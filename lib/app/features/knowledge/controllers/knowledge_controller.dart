@@ -12,6 +12,6 @@ final knowledgeControllerProvider =
 class KnowledgeController extends AutoDisposeAsyncNotifier<KnowledgeState> {
   @override
   FutureOr<KnowledgeState> build() {
-    return KnowledgeState();
+    return KnowledgeState(['test 1', 'test 2']); // Todo actual data
   }
 }

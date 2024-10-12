@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app/routing/router.dart';
 import 'app/theme/theme.dart';
@@ -7,7 +8,7 @@ import 'app/theme/theme.dart';
 Future<void> main() async {
   await Future.delayed(const Duration(seconds: 1));
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const KnowFlowApp());
+  runApp(const ProviderScope(child: KnowFlowApp()));
 }
 
 class KnowFlowApp extends StatelessWidget {
