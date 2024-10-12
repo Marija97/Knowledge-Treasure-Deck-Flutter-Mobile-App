@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../theme/colors.dart';
 import 'text.dart';
 
 class AppButton extends StatelessWidget {
@@ -12,6 +13,12 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onTap,
+      minWidth: double.infinity,
+      height: 55,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      color: Colors.blueGrey.shade700,
       child: AppText.medium(title),
     );
   }

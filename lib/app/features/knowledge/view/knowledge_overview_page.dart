@@ -22,9 +22,11 @@ class KnowledgeOverviewPage extends ConsumerWidget {
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           child: Column(
             children: [
-              AppText.medium('Looking into the knowledge treasure...'),
+              const Spacer(),
+              AppText.large('Looking into the knowledge treasure...'),
               const SizedBox(height: 12),
               Expanded(
+                flex: 8,
                 child: state.when(
                   data: (knowledge) => ListView(
                     children: knowledge.units.map(FactoidView.new).toList(),
@@ -37,7 +39,12 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                   ),
                 ),
               ),
+              AppButton(
+                title: '🌟 Expand the knowledge treasure 🌟',
+                onTap: () {},
+              ),
               AppButton(title: 'Start the quest...'),
+              const Spacer(),
             ],
           ),
         ),
