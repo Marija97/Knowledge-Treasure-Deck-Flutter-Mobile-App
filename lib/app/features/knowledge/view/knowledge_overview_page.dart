@@ -1,4 +1,4 @@
-import 'package:ash/app/features/knowledge/widgets/factoid_view.dart';
+import 'package:ash/app/features/knowledge/view/widgets/factoid_view.dart';
 import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -39,11 +39,10 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                   ),
                 ),
               ),
+              AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
               AppButton(
-                title: '🌟 Expand the knowledge treasure 🌟',
-                onTap: () {},
+                title: 'Start the quest',
               ),
-              AppButton(title: 'Start the quest...'),
               const Spacer(),
             ],
           ),
