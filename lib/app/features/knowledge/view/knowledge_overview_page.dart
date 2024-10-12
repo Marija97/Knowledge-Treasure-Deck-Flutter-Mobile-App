@@ -1,16 +1,14 @@
+import 'package:ash/app/features/knowledge/widgets/factoid_view.dart';
 import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../theme/colors.dart';
+import '../../../widgets/text.dart';
 import '../controllers/knowledge_controller.dart';
 
 class KnowledgeOverviewPage extends ConsumerWidget {
   const KnowledgeOverviewPage();
-
-  Widget knowledgeUnitAsView(String unit) {
-    return Text(unit);
-  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -24,11 +22,12 @@ class KnowledgeOverviewPage extends ConsumerWidget {
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           child: Column(
             children: [
-              Text('Looking into the knowledge treasure...'),
+              AppText.medium('Looking into the knowledge treasure...'),
+              const SizedBox(height: 12),
               Expanded(
                 child: state.when(
                   data: (knowledge) => ListView(
-                    children: knowledge.units.map(knowledgeUnitAsView).toList(),
+                    children: knowledge.units.map(FactoidView.new).toList(),
                   ),
                   error: (error, _) => Text(error.toString()),
                   loading: () => Center(

@@ -5,6 +5,7 @@ abstract class AppColors {
   static const standardText = Color(0xFFAAAAAA);
   static const ashBeige = Color(0xFFE3DACF);
   static const photoAlbumBackground = Color(0xFFECE2D5);
+  static const content = Color(0xFF96AFB8);
 
   static const accentDark = Color(0xFF6A4F4B);
   static const accentExperimental = Color(0xFF0288D1);

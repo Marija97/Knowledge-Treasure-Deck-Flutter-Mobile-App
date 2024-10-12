@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ash/app/features/models/factoid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'knowledge_state.dart';
@@ -12,6 +13,12 @@ final knowledgeControllerProvider =
 class KnowledgeController extends AutoDisposeAsyncNotifier<KnowledgeState> {
   @override
   FutureOr<KnowledgeState> build() {
-    return KnowledgeState(['test 1', 'test 2']); // Todo actual data
+    return KnowledgeState([
+      Factoid(question: 'Q1', correctAnswer: 'A1', obtained: true),
+      Factoid(question: 'Q2', correctAnswer: 'A2', obtained: false),
+      Factoid(question: 'Q3', correctAnswer: 'A3', obtained: false),
+      Factoid(question: 'Q4', correctAnswer: 'A4', obtained: true),
+      Factoid(question: 'Q5', correctAnswer: 'A5', obtained: true),
+    ]); // Todo actual data
   }
 }
