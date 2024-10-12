@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' show Color;
 
 abstract class AppColors {
-  static const backgroundDark = Color(0xFF000000);
+  static const backgroundDark = Color(0xFF2E4D56);
   static const standardText = Color(0xFFAAAAAA);
   static const ashBeige = Color(0xFFE3DACF);
   static const photoAlbumBackground = Color(0xFFECE2D5);
