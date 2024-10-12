@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../models/factoid.dart';
 import '../../../../theme/colors.dart';
-import '../../models/factoid.dart';
 
 class FactoidView extends StatelessWidget {
   const FactoidView(this.factoid);

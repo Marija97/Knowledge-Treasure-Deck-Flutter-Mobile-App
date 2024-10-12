@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/factoid.dart';
+import '../../../models/factoid.dart';
 import 'knowledge_state.dart';
 
 final knowledgeControllerProvider =
