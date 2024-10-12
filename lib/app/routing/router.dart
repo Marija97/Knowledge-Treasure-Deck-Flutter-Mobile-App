@@ -1,7 +1,6 @@
+import 'package:ash/app/features/knowledge/view/knowledge_overview_page.dart';
 import 'package:flutter/material.dart' show BuildContext;
 import 'package:go_router/go_router.dart';
-
-import '../pages/home/home_page.dart';
 
 abstract class RoutePaths {
   static const String home = '/home';
@@ -14,7 +13,7 @@ abstract class AppRouter {
       GoRoute(
         path: RoutePaths.home,
         builder: (BuildContext context, GoRouterState state) {
-          return HomePage();
+          return KnowledgeOverviewPage();
         },
         routes: const <RouteBase>[],
       ),
