@@ -32,6 +32,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                   children: state.units.map(FactoidView.new).toList(),
                 ),
               ),
+              const Spacer(),
               AppButton(
                 title: '📝 Test filling the database',
                 onTap: controller.databaseFillUpTest,
@@ -55,7 +56,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                     ? () => GoRouter.of(context).push(RoutePaths.quiz)
                     : null,
               ),
-              const Spacer(),
+              const SizedBox(height: 20),
             ],
           ),
         ),
