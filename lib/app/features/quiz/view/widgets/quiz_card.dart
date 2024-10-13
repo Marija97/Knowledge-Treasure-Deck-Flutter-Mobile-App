@@ -15,19 +15,26 @@ class QuizCard extends StatefulWidget {
 class _QuizCardState extends State<QuizCard> {
   bool showCorrectAnswer = false;
 
+
   static final _textStyle = TextStyle(
     color: Colors.grey.shade800,
     fontSize: 17,
   );
 
+  static final _cardBorderRadius = BorderRadius.all(Radius.circular(20));
+
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () => setState(() {
         showCorrectAnswer = !showCorrectAnswer;
       }),
-      child: Card(
-        color: AppColors.content,
+      borderRadius: _cardBorderRadius,
+      child: Ink(
+        decoration: BoxDecoration(
+          color: AppColors.content,
+          borderRadius: _cardBorderRadius,
+        ),
         child: SizedBox(
           width: double.infinity,
           height: MediaQuery.of(context).size.height * 0.5,
