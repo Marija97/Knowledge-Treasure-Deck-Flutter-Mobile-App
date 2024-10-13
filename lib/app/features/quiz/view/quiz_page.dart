@@ -3,7 +3,6 @@ import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../theme/colors.dart';
 import '../../../widgets/text.dart';
 import '../controllers/quiz_controller.dart';
 
@@ -13,7 +12,10 @@ class QuizPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(quizControllerProvider);
-
+    Widget stateContentView;
+    if (state.completed) stateContentView =  Text('Completed!!');
+    else if (state.factoid == null) stateContentView = Text('Some error!');
+    else stateContentView = Expanded(flex: 3, child: QuizCard(state.factoid!));
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -24,19 +26,7 @@ class QuizPage extends ConsumerWidget {
             children: [
               Center(child: AppText.large(':)')),
               const Spacer(),
-              state.when(
-                data: (quizState) {
-                  if (quizState.completed) return Text('Completed!!');
-                  if (quizState.factoid == null) return Text('Some error!');
-                  return Expanded(flex: 3, child: QuizCard(quizState.factoid!));
-                },
-                error: (error, _) => Text(error.toString()),
-                loading: () => Center(
-                  child: CircularProgressIndicator.adaptive(
-                    backgroundColor: AppColors.primaryLight,
-                  ),
-                ),
-              ),
+              stateContentView,
               const Spacer(),
               AppButton(title: 'Next'),
             ],

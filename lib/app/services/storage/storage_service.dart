@@ -6,18 +6,20 @@ final storageServiceProvider = Provider<StorageService>(
   (_) => HiveStorageService(),
 );
 
+enum StorageKey { factoids }
+
 /// Abstract class defining [StorageService] structure
 abstract class StorageService {
   Future<void> init();
 
   /// Get value by key
-  Object? getValue(String key);
+  Object? getValue(StorageKey key);
 
   /// Store new value
-  Future<void> setValue({required String key, required Object? data});
+  Future<void> setValue({required StorageKey key, required Object? data});
 
   /// Delete value by key
-  Future<void> deleteValue(String key);
+  Future<void> deleteValue(StorageKey key);
 
   /// Clear storage
   Future<void> clear();

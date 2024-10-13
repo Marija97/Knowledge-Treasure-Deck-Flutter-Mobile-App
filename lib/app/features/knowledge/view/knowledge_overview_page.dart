@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../theme/colors.dart';
 import '../../../widgets/text.dart';
 import '../controllers/knowledge_controller.dart';
 
@@ -29,19 +28,27 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               const SizedBox(height: 12),
               Expanded(
                 flex: 8,
-                child: state.when(
-                  data: (knowledge) => ListView(
-                    children: knowledge.units.map(FactoidView.new).toList(),
-                  ),
-                  error: (error, _) => Text(error.toString()),
-                  loading: () => Center(
-                    child: CircularProgressIndicator.adaptive(
-                      backgroundColor: AppColors.primaryLight,
-                    ),
-                  ),
+                child: ListView(
+                  children: state.units.map(FactoidView.new).toList(),
                 ),
               ),
+              AppButton(
+                title: '📝 Test filling the database',
+                onTap: controller.databaseFillUpTest,
+              ),
+              const SizedBox(height: 12),
+              AppButton(
+                title: '📖 Test reading the database',
+                onTap: controller.readDatabaseTest,
+              ),
+              const SizedBox(height: 12),
+              AppButton(
+                title: '🗑️ Test clearing the database',
+                onTap: controller.clearDatabaseTest,
+              ),
+              const SizedBox(height: 12),
               AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
+              const SizedBox(height: 12),
               AppButton(
                 title: 'Start the quest',
                 onTap: () => GoRouter.of(context).push(RoutePaths.quiz),

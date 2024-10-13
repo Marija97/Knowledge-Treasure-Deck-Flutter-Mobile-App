@@ -6,14 +6,12 @@ class QuizState extends Equatable {
   const QuizState({
     required this.factoid,
     required this.ordinalNumber,
+    this.completed = false,
   });
-
-  static const questLength = 5; // Todo set in settings...
 
   final Factoid? factoid;
   final int ordinalNumber;
-
-  bool get completed => ordinalNumber == questLength;
+  final bool completed;
 
   @override
   List<Object?> get props => [];

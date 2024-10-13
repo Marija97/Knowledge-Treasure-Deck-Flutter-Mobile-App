@@ -6,7 +6,6 @@ import 'app/routing/router.dart';
 import 'app/theme/theme.dart';
 
 Future<void> main() async {
-  await Future.delayed(const Duration(seconds: 1));
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const ProviderScope(child: KnowFlowApp()));
 }

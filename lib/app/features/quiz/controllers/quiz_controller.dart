@@ -1,19 +1,35 @@
-import 'dart:async';
-
+import 'package:ash/app/features/knowledge/controllers/knowledge_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
-final quizControllerProvider =
-    AutoDisposeAsyncNotifierProvider<QuizController, QuizState>(
+final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
   () => QuizController(),
 );
 
-class QuizController extends AutoDisposeAsyncNotifier<QuizState> {
+class QuizController extends Notifier<QuizState> {
+  late final List<Factoid> _knowledge;
+
+  static const questLength = 5; // Todo set in settings...
+
+  void onNext() {
+    final cardNumber = state.ordinalNumber + 1;
+    if (cardNumber == questLength - 1) {
+      // Todo completed as a custom state
+      state = QuizState(factoid: null, ordinalNumber: 0, completed: true);
+      return;
+    }
+    state = QuizState(factoid: _knowledge[cardNumber], ordinalNumber: cardNumber);
+  }
+
   @override
-  FutureOr<QuizState> build() {
-    final defaultFactoid = Factoid(question: 'Q0', correctAnswer: 'A0');
-    return QuizState(factoid: defaultFactoid, ordinalNumber: 0);
+  QuizState build() {
+    _knowledge = ref.read(knowledgeControllerProvider).units;
+
+    // Todo define empty QuizState
+    if (_knowledge.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
+
+    return QuizState(factoid: _knowledge.first, ordinalNumber: 0);
   }
 }
