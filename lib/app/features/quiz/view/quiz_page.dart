@@ -11,6 +11,7 @@ class QuizPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final controller = ref.read(quizControllerProvider.notifier);
     final state = ref.watch(quizControllerProvider);
     Widget stateContentView;
     if (state.completed) stateContentView =  Text('Completed!!');
@@ -28,7 +29,7 @@ class QuizPage extends ConsumerWidget {
               const Spacer(),
               stateContentView,
               const Spacer(),
-              AppButton(title: 'Next'),
+              AppButton(title: 'Next', onTap: controller.onNext),
             ],
           ),
         ),

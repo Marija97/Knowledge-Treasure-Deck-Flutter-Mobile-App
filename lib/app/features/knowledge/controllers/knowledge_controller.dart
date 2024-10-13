@@ -34,7 +34,7 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
   @override
   KnowledgeState build() {
-    ref.read(storageServiceProvider).init();
+    ref.read(storageServiceProvider).init().whenComplete(readDatabaseTest);
     return KnowledgeState([]);
   }
 }

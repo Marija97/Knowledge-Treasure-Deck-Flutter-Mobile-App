@@ -11,16 +11,21 @@ final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
 class QuizController extends Notifier<QuizState> {
   late final List<Factoid> _knowledge;
 
-  static const questLength = 5; // Todo set in settings...
+  // static const questLength = 5; // Todo set in settings...
 
   void onNext() {
     final cardNumber = state.ordinalNumber + 1;
-    if (cardNumber == questLength - 1) {
-      // Todo completed as a custom state
-      state = QuizState(factoid: null, ordinalNumber: 0, completed: true);
+
+    // Todo completed as a custom state
+    // if (cardNumber == questLength - 1) {
+    if (cardNumber >= _knowledge.length) {
+      state = QuizState(factoid: null, ordinalNumber: -1, completed: true);
       return;
     }
-    state = QuizState(factoid: _knowledge[cardNumber], ordinalNumber: cardNumber);
+    state = QuizState(
+      factoid: _knowledge[cardNumber],
+      ordinalNumber: cardNumber,
+    );
   }
 
   @override
