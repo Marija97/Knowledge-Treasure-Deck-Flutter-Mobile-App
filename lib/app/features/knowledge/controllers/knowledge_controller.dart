@@ -13,6 +13,7 @@ final knowledgeControllerProvider =
 class KnowledgeController extends AutoDisposeAsyncNotifier<KnowledgeState> {
   @override
   FutureOr<KnowledgeState> build() {
+
     return KnowledgeState([
       Factoid(question: 'Q1', correctAnswer: 'A1', obtained: true),
       Factoid(question: 'Q2', correctAnswer: 'A2', obtained: false),

@@ -8,7 +8,7 @@ class Factoid extends Equatable {
   const Factoid({
     required this.question,
     required this.correctAnswer,
-    required this.obtained,
+    this.obtained = false,
   });
 
   @override

@@ -1,7 +1,9 @@
 import 'package:ash/app/features/knowledge/view/widgets/factoid_view.dart';
+import 'package:ash/app/routing/router.dart';
 import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../theme/colors.dart';
 import '../../../widgets/text.dart';
@@ -42,6 +44,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
               AppButton(
                 title: 'Start the quest',
+                onTap: () => GoRouter.of(context).push(RoutePaths.quiz),
               ),
               const Spacer(),
             ],
