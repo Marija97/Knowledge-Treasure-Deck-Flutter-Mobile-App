@@ -11,7 +11,6 @@ final knowledgeControllerProvider =
 );
 
 class KnowledgeController extends Notifier<KnowledgeState> {
-  // final fetchedKnowledge = <Factoid>[];
 
   void databaseFillUpTest() {
     final knowledge = [
@@ -35,13 +34,7 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
   @override
   KnowledgeState build() {
-    ref.read(storageServiceProvider).init().whenComplete(() {
-      state = KnowledgeState([
-        Factoid(question: 'The storage is initialized.', correctAnswer: 'A1'),
-      ]);
-    });
-    return KnowledgeState([
-      Factoid(question: 'Just the sad default', correctAnswer: 'A1'),
-    ]);
+    ref.read(storageServiceProvider).init();
+    return KnowledgeState([]);
   }
 }
