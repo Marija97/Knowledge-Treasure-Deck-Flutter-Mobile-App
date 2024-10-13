@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/factoid.dart';
+import '../../../../data/models/factoid.dart';
 import '../../../../theme/colors.dart';
 
 class QuizCard extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-import '../../../models/factoid.dart';
+import '../../../data/models/factoid.dart';
 
 class KnowledgeState extends Equatable {
   const KnowledgeState(this.units);

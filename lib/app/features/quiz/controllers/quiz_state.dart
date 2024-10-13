@@ -1,5 +1,6 @@
-import 'package:ash/app/models/factoid.dart';
 import 'package:equatable/equatable.dart';
+
+import '../../../data/models/factoid.dart';
 
 class QuizState extends Equatable {
   const QuizState({

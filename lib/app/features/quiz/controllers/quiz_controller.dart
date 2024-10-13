@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:ash/app/models/factoid.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
 final quizControllerProvider =
