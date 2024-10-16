@@ -5,13 +5,17 @@ import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
 final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
-  () => QuizController(),
+      () => QuizController(),
 );
 
 class QuizController extends Notifier<QuizState> {
   late final List<Factoid> _knowledge;
 
   // static const questLength = 5; // Todo set in settings...
+
+  void markFactoidObtained(Factoid factoid) {
+    // Todo ...
+  }
 
   void onNext() {
     final cardNumber = state.ordinalNumber + 1;
@@ -30,7 +34,9 @@ class QuizController extends Notifier<QuizState> {
 
   @override
   QuizState build() {
-    _knowledge = ref.read(knowledgeControllerProvider).units;
+    _knowledge = ref
+        .read(knowledgeControllerProvider)
+        .units;
 
     // Todo define empty QuizState
     if (_knowledge.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
