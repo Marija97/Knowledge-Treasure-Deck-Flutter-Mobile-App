@@ -1,0 +1,759 @@
+{
+  "zbog": {
+    "question": "zbog",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "wegen",
+    "example": "Wegen des Staus kamen wir zu spät zur Arbeit. – Zbog gužve smo zakasnili na posao."
+  },
+  "usprkos": {
+    "question": "usprkos",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "trotz",
+    "example": "Trotz des Regens gingen wir spazieren. – Iako je padala kiša, otišli smo u šetnju."
+  },
+  "tijekom": {
+    "question": "tijekom",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "während",
+    "example": "Während des Unterrichts sollte man nicht telefonieren. – Tokom predavanja ne bi trebalo koristiti telefon."
+  },
+  "umjesto": {
+    "question": "umjesto",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "(an)statt",
+    "example": "Anstatt des Autos kaufte er ein Fahrrad. – Umjesto automobila, kupio je bicikl."
+  },
+  "unutar": {
+    "question": "unutar",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "innerhalb",
+    "example": "Innerhalb einer Stunde waren alle Probleme gelöst. – Unutar jednog sata svi problemi su bili riješeni."
+  },
+  "izvan": {
+    "question": "izvan",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "außerhalb",
+    "example": "Außerhalb der Stadt ist die Luft viel sauberer. – Izvan grada je zrak mnogo čišći."
+  },
+  "s one strane": {
+    "question": "s one strane",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "jenseits",
+    "example": "Jenseits des Flusses liegt ein kleines Dorf. – S druge strane rijeke nalazi se malo selo."
+  },
+  "uz pomoć": {
+    "question": "uz pomoć",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "mithilfe",
+    "example": "Mithilfe eines Wörterbuchs konnte er den Text übersetzen. – Uz pomoć rječnika uspio je prevesti tekst."
+  },
+  "sredinom": {
+    "question": "sredinom",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "mittels",
+    "example": "Mittels einer Umfrage sammelten sie die Meinungen der Teilnehmer. – Uz pomoć ankete prikupili su mišljenja učesnika."
+  },
+  "na osnovu": {
+    "question": "na osnovu",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "aufgrund",
+    "example": "Aufgrund der schlechten Wetterbedingungen wurde das Konzert abgesagt. – Zbog loših vremenskih uvjeta koncert je otkazan."
+  },
+  "zahvaljujući": {
+    "question": "zahvaljujući",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "dank",
+    "example": "Dank ihrer Unterstützung konnte das Projekt erfolgreich abgeschlossen werden. – Zahvaljujući njenoj podršci, projekat je uspješno završen."
+  },
+  "u skladu sa, prema (according to)": {
+    "question": "u skladu sa, prema (according to)",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "laut",
+    "example": "Laut dem Bericht wird die neue Regelung nächste Woche eingeführt. – Prema izveštaju, nova pravila će biti uvedena sledeće nedelje."
+  },
+  "iz": {
+    "question": "iz",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "aus",
+    "example": "Aus Erfahrung weiß ich, dass regelmäßiges Üben wichtig ist. – Iz iskustva znam da je redovno vežbanje važno."
+  },
+  "kod": {
+    "question": "kod",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "bei",
+    "example": "Bei diesem Wetter sollten wir lieber drinnen bleiben. – Po ovom vremenu bolje je da ostanemo unutra."
+  },
+  "sa": {
+    "question": "sa",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "mit",
+    "example": "Mit seinen Freunden plant er eine Reise nach Spanien. – Sa svojim prijateljima planira putovanje u Španiju."
+  },
+  "nakon, prema": {
+    "question": "nakon, prema",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "nach",
+    "example": "Nach der Schule gehen die Kinder oft ins Schwimmbad. – Nakon škole, deca često idu u bazen."
+  },
+  "otkad": {
+    "question": "otkad",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "seit",
+    "example": "Seit einem Jahr lerne ich Deutsch. – Već godinu dana učim nemački."
+  },
+  "od": {
+    "question": "od",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "von",
+    "example": "Von meinem Fenster aus habe ich einen schönen Blick auf den Park. – Sa mog prozora imam lep pogled na park."
+  },
+  "do": {
+    "question": "do",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "zu",
+    "example": "Zu meinem Geburtstag habe ich viele Geschenke bekommen. – Za moj rođendan dobio sam mnogo poklona."
+  },
+  "od(nekog trenutka)": {
+    "question": "od(nekog trenutka)",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "ab",
+    "example": "Ab nächster Woche beginnt der neue Kurs. – Od sledeće nedelje počinje novi kurs."
+  },
+  "nasuprot": {
+    "question": "nasuprot",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "entgegen",
+    "example": "Entgegen den Erwartungen fiel die Entscheidung positiv aus. – U suprotnosti s očekivanjima, odluka je bila pozitivna."
+  },
+  "blizu": {
+    "question": "blizu",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "nahe",
+    "example": "Nahe der Stadt gibt es viele schöne Wanderwege. – U blizini grada ima mnogo lepih planinarskih staza."
+  },
+  "izuzev, osim": {
+    "question": "izuzev, osim",
+    "correct_answer": "Dativ",
+    "category": "articles",
+    "hint": "außer",
+    "example": "Außer meinen Eltern kommen auch meine Geschwister zur Feier. – Osim mojih roditelja, dolaze i moja braća i sestre na proslavu."
+  },
+  "za": {
+    "question": "za",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "für",
+    "example": "Für das Projekt benötigen wir zusätzliche Ressourcen. – Za projekat su nam potrebni dodatni resursi."
+  },
+  "kroz": {
+    "question": "kroz",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "durch",
+    "example": "Durch die Zusammenarbeit konnten wir viele Probleme lösen. – Kroz saradnju uspeli smo da rešimo mnoge probleme."
+  },
+  "protiv": {
+    "question": "protiv",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "wider",
+    "example": "Wider Erwarten fand die Veranstaltung doch statt. – Suprotno očekivanjima, događaj se ipak održao."
+  },
+  "bez": {
+    "question": "bez",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "ohne",
+    "example": "Ohne Zweifel ist dies die beste Lösung für das Problem. – Bez sumnje, ovo je najbolje rešenje za problem."
+  },
+  "u (vremenski)": {
+    "question": "u (vremenski)",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "um",
+    "example": "Um die Ecke befindet sich ein kleines Café. – Iza ugla se nalazi mala kafana."
+  },
+  "do (vremenski)": {
+    "question": "do (vremenski)",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "bis",
+    "example": "Bis zum Ende des Monats müssen alle Rechnungen bezahlt sein. – Do kraja meseca sve fakture moraju biti plaćene."
+  },
+  "uz(duž)": {
+    "question": "uz(duž)",
+    "correct_answer": "Akkusativ",
+    "category": "articles",
+    "hint": "entlang",
+    "example": "Wir spazieren den Fluss entlang. – Šetamo pored reke."
+  },
+  "na (vertikalno), uz": {
+    "question": "na (vertikalno), uz",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "an",
+    "example": "An der Wand hängt ein schönes Gemälde. – Na zidu visi lepa slika."
+  },
+  "na (horizontalno)": {
+    "question": "na (horizontalno)",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "auf",
+    "example": "Auf der Straße spielen viele Kinder. – Na ulici se igra mnogo dece."
+  },
+  "iza": {
+    "question": "iza",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "hinter",
+    "example": "Hinter dem Haus steht ein großer Baum. – Iza kuće se nalazi veliko drvo."
+  },
+  "u": {
+    "question": "u",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "in",
+    "example": "In der Bibliothek gibt es viele spannende Bücher. – U biblioteci ima mnogo uzbudljivih knjiga."
+  },
+  "pored": {
+    "question": "pored",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "neben",
+    "example": "Neben dem Fenster steht ein bequemes Sofa. – Pored prozora se nalazi udoban kauč."
+  },
+  "preko, iznad": {
+    "question": "preko, iznad",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "über",
+    "explanation": "U većini slučajeva, über zahtijeva akuzativ",
+    "example": "Über dem Berg liegt eine schöne Aussicht. – Iznad planine se nalazi lep pogled."
+  },
+  "ispod": {
+    "question": "ispod",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "unter",
+    "example": "Unter dem Tisch fanden wir ein altes Buch. – Ispod stola pronašli smo staru knjigu."
+  },
+  "ispred": {
+    "question": "ispred",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "vor",
+    "example": "Vor dem Haus blühen viele bunte Blumen. – Ispred kuće cveta mnogo šarenog cveća."
+  },
+  "između": {
+    "question": "između",
+    "correct_answer": "Dativ / Akkusativ",
+    "category": "articles",
+    "hint": "zwischen",
+    "example": "Zwischen den Bäumen befindet sich ein kleiner Teich. – Između drveća se nalazi mali ribnjak."
+  },
+  "sjećati se na ": {
+    "question": "sjećati se na ",
+    "correct_answer": "sich erinnern an + A. / sich erinnern + G.",
+    "category": "vocabulary_from_the_book"
+  },
+  "odgovoriti od": {
+    "question": "odgovoriti od",
+    "correct_answer": "abbringen von + D",
+    "category": "vocabulary_from_the_book",
+    "hint": "npr. od neke namjere",
+    "example": "Niemand kann ih von seinem Entschluß abbringen"
+  },
+  "peći": {
+    "question": "peći",
+    "correct_answer": "backen, backte, hat gebacken; er bäckte",
+    "category": "irregular_verbs_common",
+    "hint": "backen"
+  },
+  "početi": {
+    "question": "početi",
+    "correct_answer": "beginnen, begann, hat begonnen",
+    "category": "irregular_verbs_common",
+    "hint": "beginnen"
+  },
+  "dobiti": {
+    "question": "dobiti",
+    "correct_answer": "bekommen, bekam, hat bekommen",
+    "category": "irregular_verbs_common",
+    "hint": "bekommen"
+  },
+  "ponuditi": {
+    "question": "ponuditi",
+    "correct_answer": "bieten, bot, hat heboten",
+    "category": "irregular_verbs_common",
+    "hint": "bieten"
+  },
+  "zamoliti": {
+    "question": "zamoliti",
+    "correct_answer": "bitten, bat, hat gebeten",
+    "category": "irregular_verbs_common",
+    "hint": "bitten"
+  },
+  "ostati": {
+    "question": "ostati",
+    "correct_answer": "bleiben, blieb, hat geblieben",
+    "category": "irregular_verbs_common",
+    "hint": "bleiben"
+  },
+  "donijeti": {
+    "question": "donijeti",
+    "correct_answer": "bringen, brachte, hat gebracht",
+    "category": "irregular_verbs_common",
+    "hint": "bringen"
+  },
+  "misliti": {
+    "question": "misliti",
+    "correct_answer": "denken, dachte, hat gedacht",
+    "category": "irregular_verbs_common",
+    "hint": "denken"
+  },
+  "pozvati": {
+    "question": "pozvati",
+    "correct_answer": "einladen, lud ein, hat eingeladen; er lädt ein",
+    "category": "irregular_verbs_common",
+    "hint": "einladen",
+    "example": "Er lud mich zur Party ein. – On me je pozvao na žurku."
+  },
+  "jesti": {
+    "question": "jesti",
+    "correct_answer": "essen, aß, hat gegessen; er isst",
+    "category": "irregular_verbs_common",
+    "hint": "essen"
+  },
+  "odlučiti": {
+    "question": "odlučiti",
+    "correct_answer": "entscheiden, entschied, hat entschieden",
+    "category": "irregular_verbs_common",
+    "hint": "entscheiden"
+  },
+  "voziti se, putovati": {
+    "question": "voziti se, putovati",
+    "correct_answer": "fahren, fuhr, hat gefahren; er fährt",
+    "category": "irregular_verbs_common",
+    "hint": "fahren"
+  },
+  "pronaći": {
+    "question": "pronaći",
+    "correct_answer": "finden, fand, hat gefunden; er findet",
+    "category": "irregular_verbs_common",
+    "hint": "finden"
+  },
+  "dati": {
+    "question": "dati",
+    "correct_answer": "geben, gab, hat gegeben; er gibt",
+    "category": "irregular_verbs_common",
+    "hint": "geben"
+  },
+  "ići": {
+    "question": "ići",
+    "correct_answer": "gehen, ging, ist gegangen",
+    "category": "irregular_verbs_common",
+    "hint": "gehen"
+  },
+  "uživati": {
+    "question": "uživati",
+    "correct_answer": "genießen, genoss, hat genossen",
+    "category": "irregular_verbs_common",
+    "hint": "genießen"
+  },
+  "pobijediti, osvojiti": {
+    "question": "pobijediti, osvojiti",
+    "correct_answer": "gewinnen, gewann, hat gewonnen",
+    "category": "irregular_verbs_common",
+    "hint": "gewinnen"
+  },
+  "držati": {
+    "question": "držati",
+    "correct_answer": "halten, hielt, hat gehalten; er hält",
+    "category": "irregular_verbs_common",
+    "hint": "halten"
+  },
+  "zvati se": {
+    "question": "zvati se",
+    "correct_answer": "heißen, hieß, hat geheißen",
+    "category": "irregular_verbs_common",
+    "hint": "heißen"
+  },
+  "pomoći": {
+    "question": "pomoći",
+    "correct_answer": "helfen, half, hat geholfen; er hilft",
+    "category": "irregular_verbs_common",
+    "hint": "helfen"
+  },
+  "poznavati": {
+    "question": "poznavati",
+    "correct_answer": "kennen, kannte, hat gekannt",
+    "category": "irregular_verbs_common",
+    "hint": "kennen"
+  },
+  "doći": {
+    "question": "doći",
+    "correct_answer": "kommen, kam, ist gekommen",
+    "category": "irregular_verbs_common",
+    "hint": "kommen"
+  },
+  "trčati": {
+    "question": "trčati",
+    "correct_answer": "laufen, lief, ist gelaufen; er läuft",
+    "category": "irregular_verbs_common",
+    "hint": "laufen"
+  },
+  "patiti, bolovati": {
+    "question": "patiti, bolovati",
+    "correct_answer": "leiden, litt, hat gelitten",
+    "category": "irregular_verbs_common",
+    "hint": "leiden"
+  },
+  "čitati": {
+    "question": "čitati",
+    "correct_answer": "lesen, las, hat gelesen; er liest",
+    "category": "irregular_verbs_common",
+    "hint": "lesen"
+  },
+  "ležati": {
+    "question": "ležati",
+    "correct_answer": "liegen, lag, hat gelegen",
+    "category": "irregular_verbs_common",
+    "hint": "liegen"
+  },
+  "uzeti": {
+    "question": "uzeti",
+    "correct_answer": "nehmen, nahm, hat genommen; er nimmt",
+    "category": "irregular_verbs_common",
+    "hint": "nehmen"
+  },
+  "zvati": {
+    "question": "zvati",
+    "correct_answer": "rufen, rief, hat gerufen",
+    "category": "irregular_verbs_common",
+    "hint": "rufen"
+  },
+  "sjati": {
+    "question": "sjati",
+    "correct_answer": "scheinen, schien, hat geschienen",
+    "category": "irregular_verbs_common",
+    "hint": "scheinen"
+  },
+  "spavati": {
+    "question": "spavati",
+    "correct_answer": "schlafen, schlief, hat geschlafen; er schläft",
+    "category": "irregular_verbs_common",
+    "hint": "schlafen"
+  },
+  "zatvoriti": {
+    "question": "zatvoriti",
+    "correct_answer": "schließen, schloss, hat geschlossen",
+    "category": "irregular_verbs_common",
+    "hint": "schließen"
+  },
+  "pisati": {
+    "question": "pisati",
+    "correct_answer": "schreiben, schrieb, hat geschrieben",
+    "category": "irregular_verbs_common",
+    "hint": "schreiben"
+  },
+  "plivati": {
+    "question": "plivati",
+    "correct_answer": "schwimmen, schwamm, hat/ist geschwommen",
+    "category": "irregular_verbs_common",
+    "hint": "schwimmen"
+  },
+  "vidjeti": {
+    "question": "vidjeti",
+    "correct_answer": "sehen, sah, hat gesehen; er sieht",
+    "category": "irregular_verbs_common",
+    "hint": "sehen"
+  },
+  "biti": {
+    "question": "biti",
+    "correct_answer": "sein, war, ist gewesen; er ist",
+    "category": "irregular_verbs_common",
+    "hint": "sein"
+  },
+  "pjevati": {
+    "question": "pjevati",
+    "correct_answer": "singen, sang, hat gesungen",
+    "category": "irregular_verbs_common",
+    "hint": "singen"
+  },
+  "pričati": {
+    "question": "pričati",
+    "correct_answer": "sprechen, sprach, hat gesprochen; er spricht",
+    "category": "irregular_verbs_common",
+    "hint": "sprechen"
+  },
+  "stajati": {
+    "question": "stajati",
+    "correct_answer": "stehen, stand, hat gestanden",
+    "category": "irregular_verbs_common",
+    "hint": "stehen"
+  },
+  "umrijeti": {
+    "question": "umrijeti",
+    "correct_answer": "sterben, starb, ist gestroben; er stirbt",
+    "category": "irregular_verbs_common",
+    "hint": "sterben"
+  },
+  "nositi": {
+    "question": "nositi",
+    "correct_answer": "tragen, trug, hat getragen; er trägt",
+    "category": "irregular_verbs_common",
+    "hint": "tragen"
+  },
+  "sresti": {
+    "question": "sresti",
+    "correct_answer": "treffen, traf, hat getroffen; er trifft",
+    "category": "irregular_verbs_common",
+    "hint": "treffen"
+  },
+  "piti": {
+    "question": "piti",
+    "correct_answer": "trinken, trank, hat getrunken",
+    "category": "irregular_verbs_common",
+    "hint": "trinken"
+  },
+  "činiti, raditi": {
+    "question": "činiti, raditi",
+    "correct_answer": "tun, tat, hat getan",
+    "category": "irregular_verbs_common",
+    "hint": "tun",
+    "example": "Present: tue, tust, tut, tun, tut, tun"
+  },
+  "provesti": {
+    "question": "provesti",
+    "correct_answer": "verbringen, verbrachte, hat verbracht",
+    "category": "irregular_verbs_common",
+    "hint": "verbringen"
+  },
+  "zaboraviti": {
+    "question": "zaboraviti",
+    "correct_answer": "vergessen, vergaß, hat vergessen; er vergisst",
+    "category": "irregular_verbs_common",
+    "hint": "vergessen"
+  },
+  "izgubiti": {
+    "question": "izgubiti",
+    "correct_answer": "verlieren, verlor, hat verloren",
+    "category": "irregular_verbs_common",
+    "hint": "verlieren"
+  },
+  "razumjeti": {
+    "question": "razumjeti",
+    "correct_answer": "verstehen, verstand, hat verstanden",
+    "category": "irregular_verbs_common",
+    "hint": "verstehen"
+  },
+  "prati": {
+    "question": "prati",
+    "correct_answer": "waschen, wusch, hat gewaschen; er wäscht",
+    "category": "irregular_verbs_common",
+    "hint": "waschen"
+  },
+  "postati": {
+    "question": "postati",
+    "correct_answer": "werden, wurde, ist geworden; er wird",
+    "category": "irregular_verbs_common",
+    "hint": "werden"
+  },
+  "znati": {
+    "question": "znati",
+    "correct_answer": "wissen, wusste, hat gewusst; er weiß",
+    "category": "irregular_verbs_common",
+    "hint": "wissen"
+  },
+  "vući, seliti se": {
+    "question": "vući, seliti se",
+    "correct_answer": "ziehen, zog, hat gezogen",
+    "category": "irregular_verbs_common",
+    "hint": "ziehen"
+  },
+  "otkad je ostarila": {
+    "question": "otkad je ostarila",
+    "correct_answer": "seit sie älter geworden ist",
+    "category": "notebook_14_10_2024"
+  },
+  "nezadovoljan": {
+    "question": "nezadovoljan",
+    "correct_answer": "unzufrieden",
+    "category": "notebook_14_10_2024"
+  },
+  "svako malo, češće od ponekad": {
+    "question": "svako malo, češće od ponekad",
+    "correct_answer": "immer mal",
+    "category": "notebook_14_10_2024"
+  },
+  "zapisati (zabilježiti) nešto u bilježnicu": {
+    "question": "zapisati (zabilježiti) nešto u bilježnicu",
+    "correct_answer": "etwas(A) + im Notizbuch notieren",
+    "category": "notebook_14_10_2024",
+    "hint": "notieren + A"
+  },
+  "voditi (npr. dnevnik)": {
+    "question": "voditi (npr. dnevnik)",
+    "correct_answer": "ein Tagebuch führen",
+    "category": "notebook_14_10_2024",
+    "hint": "führen",
+    "explanation": "„führen“ znači „voditi“, „upustiti“, „organizovati“ ili „uputiti“. Koristi se u različitim kontekstima, kao što su vođenje ljudi, vođenje beležnica ili organizacija nečega.",
+    "example": "Sie führt ein Merkbuch (biljeznica sa važnijim informacijama)"
+  },
+  "Ona se raduje svakom plavom(lijepom) danu.": {
+    "question": "Ona se raduje svakom plavom(lijepom) danu.",
+    "correct_answer": "Sie freut sich über jeden blauen Tag.",
+    "category": "notebook_14_10_2024"
+  },
+  "Baka želi otići(seliti) u dom za starije.": {
+    "question": "Baka želi otići(seliti) u dom za starije.",
+    "correct_answer": "Oma will in ein Altersheim ziehen.",
+    "category": "notebook_14_10_2024",
+    "hint": "das Altersheim, ziehen"
+  },
+  "odseliti se": {
+    "question": "odseliti se",
+    "correct_answer": "umziehen",
+    "category": "notebook_14_10_2024",
+    "example": "Sie sind letzten Monat umgezogen."
+  },
+  "brinuti se za nekoga": {
+    "question": "brinuti se za nekoga",
+    "correct_answer": "sich Sorgen machen, um + Akk",
+    "category": "notebook_14_10_2024",
+    "example": "Evi macht sich Sorgen um Oma."
+  },
+  "useliti se": {
+    "question": "useliti se",
+    "correct_answer": "einziehen",
+    "category": "notebook_14_10_2024"
+  },
+  "u trendu je": {
+    "question": "u trendu je",
+    "correct_answer": "etwas im Trend liegt",
+    "category": "notebook_14_10_2024",
+    "hint": "liegen - ležati, biti",
+    "example": "Es liegt im Trend, minimalistisch zu leben. Gesunde Ernährung liegt im Trend."
+  },
+  "trošiti novac": {
+    "question": "trošiti novac",
+    "correct_answer": "das Geld ausgeben",
+    "category": "notebook_14_10_2024",
+    "hint": "ausgeben"
+  },
+  "trošiti struju": {
+    "question": "trošiti struju",
+    "correct_answer": "Strom verbrauchen",
+    "category": "notebook_14_10_2024",
+    "hint": "der Strom",
+    "example": "Der Stromverbrauch "
+  },
+  "potrošnja struje": {
+    "question": "potrošnja struje",
+    "correct_answer": "der Stromverbrauch / der Verbrauch von Strom",
+    "category": "notebook_14_10_2024"
+  },
+  "prilagoditi se": {
+    "question": "prilagoditi se",
+    "correct_answer": "anpassen",
+    "category": "notebook_14_10_2024"
+  },
+  "oštećen(fizički)": {
+    "question": "oštećen(fizički)",
+    "correct_answer": "beschädigt",
+    "category": "notebook_14_10_2024",
+    "explanation": "beschädigen - oštetiti, nanijeti štetu fizički",
+    "example": "Das Auto ist nach dem Unfall beschädigt. - Auto je oštećen nakon nesreće."
+  },
+  "okončati školovanje": {
+    "question": "okončati školovanje",
+    "correct_answer": "die Ausbildung absolvieren",
+    "category": "notebook_14_10_2024",
+    "hint": "absolvieren"
+  },
+  "Rečenica je glasila...": {
+    "question": "Rečenica je glasila...",
+    "correct_answer": "Der Satz lautete",
+    "category": "notebook_14_10_2024",
+    "explanation": "lauten"
+  },
+  "od prošlog tjedna...": {
+    "question": "od prošlog tjedna...",
+    "correct_answer": "seit der letzten Woche...",
+    "category": "notebook_14_10_2024",
+    "hint": "seit",
+    "explanation": "seit + Dativ"
+  },
+  "obaviti, završiti, riješiti": {
+    "question": "obaviti, završiti, riješiti",
+    "correct_answer": "erledigen",
+    "category": "notebook_14_10_2024",
+    "hint": "zadatak, obavezu, problem..",
+    "example": "Ich muss noch ein paar Dinge erledigen. - Moram obaviti još nekoliko stvari."
+  },
+  "događaj": {
+    "question": "događaj",
+    "correct_answer": "das Ereignis / die Ereignisse",
+    "category": "notebook_14_10_2024",
+    "hint": "das Geschehen"
+  },
+  "unuk/a": {
+    "question": "unuk/a",
+    "correct_answer": "Enkel:in",
+    "category": "notebook_14_10_2024"
+  },
+  "odrediti(određivati) npr. budućnost": {
+    "question": "odrediti(određivati) npr. budućnost",
+    "correct_answer": "die Zukunft bestimmen",
+    "category": "notebook_14_10_2024",
+    "example": "Wir müssen die Zukunft unseres Unternehmens bestimmen. - Moramo odrediti budućnost naše kompanije."
+  },
+  "poplava": {
+    "question": "poplava",
+    "correct_answer": "die Uberschwemmung",
+    "category": "notebook_14_10_2024"
+  },
+  "suša": {
+    "question": "suša",
+    "correct_answer": "die Dürre",
+    "category": "notebook_14_10_2024"
+  },
+  "smiješiti se": {
+    "question": "smiješiti se",
+    "correct_answer": "lächeln",
+    "category": "notebook_14_10_2024",
+    "example": "Ich lächle, wenn ich glücklich bin."
+  },
+  "smijati se": {
+    "question": "smijati se",
+    "correct_answer": "lachen",
+    "category": "notebook_14_10_2024"
+  },
+  "s vremena na vrijeme": {
+    "question": "s vremena na vrijeme",
+    "correct_answer": "von Zeit zu Zeit",
+    "category": "frases"
+  }
+}

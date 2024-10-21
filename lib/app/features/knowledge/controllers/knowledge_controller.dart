@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:ash/app/services/storage/storage_service.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/knowledge_repository/knowledge_repository.dart';
@@ -11,15 +14,13 @@ final knowledgeControllerProvider =
 );
 
 class KnowledgeController extends Notifier<KnowledgeState> {
+  Future<void> databaseFillUpTest() async {
+    final data = await rootBundle.loadString('assets/quiz_data/german.json');
+    final knowledge = <Factoid>[];
+    (json.decode(data) as Map<String, dynamic>).forEach((_, factoidJson) {
+      knowledge.add(Factoid.fromMap(factoidJson));
+    });
 
-  void databaseFillUpTest() {
-    final knowledge = [
-      Factoid(question: 'Q01', correctAnswer: 'A1', obtained: true),
-      Factoid(question: 'Q02', correctAnswer: 'A2', obtained: false),
-      Factoid(question: 'Q03', correctAnswer: 'A3', obtained: false),
-      Factoid(question: 'Q04', correctAnswer: 'A4', obtained: true),
-      Factoid(question: 'Q05', correctAnswer: 'A5', obtained: true),
-    ];
     ref.read(knowledgeRepositoryProvider).setupInitialKnowledge(knowledge);
   }
 

@@ -43,13 +43,13 @@ class QuizCard extends ConsumerWidget {
               /// --- Hint view ---
 
               Visibility(
-                visible: state.showHint,
+                visible: factoid.hint != null && state.showHint,
                 replacement: IconButton(
                   onPressed: controller.toggleHintVisibility,
                   icon: Icon(Icons.info_outline),
                 ),
                 child: Text(
-                  factoid.hint,
+                  factoid.hint!,
                   style: QuizCard.textStyle.copyWith(
                     color: Colors.grey.shade600,
                   ),
@@ -77,12 +77,18 @@ class QuizCard extends ConsumerWidget {
 
               Visibility(
                 visible: state.showCorrectAnswer,
-                child: Text(factoid.explanation, style: QuizCard.textStyle),
+                child: Text(
+                  factoid.explanation ?? '',
+                  style: QuizCard.textStyle,
+                ),
               ),
               const SizedBox(height: 25),
               Visibility(
                 visible: state.showCorrectAnswer,
-                child: Text(factoid.example, style: QuizCard.textStyle),
+                child: Text(
+                  factoid.example ?? '',
+                  style: QuizCard.textStyle,
+                ),
               ),
               const SizedBox(height: 30),
             ],

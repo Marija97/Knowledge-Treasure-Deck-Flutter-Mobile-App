@@ -73,4 +73,5 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application
-
+  assets:
+    - assets/quiz_data/german.json
