@@ -13,6 +13,10 @@ class Factoid extends Equatable {
     this.obtained = false,
   });
 
+  String get hint => 'test';
+  String get explanation => 'explanation test ...';
+  String get example => 'example test ...';
+
   @override
   List<Object?> get props => <Object?>[question, correctAnswer];
 

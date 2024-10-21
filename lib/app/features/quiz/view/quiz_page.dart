@@ -12,11 +12,6 @@ class QuizPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.read(quizControllerProvider.notifier);
-    final state = ref.watch(quizControllerProvider);
-    Widget stateContentView;
-    if (state.completed) stateContentView =  Text('Completed!!');
-    else if (state.factoid == null) stateContentView = Text('Some error!');
-    else stateContentView = Expanded(flex: 3, child: QuizCard(state.factoid!));
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -27,7 +22,7 @@ class QuizPage extends ConsumerWidget {
             children: [
               Center(child: AppText.large(':)')),
               const Spacer(),
-              stateContentView,
+              QuizCard(),
               const Spacer(),
               AppButton(title: 'Next', onTap: controller.onNext),
             ],

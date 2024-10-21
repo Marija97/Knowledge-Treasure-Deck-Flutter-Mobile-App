@@ -5,7 +5,7 @@ import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
 final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
-      () => QuizController(),
+  () => QuizController(),
 );
 
 class QuizController extends Notifier<QuizState> {
@@ -13,8 +13,25 @@ class QuizController extends Notifier<QuizState> {
 
   // static const questLength = 5; // Todo set in settings...
 
-  void markFactoidObtained(Factoid factoid) {
+  void markAsObtained() {
     // Todo ...
+  }
+
+  void toggleCorrectAnswerVisibility() {
+    state = state.copyWith(showCorrectAnswer: !state.showCorrectAnswer);
+  }
+
+  void toggleHintVisibility() {
+    state = state.copyWith(showHint: !state.showHint);
+  }
+
+  void nextView() {
+    if (!state.showHint)
+      toggleHintVisibility();
+    else if (!state.showCorrectAnswer)
+      toggleCorrectAnswerVisibility();
+    else
+      onNext();
   }
 
   void onNext() {
@@ -34,9 +51,7 @@ class QuizController extends Notifier<QuizState> {
 
   @override
   QuizState build() {
-    _knowledge = ref
-        .read(knowledgeControllerProvider)
-        .units;
+    _knowledge = ref.read(knowledgeControllerProvider).units;
 
     // Todo define empty QuizState
     if (_knowledge.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
