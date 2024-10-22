@@ -29,7 +29,14 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               Expanded(
                 flex: 8,
                 child: ListView(
-                  children: state.allCategories().map(CategoryView.new).toList(),
+                  children: state
+                      .allCategories()
+                      .map((category) => CategoryView(
+                            category,
+                            isSelected: state.selectedCategory == category,
+                            onTap: () => controller.selectCategory(category),
+                          ))
+                      .toList(),
                 ),
               ),
               const Spacer(),

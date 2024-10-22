@@ -49,7 +49,7 @@ class QuizCard extends ConsumerWidget {
                   icon: Icon(Icons.info_outline),
                 ),
                 child: Text(
-                  factoid.hint!,
+                  factoid.hint ?? 'err',
                   style: QuizCard.textStyle.copyWith(
                     color: Colors.grey.shade600,
                   ),

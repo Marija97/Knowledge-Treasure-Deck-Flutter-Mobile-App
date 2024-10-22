@@ -48,6 +48,10 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     state = state.copyWith(factoidsByCategory: _factoidsByCategory);
   }
 
+  void selectCategory(String? category){
+    state = state.copyWith(selectedCategory: category);
+  }
+
   List<Factoid> getQuizData(){
     // all the factoids from the selected category
     return state.getSection()..shuffle(Random(0));
