@@ -6,6 +6,7 @@ class Factoid extends Equatable {
   final String question;
   final String correctAnswer;
   final bool obtained;
+  final String category;
   final String? hint;
   final String? explanation;
   final String? example;
@@ -13,6 +14,7 @@ class Factoid extends Equatable {
   const Factoid({
     required this.question,
     required this.correctAnswer,
+    required this.category,
     this.obtained = false,
     this.hint,
     this.explanation,
@@ -32,6 +34,7 @@ class Factoid extends Equatable {
         question: json["question"] as String,
         correctAnswer: json["correct_answer"] as String,
         obtained: json["obtained"] as bool? ?? false,
+        category: json["category"] as String,
         hint: json["hint"] as String?,
         explanation: json["explanation"] as String?,
         example: json["example"] as String?,
@@ -41,6 +44,7 @@ class Factoid extends Equatable {
         "question": question,
         "correct_answer": correctAnswer,
         "obtained": obtained,
+        "category": category,
         "hint": hint,
         "example": example,
         "explanation": explanation,
