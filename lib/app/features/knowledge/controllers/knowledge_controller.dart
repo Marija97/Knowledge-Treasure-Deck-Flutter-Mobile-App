@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:ash/app/services/storage/storage_service.dart';
 import 'package:flutter/services.dart';
@@ -14,9 +15,6 @@ final knowledgeControllerProvider =
 );
 
 class KnowledgeController extends Notifier<KnowledgeState> {
-  late Map<String, List<Factoid>> _factoidsByCategory;
-
-  final selectedCategory = 'irregular_verbs_common'; // Todo selected by user!
 
   Future<void> databaseFillUpTest() async {
     final data = await rootBundle.loadString('assets/quiz_data/german.json');
@@ -36,7 +34,7 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     final units = ref.read(knowledgeRepositoryProvider).getKnowledge();
 
     // prepare quests
-    _factoidsByCategory = Map<String, List<Factoid>>();
+    final _factoidsByCategory = Map<String, List<Factoid>>();
 
     // collect factoids into their category group
     for(final factoid in units){
@@ -47,11 +45,12 @@ class KnowledgeController extends Notifier<KnowledgeState> {
       }
     }
 
-    state = KnowledgeState(units);
+    state = state.copyWith(factoidsByCategory: _factoidsByCategory);
   }
 
   List<Factoid> getQuizData(){
-    return _factoidsByCategory[selectedCategory]!..shuffle();
+    // all the factoids from the selected category
+    return state.getSection()..shuffle(Random(0));
   }
 
   void clearDatabaseTest() {
@@ -61,6 +60,8 @@ class KnowledgeController extends Notifier<KnowledgeState> {
   @override
   KnowledgeState build() {
     ref.read(storageServiceProvider).init().whenComplete(readDatabaseTest);
-    return KnowledgeState([]);
+    // Todo selected by user!
+    // Todo read from a variable
+    return KnowledgeState(factoidsByCategory: null, selectedCategory: null);
   }
 }

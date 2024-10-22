@@ -1,4 +1,4 @@
-import 'package:ash/app/features/knowledge/view/widgets/factoid_view.dart';
+import 'package:ash/app/features/knowledge/view/widgets/category_view.dart';
 import 'package:ash/app/routing/router.dart';
 import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               Expanded(
                 flex: 8,
                 child: ListView(
-                  children: state.units.map(FactoidView.new).toList(),
+                  children: state.allCategories().map(CategoryView.new).toList(),
                 ),
               ),
               const Spacer(),
@@ -52,7 +52,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               const SizedBox(height: 12),
               AppButton(
                 title: 'Start the quest',
-                onTap: state.units.isNotEmpty
+                onTap: state.selectedCategory != null
                     ? () => GoRouter.of(context).push(RoutePaths.quiz)
                     : null,
               ),

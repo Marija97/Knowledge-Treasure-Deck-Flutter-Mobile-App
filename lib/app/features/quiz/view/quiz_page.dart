@@ -12,6 +12,7 @@ class QuizPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.read(quizControllerProvider.notifier);
+    // final state = ref.watch(quizControllerProvider);
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -23,6 +24,8 @@ class QuizPage extends ConsumerWidget {
               Center(child: AppText.large(':)')),
               const Spacer(),
               QuizCard(),
+              const SizedBox(height: 15),
+              // Text('${state.ordinalNumber}/${controller.quest.length}'),
               const Spacer(),
               AppButton(title: 'Next', onTap: controller.onNext),
             ],

@@ -52,8 +52,8 @@ class QuizController extends Notifier<QuizState> {
   @override
   QuizState build() {
     final knowledgeProvider = ref.read(knowledgeControllerProvider.notifier);
-    quest = knowledgeProvider.getQuizData();
-
+    final factoidsForThisQuiz = knowledgeProvider.getQuizData();
+    quest = factoidsForThisQuiz; // Todo later divide into smaller chunks
 
     // Todo define empty QuizState
     if (quest.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
