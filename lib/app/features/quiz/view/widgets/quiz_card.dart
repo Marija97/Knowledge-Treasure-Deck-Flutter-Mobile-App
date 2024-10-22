@@ -5,7 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../theme/colors.dart';
 
 class QuizCard extends ConsumerWidget {
-  const QuizCard();
+  const QuizCard(this.category);
+
+  final String category;
 
   static final textStyle = TextStyle(color: Colors.grey.shade800, fontSize: 17);
 
@@ -13,8 +15,8 @@ class QuizCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final controller = ref.read(quizControllerProvider.notifier);
-    final state = ref.watch(quizControllerProvider);
+    final controller = ref.read(quizControllerProvider(category).notifier);
+    final state = ref.watch(quizControllerProvider(category));
 
     if (state.completed) return Text('Completed!!');
     if (state.factoid == null) return Text('Some error!');

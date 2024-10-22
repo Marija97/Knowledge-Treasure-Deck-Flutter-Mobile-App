@@ -4,12 +4,22 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
-final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
-  () => QuizController(),
-);
+final quizControllerProvider = StateNotifierProvider.autoDispose
+    .family<QuizController, QuizState, String>((ref, category) {
+  final knowledgeProvider = ref.watch(knowledgeControllerProvider.notifier);
+  final quest = knowledgeProvider.getQuizData(); // factoidsForThisQuiz;
 
-class QuizController extends Notifier<QuizState> {
-  List<Factoid> quest = [];
+  final state = quest.isEmpty
+      ? QuizState.empty()
+      : QuizState(factoid: quest.first, ordinalNumber: 0);
+
+  return QuizController(state, quest);
+});
+
+class QuizController extends StateNotifier<QuizState> {
+  final List<Factoid> quest;
+
+  QuizController(QuizState state, List<Factoid> this.quest) : super(state);
 
   // static const questLength = 5; // Todo set in settings...
 
@@ -47,17 +57,5 @@ class QuizController extends Notifier<QuizState> {
       factoid: quest[cardNumber],
       ordinalNumber: cardNumber,
     );
-  }
-
-  @override
-  QuizState build() {
-    final knowledgeProvider = ref.read(knowledgeControllerProvider.notifier);
-    final factoidsForThisQuiz = knowledgeProvider.getQuizData();
-    quest = factoidsForThisQuiz; // Todo later divide into smaller chunks
-
-    // Todo define empty QuizState
-    if (quest.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
-
-    return QuizState(factoid: quest.first, ordinalNumber: 0);
   }
 }

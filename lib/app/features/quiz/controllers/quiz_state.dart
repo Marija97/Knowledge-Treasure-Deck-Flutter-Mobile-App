@@ -11,6 +11,8 @@ class QuizState extends Equatable {
     this.showCorrectAnswer = false,
   });
 
+  factory QuizState.empty() => QuizState(factoid: null, ordinalNumber: -1);
+
   final Factoid? factoid;
   final int ordinalNumber;
   final bool completed;

@@ -22,7 +22,7 @@ abstract class AppRouter {
       GoRoute(
         path: RoutePaths.quiz,
         builder: (BuildContext context, GoRouterState state) {
-          return QuizPage();
+          return QuizPage(state.extra as String);
         },
         routes: const <RouteBase>[],
       ),

@@ -7,12 +7,13 @@ import '../../../widgets/text.dart';
 import '../controllers/quiz_controller.dart';
 
 class QuizPage extends ConsumerWidget {
-  const QuizPage();
+  const QuizPage(this.category);
+  final String category;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final controller = ref.read(quizControllerProvider.notifier);
-    // final state = ref.watch(quizControllerProvider);
+    final controller = ref.read(quizControllerProvider(category).notifier);
+    // final state = ref.watch(quizControllerProvider(category));
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -23,7 +24,7 @@ class QuizPage extends ConsumerWidget {
             children: [
               Center(child: AppText.large(':)')),
               const Spacer(),
-              QuizCard(),
+              QuizCard(category),
               const SizedBox(height: 15),
               // Text('${state.ordinalNumber}/${controller.quest.length}'),
               const Spacer(),

@@ -60,7 +60,10 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               AppButton(
                 title: 'Start the quest',
                 onTap: state.selectedCategory != null
-                    ? () => GoRouter.of(context).push(RoutePaths.quiz)
+                    ? () => GoRouter.of(context).push(
+                          RoutePaths.quiz,
+                          extra: state.selectedCategory,
+                        )
                     : null,
               ),
               const SizedBox(height: 20),
