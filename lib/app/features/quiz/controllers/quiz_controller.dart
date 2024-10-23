@@ -12,19 +12,32 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
   final allObtained = knowledgeRepository.getAllObtained(category);
   final markPermanentlyAsObtained = knowledgeRepository.markAsObtained;
 
-  final state = quest.isEmpty
-      ? QuizState.empty()
-      : QuizState(
-          factoid: quest.first,
-          ordinalNumber: 0,
-          obtained: allObtained.contains(quest.first.key),
-        );
+  assert(quest.isNotEmpty, 'No data received');
 
-  return QuizController(state, quest, allObtained, markPermanentlyAsObtained);
+  // show only unlearned factoids
+  // Todo revise this decision
+  final filteredQuest = quest.where(
+    (f) => !allObtained.contains(f.key),
+  ).toList().cast<Factoid>();
+
+  assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
+
+  final initialState = QuizState(
+    factoid: filteredQuest.first,
+    ordinalNumber: 0,
+    obtained: allObtained.contains(filteredQuest.first.key),
+  );
+
+  return QuizController(
+    initialState,
+    filteredQuest,
+    allObtained,
+    markPermanentlyAsObtained,
+  );
 });
 
 class QuizController extends StateNotifier<QuizState> {
-  final List<Factoid> quest;
+  List<Factoid> quest;
   final Set<String> allObtained;
   final Future<void> Function(Factoid f) markPermanentlyAsObtained;
 
@@ -88,12 +101,25 @@ class QuizController extends StateNotifier<QuizState> {
   }
 
   void onNext() {
-    final cardNumber = state.ordinalNumber + 1;
+    int cardNumber = state.ordinalNumber + 1;
+    if (state.completed) {
+      cardNumber = 0;
+      final nextIteration = <Factoid>[];
+      for (final factoid in quest) {
+        if (!_isObtained(factoid)) nextIteration.add(factoid);
+      }
+      // Todo maybe shuffle?
+      quest = nextIteration;
+    }
 
     // Todo completed as a custom state
     // if (cardNumber == questLength - 1) {
     if (cardNumber >= quest.length) {
-      state = state.copyWith(factoid: null, ordinalNumber: cardNumber, completed: true);
+      state = state.copyWith(
+        factoid: null,
+        ordinalNumber: cardNumber,
+        completed: true,
+      );
       return;
     }
     state = QuizState(
