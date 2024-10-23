@@ -31,6 +31,7 @@ class QuizCard extends ConsumerWidget {
           color: AppColors.content,
           borderRadius: QuizCard.cardBorderRadius,
         ),
+        padding: EdgeInsets.all(20),
         child: SizedBox(
           width: double.infinity,
           height: MediaQuery.of(context).size.height * 0.5,

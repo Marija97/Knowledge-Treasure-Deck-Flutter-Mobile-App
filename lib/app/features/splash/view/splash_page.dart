@@ -16,7 +16,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
   @override
   Widget build(BuildContext context) {
     ref.listen(splashControllerProvider, (previous, next) {
-      Future.delayed(const Duration(seconds: 2), () {
+      Future.delayed(const Duration(seconds: 1), () {
         /// Delay routing 1 second, so that the animation is played
         GoRouter.of(context).go(RoutePaths.home);
       });

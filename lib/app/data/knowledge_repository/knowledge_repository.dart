@@ -14,6 +14,10 @@ abstract class KnowledgeRepository {
 
   List<Factoid> getKnowledgeForCategory(String category);
 
+  Set<String> getAllObtained(String category);
+
+  Future<void> markAsObtained(Factoid factoid);
+
   List<String> getCategories();
 
   Future<void> clear();

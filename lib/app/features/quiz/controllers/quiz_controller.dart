@@ -8,23 +8,34 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
     .family<QuizController, QuizState, String>((ref, category) {
   final knowledgeRepository = ref.read(knowledgeRepositoryProvider);
   final quest = knowledgeRepository.getKnowledgeForCategory(category);
+  final obtained = knowledgeRepository.getAllObtained(category);
+  final markPermanentlyAsObtained = knowledgeRepository.markAsObtained;
 
   final state = quest.isEmpty
       ? QuizState.empty()
       : QuizState(factoid: quest.first, ordinalNumber: 0);
 
-  return QuizController(state, quest);
+  return QuizController(state, quest, obtained, markPermanentlyAsObtained);
 });
 
 class QuizController extends StateNotifier<QuizState> {
   final List<Factoid> quest;
+  final Set<String> obtained;
+  final Future<void> Function(Factoid f) markPermanentlyAsObtained;
 
-  QuizController(QuizState state, List<Factoid> this.quest) : super(state);
+  QuizController(
+    QuizState state,
+    List<Factoid> this.quest,
+    Set<String> this.obtained,
+    Future<void> Function(Factoid f) this.markPermanentlyAsObtained,
+  ) : super(state);
 
   // static const questLength = 5; // Todo set in settings...
 
   void markAsObtained() {
-    // Todo ...
+    final factoid = state.factoid!;
+    obtained.add(factoid.key);
+    markPermanentlyAsObtained.call(factoid);
   }
 
   void toggleCorrectAnswerVisibility() {

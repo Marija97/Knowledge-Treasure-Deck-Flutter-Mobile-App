@@ -21,6 +21,8 @@ class Factoid extends Equatable {
     this.example,
   });
 
+  String get key => question;
+
   @override
   List<Object?> get props => <Object?>[question, correctAnswer];
 
