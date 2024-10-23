@@ -6,7 +6,8 @@ final storageServiceProvider = Provider<StorageService>(
   (_) => HiveStorageService(),
 );
 
-enum StorageKey { factoids }
+// enum StorageKey { factoids }
+typedef StorageKey = String;
 
 /// Abstract class defining [StorageService] structure
 abstract class StorageService {

@@ -29,7 +29,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               Expanded(
                 flex: 8,
                 child: ListView(
-                  children: state
+                  children: controller
                       .allCategories()
                       .map((category) => CategoryView(
                             category,
@@ -39,23 +39,23 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                       .toList(),
                 ),
               ),
-              const Spacer(),
-              AppButton(
-                title: '📝 Test filling the database',
-                onTap: controller.databaseFillUpTest,
-              ),
-              const SizedBox(height: 12),
-              AppButton(
-                title: '📖 Test reading the database',
-                onTap: controller.readDatabaseTest,
-              ),
-              const SizedBox(height: 12),
-              AppButton(
-                title: '🗑️ Test clearing the database',
-                onTap: controller.clearDatabaseTest,
-              ),
-              const SizedBox(height: 12),
-              AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
+              // const Spacer(),
+              // AppButton(
+              //   title: '📝 Test filling the database',
+              //   onTap: controller.databaseFillUpTest,
+              // ),
+              // const SizedBox(height: 12),
+              // AppButton(
+              //   title: '📖 Test reading the database',
+              //   onTap: controller.readDatabaseTest,
+              // ),
+              // const SizedBox(height: 12),
+              // AppButton(
+              //   title: '🗑️ Test clearing the database',
+              //   onTap: controller.clearDatabaseTest,
+              // ),
+              // const SizedBox(height: 12),
+              // AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
               const SizedBox(height: 12),
               AppButton(
                 title: 'Start the quest',

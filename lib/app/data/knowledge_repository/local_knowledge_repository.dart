@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:ash/app/data/knowledge_repository/knowledge_repository.dart';
 import 'package:ash/app/data/models/factoid.dart';
 import 'package:ash/app/services/storage/storage_service.dart';
@@ -8,29 +10,48 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
   final StorageService storage;
 
   @override
-  void setupInitialKnowledge(List<Factoid> knowledge) {
-    final encodedKnowledge = <String>[];
-    for (final factoid in knowledge) {
-      encodedKnowledge.add(factoid.toJson());
+  void setupInitialKnowledge(String jsonString) {
+    // section the knowledge database by categories to be saved and loaded
+    // individually
+    final knowledgeByCategory = Map<String, List<String>>();
+    final categories = <String>[];
+
+    (json.decode(jsonString) as Map<String, dynamic>).forEach((_, factoidJson) {
+      // final factoid = Factoid.fromMap(factoidJson);
+      final category = factoidJson["category"];
+
+      if (knowledgeByCategory.containsKey(category)) {
+        knowledgeByCategory[category]!.add(factoidJson);
+      } else {
+        categories.add(category);
+        knowledgeByCategory[category] = [factoidJson];
+      }
+    });
+
+    // fills up the database with entries category: List of factoids in jsonstr
+    for (final category in knowledgeByCategory.keys) {
+      storage.setValue(key: category, data: knowledgeByCategory[category]);
     }
-    storage.setValue(key: StorageKey.factoids, data: encodedKnowledge);
+
+    // save the list of categories
+    storage.setValue(key: 'categories', data: categories);
   }
 
   @override
-  List<Factoid> getKnowledge() {
-    final encodedData = storage.getValue(StorageKey.factoids) as List<String>?;
-    if (encodedData == null) return [];
+  List<Factoid> getKnowledgeForCategory(String category) {
+    final encodedData = storage.getValue(category) as List<String>?;
+    if (encodedData == null) throw Exception('Non existent category $category');
 
-    final knowledge = <Factoid>[];
-    for (final data in encodedData) {
-      final factoid = Factoid.fromJson(data);
-      knowledge.add(factoid);
-    }
-    return knowledge;
+    return encodedData.map((data) => Factoid.fromJson(data)).toList();
   }
 
   @override
   void clear() {
-    storage.deleteValue(StorageKey.factoids);
+    storage.clear();
+  }
+
+  @override
+  List<String> getCategories() {
+    return storage.getValue('categories') as List<String>;
   }
 }

@@ -1,4 +1,4 @@
-import 'package:ash/app/features/knowledge/controllers/knowledge_controller.dart';
+import 'package:ash/app/data/knowledge_repository/knowledge_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/models/factoid.dart';
@@ -6,8 +6,8 @@ import 'quiz_state.dart';
 
 final quizControllerProvider = StateNotifierProvider.autoDispose
     .family<QuizController, QuizState, String>((ref, category) {
-  final knowledgeProvider = ref.watch(knowledgeControllerProvider.notifier);
-  final quest = knowledgeProvider.getQuizData(); // factoidsForThisQuiz;
+  final knowledgeRepository = ref.read(knowledgeRepositoryProvider);
+  final quest = knowledgeRepository.getKnowledgeForCategory(category);
 
   final state = quest.isEmpty
       ? QuizState.empty()

@@ -13,15 +13,15 @@ class HiveStorageService extends StorageService {
   }
 
   @override
-  Object? getValue(StorageKey key) => hiveBox.get(key.name) as Object?;
+  Object? getValue(StorageKey key) => hiveBox.get(key) as Object?;
 
   @override
   Future<void> setValue({required StorageKey key, required Object? data}) async {
-    hiveBox.put(key.name, data);
+    hiveBox.put(key, data);
   }
 
   @override
-  Future<void> deleteValue(StorageKey key) async => hiveBox.delete(key.name);
+  Future<void> deleteValue(StorageKey key) async => hiveBox.delete(key);
 
   @override
   Future<void> clear() async => hiveBox.clear();
