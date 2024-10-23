@@ -10,11 +10,11 @@ final Provider<KnowledgeRepository> knowledgeRepositoryProvider =
 });
 
 abstract class KnowledgeRepository {
-  void setupInitialKnowledge(String jsonString);
+  Future<void> setupInitialKnowledge(String jsonString);
 
   List<Factoid> getKnowledgeForCategory(String category);
 
   List<String> getCategories();
 
-  void clear();
+  Future<void> clear();
 }

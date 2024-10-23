@@ -10,7 +10,7 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
   final StorageService storage;
 
   @override
-  void setupInitialKnowledge(String jsonString) {
+  Future<void> setupInitialKnowledge(String jsonString) async {
     // section the knowledge database by categories to be saved and loaded
     // individually
     final knowledgeByCategory = Map<String, List<String>>();
@@ -19,22 +19,23 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
     (json.decode(jsonString) as Map<String, dynamic>).forEach((_, factoidJson) {
       // final factoid = Factoid.fromMap(factoidJson);
       final category = factoidJson["category"];
+      final value = json.encode(factoidJson);
 
       if (knowledgeByCategory.containsKey(category)) {
-        knowledgeByCategory[category]!.add(factoidJson);
+        knowledgeByCategory[category]!.add(value);
       } else {
         categories.add(category);
-        knowledgeByCategory[category] = [factoidJson];
+        knowledgeByCategory[category] = [value];
       }
     });
 
     // fills up the database with entries category: List of factoids in jsonstr
-    for (final category in knowledgeByCategory.keys) {
+    await Future.forEach<String>(knowledgeByCategory.keys, (category) {
       storage.setValue(key: category, data: knowledgeByCategory[category]);
-    }
+    });
 
     // save the list of categories
-    storage.setValue(key: 'categories', data: categories);
+    await storage.setValue(key: 'categories', data: categories);
   }
 
   @override
@@ -46,8 +47,8 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
   }
 
   @override
-  void clear() {
-    storage.clear();
+  Future<void> clear() async {
+    await storage.clear();
   }
 
   @override

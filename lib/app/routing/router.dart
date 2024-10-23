@@ -3,15 +3,25 @@ import 'package:ash/app/features/quiz/view/quiz_page.dart';
 import 'package:flutter/material.dart' show BuildContext;
 import 'package:go_router/go_router.dart';
 
+import '../features/splash/view/splash_page.dart';
+
 abstract class RoutePaths {
+  static const String splash = '/splash';
   static const String home = '/home';
   static const String quiz = '/quiz';
 }
 
 abstract class AppRouter {
   static final GoRouter instance = GoRouter(
-    initialLocation: RoutePaths.home,
+    initialLocation: RoutePaths.splash,
     routes: [
+      GoRoute(
+        path: RoutePaths.splash,
+        builder: (BuildContext context, GoRouterState state) {
+          return SplashPage();
+        },
+        routes: const <RouteBase>[],
+      ),
       GoRoute(
         path: RoutePaths.home,
         builder: (BuildContext context, GoRouterState state) {
