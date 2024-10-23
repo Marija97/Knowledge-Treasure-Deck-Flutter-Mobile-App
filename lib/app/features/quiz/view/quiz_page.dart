@@ -40,7 +40,21 @@ class QuizPage extends ConsumerWidget {
               const SizedBox(height: 15),
               Text(controller.progressPrint),
               const Spacer(),
-              AppButton(title: 'Next', onTap: controller.onNext),
+              Row(
+                children: [
+                  Expanded(
+                    child: AppButton(
+                      title: 'Previous',
+                      onTap:
+                          controller.hasPrevious ? controller.onPrevious : null,
+                    ),
+                  ),
+                  const SizedBox(width: 15),
+                  Expanded(
+                    child: AppButton(title: 'Next', onTap: controller.onNext),
+                  ),
+                ],
+              )
             ],
           ),
         ),

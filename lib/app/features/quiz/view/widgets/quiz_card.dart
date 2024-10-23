@@ -38,7 +38,11 @@ class QuizCard extends ConsumerWidget {
           height: MediaQuery.of(context).size.height * 0.5,
           child: Column(
             children: [
-              if (factoid.obtained) Icon(Icons.star),
+              if (factoid.obtained)
+                Row(children: [
+                  Icon(Icons.star),
+                  const Spacer(),
+                ]),
               const SizedBox(height: 30),
 
               /// --- Question view ---
@@ -80,8 +84,7 @@ class QuizCard extends ConsumerWidget {
                 ),
 
               Visibility(
-                visible:
-                    state.mode == QuizMode.learning || state.showCorrectAnswer,
+                visible: state.showCorrectAnswer,
                 child: Text(
                   factoid.explanation ?? '',
                   style: QuizCard.textStyle,
@@ -89,7 +92,7 @@ class QuizCard extends ConsumerWidget {
               ),
               const SizedBox(height: 25),
               Visibility(
-                visible: state.mode == QuizMode.learning || state.showCorrectAnswer,
+                visible: state.showCorrectAnswer,
                 child: Text(
                   factoid.example ?? '',
                   style: QuizCard.textStyle,

@@ -70,16 +70,26 @@ class QuizController extends StateNotifier<QuizState> {
   }
 
   void nextView() {
-    if (_isObtained()) {
-      onNext();
-      return;
-    }
-    if (!state.showHint)
+    if (!state.showHint && state.factoid!.hint != null)
       toggleHintVisibility();
     else if (!state.showCorrectAnswer)
       toggleCorrectAnswerVisibility();
     else
       onNext();
+  }
+
+  bool get hasPrevious => state.ordinalNumber > 0;
+
+  void onPrevious() {
+    if (!hasPrevious) return;
+    final cardNumber = state.ordinalNumber - 1;
+    state = QuizState(
+      factoid: quest[cardNumber],
+      ordinalNumber: cardNumber,
+      mode: state.mode,
+      showHint: false,
+      showCorrectAnswer: false,
+    );
   }
 
   void onNext() {
@@ -88,12 +98,13 @@ class QuizController extends StateNotifier<QuizState> {
     // Todo completed as a custom state
     // if (cardNumber == questLength - 1) {
     if (cardNumber >= quest.length) {
-      state = QuizState(factoid: null, ordinalNumber: -1, completed: true);
+      state = state.copyWith(factoid: null, ordinalNumber: -1, completed: true);
       return;
     }
     state = QuizState(
       factoid: quest[cardNumber],
       ordinalNumber: cardNumber,
+      mode: state.mode,
     );
   }
 }
