@@ -38,7 +38,7 @@ class QuizCard extends ConsumerWidget {
           height: MediaQuery.of(context).size.height * 0.5,
           child: Column(
             children: [
-              if(factoid.obtained) Icon(Icons.star),
+              if (factoid.obtained) Icon(Icons.star),
               const SizedBox(height: 30),
 
               /// --- Question view ---
@@ -46,20 +46,20 @@ class QuizCard extends ConsumerWidget {
               const SizedBox(height: 10),
 
               /// --- Hint view ---
-
-              Visibility(
-                visible: factoid.hint != null && state.showHint,
-                replacement: IconButton(
-                  onPressed: controller.toggleHintVisibility,
-                  icon: Icon(Icons.info_outline),
-                ),
-                child: Text(
-                  factoid.hint ?? 'err',
-                  style: QuizCard.textStyle.copyWith(
-                    color: Colors.grey.shade600,
+              if (factoid.hint != null)
+                Visibility(
+                  visible: state.showHint,
+                  replacement: IconButton(
+                    onPressed: controller.toggleHintVisibility,
+                    icon: Icon(Icons.info_outline),
+                  ),
+                  child: Text(
+                    factoid.hint ?? 'err',
+                    style: QuizCard.textStyle.copyWith(
+                      color: Colors.grey.shade600,
+                    ),
                   ),
                 ),
-              ),
               const Spacer(),
 
               /// --- Correct answer view ---
@@ -73,7 +73,6 @@ class QuizCard extends ConsumerWidget {
               ),
               const Spacer(),
 
-              // Todo mark as obtained feature
               if (state.mode == QuizMode.testing && state.showCorrectAnswer)
                 OutlinedButton(
                   child: Text('Totally knew that ✅'),
@@ -81,7 +80,8 @@ class QuizCard extends ConsumerWidget {
                 ),
 
               Visibility(
-                visible: state.showCorrectAnswer,
+                visible:
+                    state.mode == QuizMode.learning || state.showCorrectAnswer,
                 child: Text(
                   factoid.explanation ?? '',
                   style: QuizCard.textStyle,
@@ -89,7 +89,7 @@ class QuizCard extends ConsumerWidget {
               ),
               const SizedBox(height: 25),
               Visibility(
-                visible: state.showCorrectAnswer,
+                visible: state.mode == QuizMode.learning || state.showCorrectAnswer,
                 child: Text(
                   factoid.example ?? '',
                   style: QuizCard.textStyle,

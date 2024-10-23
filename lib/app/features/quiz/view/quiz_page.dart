@@ -24,14 +24,22 @@ class QuizPage extends ConsumerWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(child: AppText.large('${state.mode.name} :)')),
+              Row(children: [
+                Expanded(
+                  child: AppText.large('${state.mode.name} :)'),
+                ),
+                Expanded(
+                  child: AppButton(
+                    title: 'Switch mode',
+                    onTap: controller.switchQuizMode,
+                  ),
+                ),
+              ]),
               const Spacer(),
               QuizCard(category),
               const SizedBox(height: 15),
               Text(controller.progressPrint),
               const Spacer(),
-              AppButton(title: 'Switch mode', onTap: controller.switchQuizMode),
-              const SizedBox(height: 15),
               AppButton(title: 'Next', onTap: controller.onNext),
             ],
           ),
