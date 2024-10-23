@@ -65,6 +65,7 @@ class QuizController extends StateNotifier<QuizState> {
   Future<void> markAsObtained() async {
     final factoid = state.factoid!;
     allObtained.add(factoid.key);
+    state = state.copyWith(obtained: true);
     await markPermanentlyAsObtained.call(factoid);
   }
 
@@ -95,8 +96,8 @@ class QuizController extends StateNotifier<QuizState> {
       ordinalNumber: cardNumber,
       mode: state.mode,
       obtained: _isObtained(quest[cardNumber]),
-      showHint: false,
-      showCorrectAnswer: false,
+      showHint: true,
+      showCorrectAnswer: true,
     );
   }
 
@@ -109,7 +110,7 @@ class QuizController extends StateNotifier<QuizState> {
         if (!_isObtained(factoid)) nextIteration.add(factoid);
       }
       // Todo maybe shuffle?
-      quest = nextIteration;
+      quest = nextIteration..shuffle();
     }
 
     // Todo completed as a custom state

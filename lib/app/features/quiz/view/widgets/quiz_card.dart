@@ -76,13 +76,6 @@ class QuizCard extends ConsumerWidget {
                 ),
               ),
               const Spacer(),
-
-              if (state.mode == QuizMode.testing && state.showCorrectAnswer)
-                OutlinedButton(
-                  child: Text('Totally knew that ✅'),
-                  onPressed: controller.markAsObtained,
-                ),
-
               Visibility(
                 visible: state.showCorrectAnswer,
                 child: Text(
@@ -98,6 +91,13 @@ class QuizCard extends ConsumerWidget {
                   style: QuizCard.textStyle,
                 ),
               ),
+
+              if (state.mode == QuizMode.testing && state.showCorrectAnswer && !state.obtained)
+                OutlinedButton(
+                  child: Text('Totally knew that ✅'),
+                  onPressed: controller.markAsObtained,
+                ),
+
               const SizedBox(height: 30),
             ],
           ),
