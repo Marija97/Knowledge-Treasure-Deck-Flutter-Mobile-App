@@ -38,7 +38,7 @@ class QuizCard extends ConsumerWidget {
           height: MediaQuery.of(context).size.height * 0.5,
           child: Column(
             children: [
-              if (factoid.obtained)
+              if (state.obtained)
                 Row(children: [
                   Icon(Icons.star),
                   const Spacer(),

@@ -8,19 +8,17 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
     .family<QuizController, QuizState, String>((ref, category) {
   final knowledgeRepository = ref.read(knowledgeRepositoryProvider);
 
-  final _quest = knowledgeRepository.getKnowledgeForCategory(category);
+  final quest = knowledgeRepository.getKnowledgeForCategory(category);
   final allObtained = knowledgeRepository.getAllObtained(category);
-
-  final quest = <Factoid>[];
-  for (final factoid in _quest) {
-    quest.add(factoid.copyWith(obtained: allObtained.contains(factoid.key)));
-  }
-
   final markPermanentlyAsObtained = knowledgeRepository.markAsObtained;
 
   final state = quest.isEmpty
       ? QuizState.empty()
-      : QuizState(factoid: quest.first, ordinalNumber: 0);
+      : QuizState(
+          factoid: quest.first,
+          ordinalNumber: 0,
+          obtained: allObtained.contains(quest.first.key),
+        );
 
   return QuizController(state, quest, allObtained, markPermanentlyAsObtained);
 });
@@ -38,26 +36,22 @@ class QuizController extends StateNotifier<QuizState> {
   ) : super(state);
 
   String get progressPrint {
-    return '${state.ordinalNumber + 1}/${quest.length - allObtained.length + 1}';
+    return '${state.ordinalNumber + 1}/${quest.length}';
   }
 
   void switchQuizMode() {
-    final other =
-        state.mode == QuizMode.testing ? QuizMode.learning : QuizMode.testing;
+    final other = QuizMode.values.firstWhere((mode) => mode != state.mode);
     state = state.copyWith(mode: other);
   }
 
   // static const questLength = 5; // Todo set in settings...
-  bool _isObtained() {
-    final obtained = allObtained.contains(state.factoid!.key);
-    assert(obtained == state.factoid!.obtained, 'data mismatch');
-    return obtained;
+  bool _isObtained(Factoid factoid) {
+    return allObtained.contains(factoid.key);
   }
 
   Future<void> markAsObtained() async {
     final factoid = state.factoid!;
     allObtained.add(factoid.key);
-    state = state.copyWith(factoid: factoid.copyWith(obtained: true));
     await markPermanentlyAsObtained.call(factoid);
   }
 
@@ -87,6 +81,7 @@ class QuizController extends StateNotifier<QuizState> {
       factoid: quest[cardNumber],
       ordinalNumber: cardNumber,
       mode: state.mode,
+      obtained: _isObtained(quest[cardNumber]),
       showHint: false,
       showCorrectAnswer: false,
     );
@@ -98,12 +93,13 @@ class QuizController extends StateNotifier<QuizState> {
     // Todo completed as a custom state
     // if (cardNumber == questLength - 1) {
     if (cardNumber >= quest.length) {
-      state = state.copyWith(factoid: null, ordinalNumber: -1, completed: true);
+      state = state.copyWith(factoid: null, ordinalNumber: cardNumber, completed: true);
       return;
     }
     state = QuizState(
       factoid: quest[cardNumber],
       ordinalNumber: cardNumber,
+      obtained: _isObtained(quest[cardNumber]),
       mode: state.mode,
     );
   }

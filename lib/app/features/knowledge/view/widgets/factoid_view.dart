@@ -10,9 +10,10 @@ class FactoidView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final statusIcon = factoid.obtained
-        ? Icons.radio_button_checked
-        : Icons.radio_button_unchecked;
+    // final statusIcon = factoid.obtained
+    //     ? Icons.radio_button_checked
+    //     : Icons.radio_button_unchecked;
+    final statusIcon = Icons.radio_button_unchecked;
     return Card(
       color: Colors.grey.shade400,
       child: Padding(

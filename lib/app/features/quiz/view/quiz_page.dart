@@ -38,7 +38,7 @@ class QuizPage extends ConsumerWidget {
               const Spacer(),
               QuizCard(category),
               const SizedBox(height: 15),
-              Text(controller.progressPrint),
+              if (!state.completed) Text(controller.progressPrint),
               const Spacer(),
               Row(
                 children: [

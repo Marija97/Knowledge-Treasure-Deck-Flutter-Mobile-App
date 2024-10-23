@@ -2,21 +2,27 @@ import 'package:equatable/equatable.dart';
 
 import '../../../data/models/factoid.dart';
 
-enum QuizMode {learning, testing}
+enum QuizMode { learning, testing }
 
 class QuizState extends Equatable {
   const QuizState({
     required this.factoid,
     required this.ordinalNumber,
     this.mode = QuizMode.learning,
+    required this.obtained,
     this.completed = false,
     this.showHint = false,
     this.showCorrectAnswer = false,
   });
 
-  factory QuizState.empty() => QuizState(factoid: null, ordinalNumber: -1);
+  factory QuizState.empty() => QuizState(
+        factoid: null,
+        ordinalNumber: -1,
+        obtained: false,
+      );
 
   final Factoid? factoid;
+  final bool obtained;
   final int ordinalNumber;
   final QuizMode mode;
   final bool completed;
@@ -30,6 +36,7 @@ class QuizState extends Equatable {
     Factoid? factoid,
     int? ordinalNumber,
     QuizMode? mode,
+    bool? obtained,
     bool? completed,
     bool? showHint,
     bool? showCorrectAnswer,
@@ -37,6 +44,7 @@ class QuizState extends Equatable {
     return QuizState(
       factoid: factoid ?? this.factoid,
       ordinalNumber: ordinalNumber ?? this.ordinalNumber,
+      obtained: obtained ?? this.obtained,
       completed: completed ?? this.completed,
       mode: mode ?? this.mode,
       showHint: showHint ?? this.showHint,
