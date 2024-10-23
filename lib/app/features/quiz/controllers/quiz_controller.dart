@@ -7,35 +7,58 @@ import 'quiz_state.dart';
 final quizControllerProvider = StateNotifierProvider.autoDispose
     .family<QuizController, QuizState, String>((ref, category) {
   final knowledgeRepository = ref.read(knowledgeRepositoryProvider);
-  final quest = knowledgeRepository.getKnowledgeForCategory(category);
-  final obtained = knowledgeRepository.getAllObtained(category);
+
+  final _quest = knowledgeRepository.getKnowledgeForCategory(category);
+  final allObtained = knowledgeRepository.getAllObtained(category);
+
+  final quest = <Factoid>[];
+  for (final factoid in _quest) {
+    quest.add(factoid.copyWith(obtained: allObtained.contains(factoid.key)));
+  }
+
   final markPermanentlyAsObtained = knowledgeRepository.markAsObtained;
 
   final state = quest.isEmpty
       ? QuizState.empty()
       : QuizState(factoid: quest.first, ordinalNumber: 0);
 
-  return QuizController(state, quest, obtained, markPermanentlyAsObtained);
+  return QuizController(state, quest, allObtained, markPermanentlyAsObtained);
 });
 
 class QuizController extends StateNotifier<QuizState> {
   final List<Factoid> quest;
-  final Set<String> obtained;
+  final Set<String> allObtained;
   final Future<void> Function(Factoid f) markPermanentlyAsObtained;
 
   QuizController(
     QuizState state,
     List<Factoid> this.quest,
-    Set<String> this.obtained,
+    Set<String> this.allObtained,
     Future<void> Function(Factoid f) this.markPermanentlyAsObtained,
   ) : super(state);
 
-  // static const questLength = 5; // Todo set in settings...
+  String get progressPrint {
+    return '${state.ordinalNumber + 1}/${quest.length - allObtained.length + 1}';
+  }
 
-  void markAsObtained() {
+  void switchQuizMode() {
+    final other =
+        state.mode == QuizMode.testing ? QuizMode.learning : QuizMode.testing;
+    state = state.copyWith(mode: other);
+  }
+
+  // static const questLength = 5; // Todo set in settings...
+  bool _isObtained() {
+    final obtained = allObtained.contains(state.factoid!.key);
+    assert(obtained == state.factoid!.obtained, 'data mismatch');
+    return obtained;
+  }
+
+  Future<void> markAsObtained() async {
     final factoid = state.factoid!;
-    obtained.add(factoid.key);
-    markPermanentlyAsObtained.call(factoid);
+    allObtained.add(factoid.key);
+    state = state.copyWith(factoid: factoid.copyWith(obtained: true));
+    await markPermanentlyAsObtained.call(factoid);
   }
 
   void toggleCorrectAnswerVisibility() {
@@ -47,6 +70,10 @@ class QuizController extends StateNotifier<QuizState> {
   }
 
   void nextView() {
+    if (_isObtained()) {
+      onNext();
+      return;
+    }
     if (!state.showHint)
       toggleHintVisibility();
     else if (!state.showCorrectAnswer)

@@ -51,4 +51,24 @@ class Factoid extends Equatable {
         "example": example,
         "explanation": explanation,
       };
+
+  Factoid copyWith({
+    String? question,
+    String? correctAnswer,
+    bool? obtained,
+    String? category,
+    String? hint,
+    String? explanation,
+    String? example,
+  }) {
+    return Factoid(
+      question: question ?? this.question,
+      correctAnswer: correctAnswer ?? this.correctAnswer,
+      obtained: obtained ?? this.obtained,
+      category: category ?? this.category,
+      hint: hint ?? this.hint,
+      explanation: explanation ?? this.explanation,
+      example: example ?? this.example,
+    );
+  }
 }

@@ -56,14 +56,21 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
     return storage.getValue('categories') as List<String>;
   }
 
+  static obtainedKey(String category) => 'obtained_$category';
+
   @override
   Set<String> getAllObtained(String category) {
-    return storage.getValue('obtained_$category') as Set<String>;
+    final storageValue = storage.getValue(obtainedKey(category));
+    if (storageValue == null) return {};
+
+    return Set<String>.from((storageValue as List)..cast<String>());
   }
 
   @override
   Future<void> markAsObtained(Factoid factoid) async {
-    final values = getAllObtained(factoid.category)..add(factoid.key);
-    await storage.setValue(key: 'obtained_${factoid.category}', data: values);
+    final values = await getAllObtained(factoid.category)
+      ..add(factoid.key);
+    final key = obtainedKey(factoid.category);
+    await storage.setValue(key: key, data: List.from(values));
   }
 }

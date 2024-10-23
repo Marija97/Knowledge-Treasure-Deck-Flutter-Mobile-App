@@ -2,10 +2,13 @@ import 'package:equatable/equatable.dart';
 
 import '../../../data/models/factoid.dart';
 
+enum QuizMode {learning, testing}
+
 class QuizState extends Equatable {
   const QuizState({
     required this.factoid,
     required this.ordinalNumber,
+    this.mode = QuizMode.learning,
     this.completed = false,
     this.showHint = false,
     this.showCorrectAnswer = false,
@@ -15,6 +18,7 @@ class QuizState extends Equatable {
 
   final Factoid? factoid;
   final int ordinalNumber;
+  final QuizMode mode;
   final bool completed;
   final bool showHint;
   final bool showCorrectAnswer;
@@ -25,6 +29,7 @@ class QuizState extends Equatable {
   QuizState copyWith({
     Factoid? factoid,
     int? ordinalNumber,
+    QuizMode? mode,
     bool? completed,
     bool? showHint,
     bool? showCorrectAnswer,
@@ -33,6 +38,7 @@ class QuizState extends Equatable {
       factoid: factoid ?? this.factoid,
       ordinalNumber: ordinalNumber ?? this.ordinalNumber,
       completed: completed ?? this.completed,
+      mode: mode ?? this.mode,
       showHint: showHint ?? this.showHint,
       showCorrectAnswer: showCorrectAnswer ?? this.showCorrectAnswer,
     );

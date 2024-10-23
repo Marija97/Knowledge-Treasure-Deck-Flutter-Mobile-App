@@ -8,12 +8,14 @@ import '../controllers/quiz_controller.dart';
 
 class QuizPage extends ConsumerWidget {
   const QuizPage(this.category);
+
   final String category;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.read(quizControllerProvider(category).notifier);
-    // final state = ref.watch(quizControllerProvider(category));
+    final state = ref.watch(quizControllerProvider(category));
+
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -22,12 +24,14 @@ class QuizPage extends ConsumerWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(child: AppText.large(':)')),
+              Center(child: AppText.large('${state.mode.name} :)')),
               const Spacer(),
               QuizCard(category),
               const SizedBox(height: 15),
-              // Text('${state.ordinalNumber}/${controller.quest.length}'),
+              Text(controller.progressPrint),
               const Spacer(),
+              AppButton(title: 'Switch mode', onTap: controller.switchQuizMode),
+              const SizedBox(height: 15),
               AppButton(title: 'Next', onTap: controller.onNext),
             ],
           ),

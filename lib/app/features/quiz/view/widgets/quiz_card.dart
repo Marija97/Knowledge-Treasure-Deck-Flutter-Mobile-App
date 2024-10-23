@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../theme/colors.dart';
+import '../../controllers/quiz_state.dart';
 
 class QuizCard extends ConsumerWidget {
   const QuizCard(this.category);
@@ -37,6 +38,7 @@ class QuizCard extends ConsumerWidget {
           height: MediaQuery.of(context).size.height * 0.5,
           child: Column(
             children: [
+              if(factoid.obtained) Icon(Icons.star),
               const SizedBox(height: 30),
 
               /// --- Question view ---
@@ -72,7 +74,7 @@ class QuizCard extends ConsumerWidget {
               const Spacer(),
 
               // Todo mark as obtained feature
-              if (false && state.showCorrectAnswer)
+              if (state.mode == QuizMode.testing && state.showCorrectAnswer)
                 OutlinedButton(
                   child: Text('Totally knew that ✅'),
                   onPressed: controller.markAsObtained,
