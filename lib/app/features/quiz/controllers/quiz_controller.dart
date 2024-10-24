@@ -21,6 +21,7 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
   ).toList().cast<Factoid>();
 
   assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
+  if (category == 'articles') filteredQuest.shuffle();
 
   final initialState = QuizState(
     factoid: filteredQuest.first,
