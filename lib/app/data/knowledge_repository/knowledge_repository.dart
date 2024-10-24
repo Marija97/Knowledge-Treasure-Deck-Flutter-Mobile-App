@@ -20,5 +20,8 @@ abstract class KnowledgeRepository {
 
   List<String> getCategories();
 
+  int sizeOfSection(String category);
+  int obtainedCount(String category);
+
   Future<void> clear();
 }

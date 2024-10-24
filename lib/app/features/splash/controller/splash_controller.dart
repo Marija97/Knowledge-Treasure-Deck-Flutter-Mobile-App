@@ -19,7 +19,7 @@ class SplashController extends AutoDisposeAsyncNotifier<SplashState> {
   FutureOr<SplashState> build() async {
     await ref.read(storageServiceProvider).init();
     if (shouldRefreshDatabase) {
-      await ref.read(knowledgeRepositoryProvider).clear();
+      // await ref.read(knowledgeRepositoryProvider).clear();
 
       // reload the data
       final data = await rootBundle.loadString('assets/quiz_data/german.json');

@@ -17,6 +17,14 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     state = state.copyWith(selectedCategory: category);
   }
 
+  int getTotalCount(String category){
+    return ref.read(knowledgeRepositoryProvider).sizeOfSection(category);
+  }
+
+  int getObtainedCount(String category){
+    return ref.read(knowledgeRepositoryProvider).obtainedCount(category);
+  }
+
   @override
   KnowledgeState build() {
     return KnowledgeState(selectedCategory: null);

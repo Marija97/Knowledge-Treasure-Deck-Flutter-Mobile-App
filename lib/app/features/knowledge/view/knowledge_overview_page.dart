@@ -35,6 +35,8 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                             category,
                             isSelected: state.selectedCategory == category,
                             onTap: () => controller.selectCategory(category),
+                            total: controller.getTotalCount(category),
+                            numberOfObtained: controller.getObtainedCount(category),
                           ))
                       .toList(),
                 ),

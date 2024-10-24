@@ -29,9 +29,17 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
       }
     });
 
-    // fills up the database with entries category: List of factoids in jsonstr
     await Future.forEach<String>(knowledgeByCategory.keys, (category) {
-      storage.setValue(key: category, data: knowledgeByCategory[category]);
+      // fills up the database with entries category: List of factoids
+      final factoids = knowledgeByCategory[category]!;
+      storage.setValue(key: category, data: factoids);
+
+      // save the total size of the category for status data
+      storage.setValue(key: totalCountKey(category), data: factoids.length);
+
+      // save the number of for quick access
+      final obtained = getAllObtained(category);
+      storage.setValue(key: obtainedCountKey(category), data: obtained.length);
     });
 
     // save the list of categories
@@ -56,11 +64,11 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
     return storage.getValue('categories') as List<String>;
   }
 
-  static obtainedKey(String category) => 'obtained_$category';
+  static allObtainedKey(String category) => 'obtained_$category';
 
   @override
   Set<String> getAllObtained(String category) {
-    final storageValue = storage.getValue(obtainedKey(category));
+    final storageValue = storage.getValue(allObtainedKey(category));
     if (storageValue == null) return {};
 
     return Set<String>.from((storageValue as List)..cast<String>());
@@ -68,9 +76,28 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
 
   @override
   Future<void> markAsObtained(Factoid factoid) async {
-    final values = await getAllObtained(factoid.category)
-      ..add(factoid.key);
-    final key = obtainedKey(factoid.category);
+    final category = factoid.category;
+    final values = await getAllObtained(category)..add(factoid.key);
+    final key = allObtainedKey(category);
     await storage.setValue(key: key, data: List.from(values));
+
+    // update static obtained count
+    final count = storage.getValue(obtainedCountKey(category)) as int;
+    await storage.setValue(key: obtainedCountKey(category), data: count + 1);
+  }
+
+  /// status related methods
+  static obtainedCountKey(String category) => 'status_obtained_$category';
+
+  static totalCountKey(String category) => 'status_total_$category';
+
+  @override
+  int obtainedCount(String category) {
+    return storage.getValue(obtainedCountKey(category)) as int;
+  }
+
+  @override
+  int sizeOfSection(String category) {
+    return storage.getValue(totalCountKey(category)) as int;
   }
 }
