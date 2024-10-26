@@ -1,8 +1,8 @@
-import 'package:ash/app/features/quiz/controllers/quiz_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../theme/colors.dart';
+import '../../controllers/quiz_controller.dart';
 import '../../controllers/quiz_state.dart';
 
 class QuizCard extends ConsumerWidget {

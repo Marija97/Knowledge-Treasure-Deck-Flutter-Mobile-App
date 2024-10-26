@@ -1,8 +1,8 @@
-import 'package:ash/app/features/knowledge/view/knowledge_overview_page.dart';
-import 'package:ash/app/features/quiz/view/quiz_page.dart';
 import 'package:flutter/material.dart' show BuildContext;
 import 'package:go_router/go_router.dart';
 
+import '../features/knowledge/view/knowledge_overview_page.dart';
+import '../features/quiz/view/quiz_page.dart';
 import '../features/splash/view/splash_page.dart';
 
 abstract class RoutePaths {

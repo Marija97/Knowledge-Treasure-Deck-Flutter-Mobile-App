@@ -1,6 +1,6 @@
-import 'package:ash/app/data/knowledge_repository/knowledge_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../data/knowledge_repository/knowledge_repository.dart';
 import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 

@@ -1,10 +1,10 @@
-import 'package:ash/app/features/quiz/view/widgets/quiz_card.dart';
-import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../widgets/button.dart';
 import '../../../widgets/text.dart';
 import '../controllers/quiz_controller.dart';
+import 'widgets/quiz_card.dart';
 
 class QuizPage extends ConsumerWidget {
   const QuizPage(this.category);

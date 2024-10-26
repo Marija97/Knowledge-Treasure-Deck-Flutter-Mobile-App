@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:ash/app/data/knowledge_repository/knowledge_repository.dart';
-import 'package:ash/app/data/models/factoid.dart';
-import 'package:ash/app/services/storage/storage_service.dart';
+import '../../services/storage/storage_service.dart';
+import '../models/factoid.dart';
+import 'knowledge_repository.dart';
 
 class LocalKnowledgeRepository implements KnowledgeRepository {
   LocalKnowledgeRepository({required this.storage});
@@ -77,7 +77,8 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
   @override
   Future<void> markAsObtained(Factoid factoid) async {
     final category = factoid.category;
-    final values = await getAllObtained(category)..add(factoid.key);
+    final values = await getAllObtained(category)
+      ..add(factoid.key);
     final key = allObtainedKey(category);
     await storage.setValue(key: key, data: List.from(values));
 

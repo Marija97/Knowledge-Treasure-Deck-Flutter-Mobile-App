@@ -1,6 +1,6 @@
-import 'package:ash/app/services/storage/storage_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../services/storage/storage_service.dart';
 import '../models/factoid.dart';
 import 'local_knowledge_repository.dart';
 
@@ -21,6 +21,7 @@ abstract class KnowledgeRepository {
   List<String> getCategories();
 
   int sizeOfSection(String category);
+
   int obtainedCount(String category);
 
   Future<void> clear();

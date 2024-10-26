@@ -1,12 +1,12 @@
-import 'package:ash/app/features/knowledge/view/widgets/category_view.dart';
-import 'package:ash/app/routing/router.dart';
-import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../routing/router.dart';
+import '../../../widgets/button.dart';
 import '../../../widgets/text.dart';
 import '../controllers/knowledge_controller.dart';
+import 'widgets/category_view.dart';
 
 class KnowledgeOverviewPage extends ConsumerWidget {
   const KnowledgeOverviewPage();
@@ -36,7 +36,8 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                             isSelected: state.selectedCategory == category,
                             onTap: () => controller.selectCategory(category),
                             total: controller.getTotalCount(category),
-                            numberOfObtained: controller.getObtainedCount(category),
+                            numberOfObtained:
+                                controller.getObtainedCount(category),
                           ))
                       .toList(),
                 ),
