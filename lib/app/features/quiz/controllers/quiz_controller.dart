@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/knowledge_repository/knowledge_repository.dart';
@@ -21,7 +23,9 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
   ).toList().cast<Factoid>();
 
   assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
-  if (category == 'articles') filteredQuest.shuffle();
+  if (category == 'articles' || category.startsWith('irregular_verbs)')) {
+    filteredQuest.shuffle(Random());
+  }
 
   final initialState = QuizState(
     factoid: filteredQuest.first,
