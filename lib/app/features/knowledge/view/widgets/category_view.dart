@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../theme/colors.dart';
-
 class CategoryView extends StatelessWidget {
   const CategoryView(
     this.category, {
@@ -19,25 +17,24 @@ class CategoryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cardColorOpacity = isSelected ? 0.95 : 0.8;
     final statusIcon = numberOfObtained == total
         ? Icons.check_box
         : Icons.check_box_outline_blank;
     return GestureDetector(
       onTap: onTap,
       child: Card(
-        color: isSelected ? Colors.blueGrey.shade300 : Colors.grey.shade400,
+        color: Colors.blueGrey.withOpacity(cardColorOpacity),
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 22),
           child: Row(
             children: [
-              Text(category, style: TextStyle(color: Colors.black)),
+              Text(category),
               const Spacer(),
-              Text(
-                '$numberOfObtained/$total',
-                style: TextStyle(color: AppColors.backgroundDark),
-              ),
+              Text('$numberOfObtained/$total'),
               const SizedBox(width: 8),
-              Icon(statusIcon, color: AppColors.backgroundDark),
+              // Icon(statusIcon, color: AppColors.backgroundDark),
+              Icon(statusIcon),
             ],
           ),
         ),

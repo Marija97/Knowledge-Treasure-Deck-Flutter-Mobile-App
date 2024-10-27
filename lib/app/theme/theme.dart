@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'colors.dart';
 import '../common/dimensions.dart';
 
-class AppTheme {
+abstract class AppTheme {
   factory AppTheme.dark() => _AppDarkTheme();
+
   factory AppTheme.light() => _AppLightTheme();
 
-  ThemeData get data => ThemeData();
-
-  Color get navigationBarDividerColor => AppColors.translucent;
+  ThemeData get data;
 
   static TextTheme _buildTextTheme(ThemeData base) {
     final textTheme = base.textTheme;
@@ -39,7 +38,8 @@ class AppTheme {
 
 class _AppDarkTheme implements AppTheme {
   @override
-  ThemeData get data => ThemeData.dark().copyWith(
+  ThemeData get data =>
+      ThemeData.dark().copyWith(
         brightness: Brightness.dark,
         colorScheme: const ColorScheme.dark().copyWith(
           primary: AppColors.accentDark,
@@ -59,26 +59,54 @@ class _AppDarkTheme implements AppTheme {
           height: 70,
         ),
       );
-
-  @override
-  Color get navigationBarDividerColor => AppColors.dividerDark;
 }
 
 class _AppLightTheme implements AppTheme {
+  // Color(0xFF708090) // Color(0xFF778899);
+  static final foregroundColor = Colors.blueGrey.shade500;
+
   @override
-  ThemeData get data => ThemeData.light().copyWith(
+  ThemeData get data =>
+      ThemeData(
+        primaryColor: Color(0xFFDD8858),
+        primaryColorLight: Color(0xFFD6CFCF),
+        primaryColorDark: Color(0xFFB2C4B8),
         brightness: Brightness.light,
+        scaffoldBackgroundColor: Color(0xFF7B3F2A),
+        textTheme: TextTheme(
+          bodyMedium: GoogleFonts.lato(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        appBarTheme: AppBarTheme(
+          color: Color(0xFFDD8858),
+          iconTheme: IconThemeData(color: Colors.white),
+        ),
+        cardTheme: CardTheme(
+          color: foregroundColor, // Darker card background
+          shadowColor: Color(0xFFAC5E2D).withOpacity(0.5),
+          elevation: 8, // Increased elevation for cards
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
+        ),
         colorScheme: const ColorScheme.light().copyWith(
           primary: AppColors.ashBeige,
           secondary: AppColors.accentLight,
         ),
-        primaryColor: AppColors.canvasDark,
         canvasColor: AppColors.canvasDark,
-        scaffoldBackgroundColor: AppColors.photoAlbumBackground,
-        cardColor: AppColors.cardDark,
+        cardColor: foregroundColor,
         dividerColor: AppColors.attachmentBorder,
         dialogBackgroundColor: AppColors.cardDark,
-        textTheme: AppTheme._buildTextTheme(ThemeData.light()),
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: AppColors.photoAlbumBackground,
           labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
@@ -88,7 +116,4 @@ class _AppLightTheme implements AppTheme {
           height: 50,
         ),
       );
-
-  @override
-  Color get navigationBarDividerColor => AppColors.attachmentBorder;
 }

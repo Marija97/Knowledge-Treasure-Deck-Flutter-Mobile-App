@@ -10,7 +10,7 @@ class QuizCard extends ConsumerWidget {
 
   final String category;
 
-  static final textStyle = TextStyle(color: Colors.grey.shade800, fontSize: 17);
+  static final textStyle = TextStyle(fontSize: 17);
 
   static final cardBorderRadius = BorderRadius.all(Radius.circular(20));
 
@@ -59,9 +59,7 @@ class QuizCard extends ConsumerWidget {
                   ),
                   child: Text(
                     factoid.hint ?? 'err',
-                    style: QuizCard.textStyle.copyWith(
-                      color: Colors.grey.shade600,
-                    ),
+                    style: QuizCard.textStyle
                   ),
                 ),
               const Spacer(),
