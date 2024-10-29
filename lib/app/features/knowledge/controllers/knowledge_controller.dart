@@ -1,8 +1,6 @@
-import 'package:ash/app/services/storage/storage_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/knowledge_repository/knowledge_repository.dart';
-import '../../../data/models/factoid.dart';
 import 'knowledge_state.dart';
 
 final knowledgeControllerProvider =
@@ -11,30 +9,24 @@ final knowledgeControllerProvider =
 );
 
 class KnowledgeController extends Notifier<KnowledgeState> {
-
-  void databaseFillUpTest() {
-    final knowledge = [
-      Factoid(question: 'Q01', correctAnswer: 'A1', obtained: true),
-      Factoid(question: 'Q02', correctAnswer: 'A2', obtained: false),
-      Factoid(question: 'Q03', correctAnswer: 'A3', obtained: false),
-      Factoid(question: 'Q04', correctAnswer: 'A4', obtained: true),
-      Factoid(question: 'Q05', correctAnswer: 'A5', obtained: true),
-    ];
-    ref.read(knowledgeRepositoryProvider).setupInitialKnowledge(knowledge);
+  List<String> allCategories() {
+    return ref.read(knowledgeRepositoryProvider).getCategories();
   }
 
-  void readDatabaseTest() {
-    final units = ref.read(knowledgeRepositoryProvider).getKnowledge();
-    state = KnowledgeState(units);
+  void selectCategory(String? category) {
+    state = state.copyWith(selectedCategory: category);
   }
 
-  void clearDatabaseTest() {
-    ref.read(knowledgeRepositoryProvider).clear();
+  int getTotalCount(String category){
+    return ref.read(knowledgeRepositoryProvider).sizeOfSection(category);
+  }
+
+  int getObtainedCount(String category){
+    return ref.read(knowledgeRepositoryProvider).obtainedCount(category);
   }
 
   @override
   KnowledgeState build() {
-    ref.read(storageServiceProvider).init().whenComplete(readDatabaseTest);
-    return KnowledgeState([]);
+    return KnowledgeState(selectedCategory: null);
   }
 }

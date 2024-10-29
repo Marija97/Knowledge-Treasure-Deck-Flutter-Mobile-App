@@ -1,22 +1,21 @@
-import 'package:ash/app/features/quiz/view/widgets/quiz_card.dart';
-import 'package:ash/app/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../widgets/button.dart';
 import '../../../widgets/text.dart';
 import '../controllers/quiz_controller.dart';
+import 'widgets/quiz_card.dart';
 
 class QuizPage extends ConsumerWidget {
-  const QuizPage();
+  const QuizPage(this.category);
+
+  final String category;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final controller = ref.read(quizControllerProvider.notifier);
-    final state = ref.watch(quizControllerProvider);
-    Widget stateContentView;
-    if (state.completed) stateContentView =  Text('Completed!!');
-    else if (state.factoid == null) stateContentView = Text('Some error!');
-    else stateContentView = Expanded(flex: 3, child: QuizCard(state.factoid!));
+    final controller = ref.read(quizControllerProvider(category).notifier);
+    final state = ref.watch(quizControllerProvider(category));
+
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -25,11 +24,42 @@ class QuizPage extends ConsumerWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(child: AppText.large(':)')),
+              Row(children: [
+                Expanded(
+                  child: AppText.large('${state.mode.name} :)'),
+                ),
+                Expanded(
+                  child: AppButton(
+                    title: 'Switch mode',
+                    onTap: controller.switchQuizMode,
+                  ),
+                ),
+              ]),
               const Spacer(),
-              stateContentView,
+              QuizCard(category),
+              const SizedBox(height: 15),
+              if (!state.completed) Text(controller.progressPrint),
               const Spacer(),
-              AppButton(title: 'Next', onTap: controller.onNext),
+              Row(
+                children: [
+                  Expanded(
+                    child: AppButton(
+                      title: 'Previous',
+                      onTap:
+                          controller.hasPrevious ? controller.onPrevious : null,
+                    ),
+                  ),
+                  const SizedBox(width: 15),
+                  if (!state.completed)
+                    Expanded(
+                      child: AppButton(title: 'Next', onTap: controller.onNext),
+                    ),
+                  if (state.completed)
+                    Expanded(
+                      child: AppButton(title: 'Start over', onTap: controller.onNext),
+                    ),
+                ],
+              )
             ],
           ),
         ),

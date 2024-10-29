@@ -11,7 +11,7 @@ Future<void> main() async {
 }
 
 class KnowFlowApp extends StatelessWidget {
-  const KnowFlowApp({Key? key}) : super(key: key);
+  const KnowFlowApp();
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,9 @@ class KnowFlowApp extends StatelessWidget {
       routeInformationProvider: AppRouter.instance.routeInformationProvider,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      theme: AppTheme.dark().data,
+      themeMode: ThemeMode.light,
+      theme: AppTheme.light().data,
+      darkTheme: AppTheme.dark().data,
     );
   }
 }

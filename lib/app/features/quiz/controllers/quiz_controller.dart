@@ -1,46 +1,138 @@
-import 'package:ash/app/features/knowledge/controllers/knowledge_controller.dart';
+import 'dart:math';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../data/knowledge_repository/knowledge_repository.dart';
 import '../../../data/models/factoid.dart';
 import 'quiz_state.dart';
 
-final quizControllerProvider = NotifierProvider<QuizController, QuizState>(
-      () => QuizController(),
-);
+final quizControllerProvider = StateNotifierProvider.autoDispose
+    .family<QuizController, QuizState, String>((ref, category) {
+  final knowledgeRepository = ref.read(knowledgeRepositoryProvider);
 
-class QuizController extends Notifier<QuizState> {
-  late final List<Factoid> _knowledge;
+  final quest = knowledgeRepository.getKnowledgeForCategory(category);
+  final allObtained = knowledgeRepository.getAllObtained(category);
+  final markPermanentlyAsObtained = knowledgeRepository.markAsObtained;
 
-  // static const questLength = 5; // Todo set in settings...
+  assert(quest.isNotEmpty, 'No data received');
 
-  void markFactoidObtained(Factoid factoid) {
-    // Todo ...
+  // show only unlearned factoids
+  // Todo revise this decision
+  final filteredQuest = quest.where(
+    (f) => !allObtained.contains(f.key),
+  ).toList().cast<Factoid>();
+
+  assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
+  if (category == 'articles' || category.startsWith('irregular_verbs)')) {
+    filteredQuest.shuffle(Random());
   }
 
-  void onNext() {
-    final cardNumber = state.ordinalNumber + 1;
+  final initialState = QuizState(
+    factoid: filteredQuest.first,
+    ordinalNumber: 0,
+    obtained: allObtained.contains(filteredQuest.first.key),
+  );
 
-    // Todo completed as a custom state
-    // if (cardNumber == questLength - 1) {
-    if (cardNumber >= _knowledge.length) {
-      state = QuizState(factoid: null, ordinalNumber: -1, completed: true);
-      return;
-    }
+  return QuizController(
+    initialState,
+    filteredQuest,
+    allObtained,
+    markPermanentlyAsObtained,
+  );
+});
+
+class QuizController extends StateNotifier<QuizState> {
+  List<Factoid> quest;
+  final Set<String> allObtained;
+  final Future<void> Function(Factoid f) markPermanentlyAsObtained;
+
+  QuizController(
+    QuizState state,
+    List<Factoid> this.quest,
+    Set<String> this.allObtained,
+    Future<void> Function(Factoid f) this.markPermanentlyAsObtained,
+  ) : super(state);
+
+  String get progressPrint {
+    return '${state.ordinalNumber + 1}/${quest.length}';
+  }
+
+  void switchQuizMode() {
+    final other = QuizMode.values.firstWhere((mode) => mode != state.mode);
+    state = state.copyWith(mode: other);
+  }
+
+  // static const questLength = 5; // Todo set in settings...
+  bool _isObtained(Factoid factoid) {
+    return allObtained.contains(factoid.key);
+  }
+
+  Future<void> markAsObtained() async {
+    final factoid = state.factoid!;
+    allObtained.add(factoid.key);
+    state = state.copyWith(obtained: true);
+    await markPermanentlyAsObtained.call(factoid);
+  }
+
+  void toggleCorrectAnswerVisibility() {
+    state = state.copyWith(showCorrectAnswer: !state.showCorrectAnswer);
+  }
+
+  void toggleHintVisibility() {
+    state = state.copyWith(showHint: !state.showHint);
+  }
+
+  void nextView() {
+    if (!state.showHint && state.factoid!.hint != null)
+      toggleHintVisibility();
+    else if (!state.showCorrectAnswer)
+      toggleCorrectAnswerVisibility();
+    else
+      onNext();
+  }
+
+  bool get hasPrevious => state.ordinalNumber > 0;
+
+  void onPrevious() {
+    if (!hasPrevious) return;
+    final cardNumber = state.ordinalNumber - 1;
     state = QuizState(
-      factoid: _knowledge[cardNumber],
+      factoid: quest[cardNumber],
       ordinalNumber: cardNumber,
+      mode: state.mode,
+      obtained: _isObtained(quest[cardNumber]),
+      showHint: true,
+      showCorrectAnswer: true,
     );
   }
 
-  @override
-  QuizState build() {
-    _knowledge = ref
-        .read(knowledgeControllerProvider)
-        .units;
+  void onNext() {
+    int cardNumber = state.ordinalNumber + 1;
+    if (state.completed) {
+      cardNumber = 0;
+      final nextIteration = <Factoid>[];
+      for (final factoid in quest) {
+        if (!_isObtained(factoid)) nextIteration.add(factoid);
+      }
+      // Todo maybe shuffle?
+      quest = nextIteration..shuffle();
+    }
 
-    // Todo define empty QuizState
-    if (_knowledge.isEmpty) return QuizState(factoid: null, ordinalNumber: -1);
-
-    return QuizState(factoid: _knowledge.first, ordinalNumber: 0);
+    // Todo completed as a custom state
+    // if (cardNumber == questLength - 1) {
+    if (cardNumber >= quest.length) {
+      state = state.copyWith(
+        factoid: null,
+        ordinalNumber: cardNumber,
+        completed: true,
+      );
+      return;
+    }
+    state = QuizState(
+      factoid: quest[cardNumber],
+      ordinalNumber: cardNumber,
+      obtained: _isObtained(quest[cardNumber]),
+      mode: state.mode,
+    );
   }
 }

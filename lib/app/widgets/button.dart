@@ -17,7 +17,7 @@ class AppButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      color: Colors.blueGrey.shade700,
+      color: Theme.of(context).primaryColorDark,
       child: AppText.medium(title),
     );
   }

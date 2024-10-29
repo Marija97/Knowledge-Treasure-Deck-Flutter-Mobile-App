@@ -1,12 +1,20 @@
 import 'package:equatable/equatable.dart';
 
-import '../../../data/models/factoid.dart';
-
 class KnowledgeState extends Equatable {
-  const KnowledgeState(this.units);
+  const KnowledgeState({
+    required this.selectedCategory,
+  });
 
-  final List<Factoid> units;
+  final String? selectedCategory;
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [selectedCategory];
+
+  KnowledgeState copyWith({
+    String? selectedCategory,
+  }) {
+    return KnowledgeState(
+      selectedCategory: selectedCategory ?? this.selectedCategory,
+    );
+  }
 }

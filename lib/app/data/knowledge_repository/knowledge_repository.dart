@@ -1,6 +1,6 @@
-import 'package:ash/app/services/storage/storage_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../services/storage/storage_service.dart';
 import '../models/factoid.dart';
 import 'local_knowledge_repository.dart';
 
@@ -10,9 +10,19 @@ final Provider<KnowledgeRepository> knowledgeRepositoryProvider =
 });
 
 abstract class KnowledgeRepository {
-  void setupInitialKnowledge(List<Factoid> knowledge);
+  Future<void> setupInitialKnowledge(String jsonString);
 
-  List<Factoid> getKnowledge();
+  List<Factoid> getKnowledgeForCategory(String category);
 
-  void clear();
+  Set<String> getAllObtained(String category);
+
+  Future<void> markAsObtained(Factoid factoid);
+
+  List<String> getCategories();
+
+  int sizeOfSection(String category);
+
+  int obtainedCount(String category);
+
+  Future<void> clear();
 }
