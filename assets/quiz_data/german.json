@@ -751,9 +751,428 @@
     "correct_answer": "lachen",
     "category": "notebook_14_10_2024"
   },
+  "dosadan, naporan, neugodan": {
+    "question": "dosadan, naporan, neugodan",
+    "correct_answer": "lästig",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "problematisch, schwierig, peinlich",
+    "example": "Diese Fliege ist so lästig! – Ova muha je tako naporna!"
+  },
+  "razbjesniti, razljutiti, dovesti u bijes": {
+    "question": "razbjesniti, razljutiti, dovesti u bijes",
+    "correct_answer": "in Rage bringen",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "jemanden ärgern",
+    "example": "Sein Verhalten hat mich in Rage gebracht. – Njegovo ponašanje me razbjesnilo.\n"
+  },
+  "upis, unos, registracija": {
+    "question": "upis, unos, registracija",
+    "correct_answer": "die Eintragung, -en",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "die Notiz, -en",
+    "example": "Er hat die Eintragung in das Formular gemacht. – Napravio je unos u obrazac."
+  },
+  "podići obrve": {
+    "question": "podići obrve",
+    "correct_answer": "Augenbrauen heben (hob, h. gehoben)",
+    "category": "wordwall_romanauszuge_2_3",
+    "example": "Er hebt die Augenbrauen, wenn er etwas nicht glaubt. – Podigne obrve kad ne vjeruje u nešto."
+  },
+  "potisnuti, odgurnuti, suzbiti": {
+    "question": "potisnuti, odgurnuti, suzbiti",
+    "correct_answer": "zurückdrängen",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "(npr. suze)",
+    "example": "Jemand drängt die Tränen zurück"
+  },
+  "utvrditi se, zabarikadirati se": {
+    "question": "utvrditi se, zabarikadirati se",
+    "correct_answer": "verschanzen",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "verschließen - zaključati",
+    "explanation": "Koristi se kada se netko fizički ili figurativno zaštiti ili izolira, obično radi obrane ili izbjegavanja nečega. Može značiti fizičko utvrđivanje, kao i emocionalno ili mentalno zatvaranje.",
+    "example": "Er hat sich in seinem Zimmer verschanzt. – Zabarikadirao se u svojoj sobi."
+  },
+  "briznuti u plač": {
+    "question": "briznuti u plač",
+    "correct_answer": "in Tränen ausbrechen",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "anfangen zu weinen"
+  },
+  "tajna": {
+    "question": "tajna",
+    "correct_answer": "das Geheimnis, se",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "was nur wenigen oder niemandem bekannt werden darf",
+    "example": "Sie hat ihm ihr Geheimnis anvertraut. – Povjerila mu je svoju tajnu."
+  },
+  "zapanjen, šokiran, zbunjen": {
+    "question": "zapanjen, šokiran, zbunjen",
+    "correct_answer": "bestürzt",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "schokiert, überrascht",
+    "example": "Die Eltern waren bestürzt, als sie von dem Unfall erfuhren. – Roditelji su bili šokirani kada su čuli za nesreću."
+  },
+  "pokolebati se, obeshrabriti": {
+    "question": "pokolebati se, obeshrabriti",
+    "correct_answer": "sich unterkriegen",
+    "category": "wordwall_romanauszuge_2_3",
+    "hint": "entmutigen; jemanden den Mut nehmen",
+    "example": "Lass dich nie unterkriegen! Trotz der Rückschläge darf man sich nicht unterkriegen lassen. – Unatoč neuspjesima, ne smiješ se dati slomiti."
+  },
+  "uzvratiti nešto, npr dijeliti isti osjećaj": {
+    "question": "uzvratiti nešto, npr dijeliti isti osjećaj",
+    "correct_answer": "etwas erwidern",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "hier: das Gleiche fühlen, was jemand anderes für einen empfindet",
+    "example": "Er wollte nicht unhöflich sein und erwiderte ihr Lächeln. (Nije htio biti nepristojan i uzvratio je na njen osmijeh.)"
+  },
+  "romantizirati nešto": {
+    "question": "romantizirati nešto",
+    "correct_answer": "etwas romantisieren",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "etwas (eigentlich Schlimmes) schöner erscheinen lassen, als es wirklich ist",
+    "example": "Er romantisiert seine Jugend und vergisst die Probleme, die er hatte. (Romantizira svoju mladost i zaboravlja probleme koje je imao.)"
+  },
+  "lektira": {
+    "question": "lektira",
+    "correct_answer": "die Lektüre, -n",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "einText, der gelesen wird"
+  },
+  "poistovjetiti se s nekime": {
+    "question": "poistovjetiti se s nekime",
+    "correct_answer": "sich mit jemandem identifizieren",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "sich in jemandem wiedererkennen (prepoznati)"
+  },
+  "imitatorski čin": {
+    "question": "imitatorski čin",
+    "correct_answer": "die Nachahmungstat, -en",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "eine Handlung/ein Verbrechen, bei der/dem man etwas nachmacht, was früher geschehen(und öffentlich bekannt geworden) ist"
+  },
+  "prsluk": {
+    "question": "prsluk",
+    "correct_answer": "die Weste, -n",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "eine Art Jacke ohne Ärmel"
+  },
+  "mentalna bolest": {
+    "question": "mentalna bolest",
+    "correct_answer": "psychische Erkrankung, -en (f.)",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "eine Krankheit der Seele, die oft keine direkten körperlichen Ursachen hat (bolest duše koja često nema izravne fizičke uzroke)",
+    "example": "Immer mehr Menschen suchen Hilfe bei psychischen Erkrankungen. (Sve više ljudi traži pomoć zbog mentalnih bolesti.)"
+  },
+  "nekoga/nešto imitirati, kopirati": {
+    "question": "nekoga/nešto imitirati, kopirati",
+    "correct_answer": "jemanden/etwas imitieren",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "jemanden/etwas nachmachen",
+    "example": "Die Kinder machen oft ihre Lehrer nach. (Djeca često imitiraju svoje učitelje.)"
+  },
+  "verzija, izdanje": {
+    "question": "verzija, izdanje",
+    "correct_answer": "die Fassung, -en",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "hier: die Version; eine von mehreren Varianten",
+    "example": "Die neueste Fassung des Gesetzes wurde vor kurzem veröffentlicht. (Najnovije izdanje zakona objavljeno je nedavno.)"
+  },
+  "distancirati se od nekoga": {
+    "question": "distancirati se od nekoga",
+    "correct_answer": "sich von jemandem distanzieren",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "Abstand(m.) von etwas/jemandem nehmen"
+  },
+  "ubiti se": {
+    "question": "ubiti se",
+    "correct_answer": "sich das Leben nehmen",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "sich selbst töten (auch: Suizid begehen)"
+  },
+  "egocentričan, samoproklamatorski, preteciozan, samopromocija": {
+    "question": "egocentričan, samoproklamatorski, preteciozan, samopromocija",
+    "correct_answer": "selbstdarstellerisch",
+    "category": "wordwall_romanauszuge_2_4",
+    "hint": "so, dass man seine Person und sein Verhalten wichtigmacht",
+    "example": "Sie neigt dazu, selbstdarstellerisch zu sein, wenn sie neue Leute trifft. (Ima sklonost biti egocentrična kada upoznaje nove ljude.)"
+  },
   "s vremena na vrijeme": {
     "question": "s vremena na vrijeme",
     "correct_answer": "von Zeit zu Zeit",
     "category": "frases"
+  },
+  "niti ... niti": {
+    "question": "niti ... niti",
+    "correct_answer": "weder ... noch",
+    "category": "zweiteilige_konjunktionen_regeln",
+    "hint": "doppelte Verneinung (--)",
+    "example": "Ich habe weder Zeit noch Lust, heute auszugehen. (Nemam niti vremena niti volje da danas izađem.)\nWeder der Lehrer noch die Schüler hatten die Aufgabe verstanden. (Niti učitelj niti učenici nisu razumjeli zadatak.)"
+  },
+  "ili ... ili": {
+    "question": "ili ... ili",
+    "correct_answer": "entweder ..., oder",
+    "category": "zweiteilige_konjunktionen_regeln",
+    "hint": "zwei Alternativen (??)",
+    "example": "Du musst entweder das Zimmer aufräumen oder mir beim Kochen helfen.(Moraš ili pospremiti sobu ili mi pomoći s kuhanjem.)"
+  },
+  " ne samo ... nego i": {
+    "question": " ne samo ... nego i",
+    "correct_answer": "nicht nur ..., sondern auch",
+    "category": "zweiteilige_konjunktionen_regeln",
+    "hint": "zusätzliche Betonung (++)",
+    "example": "Das Buch ist nicht nur spannend, sondern auch lehrreich. (Knjiga nije samo uzbudljiva, nego je i poučna.)"
+  },
+  "i .. i, kako ... tako i": {
+    "question": "i .. i, kako ... tako i",
+    "correct_answer": "sowohl... als auch",
+    "category": "zweiteilige_konjunktionen_regeln",
+    "hint": "zwei gleichwertige Elemente oder Aussage (++)",
+    "example": "Sie spricht sowohl Deutsch als auch Englisch fließend. (Ona govori i njemački i engleski tečno.)"
+  },
+  "naime ... ali": {
+    "question": "naime ... ali",
+    "correct_answer": "zwar ..., aber",
+    "category": "zweiteilige_konjunktionen_regeln",
+    "hint": "Einschränkung (doduše-ali)",
+    "example": "Zwar hat er viel Erfahrung, aber er ist nicht sehr selbstbewusst. (Naime, ima puno iskustva, ali nije baš samopouzdan.)"
+  },
+  "(za)roniti": {
+    "question": "(za)roniti",
+    "correct_answer": "tauchen / untertauchen; tauchte, hat/ist getaucht",
+    "category": "prinzessin und frosch",
+    "hint": "tauchen"
+  },
+  "izroniti": {
+    "question": "izroniti",
+    "correct_answer": "tauchen / untertauchen; tauchte, hat/ist getaucht",
+    "category": "prinzessin und frosch"
+  },
+  "preobraziti se, pretvoriti se": {
+    "question": "preobraziti se, pretvoriti se",
+    "correct_answer": "verwandeln",
+    "category": "prinzessin und frosch"
+  },
+  "plakati": {
+    "question": "plakati",
+    "correct_answer": "weinen",
+    "category": "prinzessin und frosch"
+  },
+  "dosađivati se": {
+    "question": "dosađivati se",
+    "correct_answer": "sich langweilen",
+    "category": "prinzessin und frosch"
+  },
+  "rasti": {
+    "question": "rasti",
+    "correct_answer": "wachsen",
+    "category": "notebook_16_10_2024"
+  },
+  "odrasti": {
+    "question": "odrasti",
+    "correct_answer": "aufwachsen?",
+    "category": "notebook_16_10_2024"
+  },
+  "povod za zabavu": {
+    "question": "povod za zabavu",
+    "correct_answer": "der Anlass zur Party",
+    "category": "unterricht_sri_28_10_2024",
+    "hint": "der Anlass - povod ili razlog",
+    "example": "Wir können uns zumindest darauf einigen. (Možemo se barem oko toga složiti.)"
+  },
+  "također (još jedna, isto) laž": {
+    "question": "također (još jedna, isto) laž",
+    "correct_answer": "auch eine Lüge",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Das ist nur auch eine Lüge unter vielen.“ – „To je samo još jedna od mnogih laži."
+  },
+  "O čemu se radi?": {
+    "question": "O čemu se radi?",
+    "correct_answer": "Worum geht es?",
+    "category": "unterricht_sri_28_10_2024",
+    "hint": "npr. u igrici",
+    "example": "Worum geht es in dem Film?“ – „O čemu se radi u filmu?"
+  },
+  "zaspati": {
+    "question": "zaspati",
+    "correct_answer": "einschlafen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Nachdem ich gestern Abend eine Folge von \"The Office\" geschaut hatte, schlief ich ein."
+  },
+  "u vezi s tim": {
+    "question": "u vezi s tim",
+    "correct_answer": "dazu",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Hast du etwas dazu zu sagen? – Imaš li nešto da kažeš u vezi s tim?"
+  },
+  "šta vidiš ovdje?": {
+    "question": "šta vidiš ovdje?",
+    "correct_answer": "Was siehst du hier?",
+    "category": "unterricht_sri_28_10_2024"
+  },
+  "napustiti": {
+    "question": "napustiti",
+    "correct_answer": "verlassen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Er hat seine Heimat für ein besseres Leben verlassen."
+  },
+  "domovina": {
+    "question": "domovina",
+    "correct_answer": "die Heimat",
+    "category": "unterricht_sri_28_10_2024"
+  },
+  "zamijeniti, razmijeniti": {
+    "question": "zamijeniti, razmijeniti",
+    "correct_answer": "tauschen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Können wir die Plätze tauschen?“ – „Možemo li zamijeniti mjesta?“"
+  },
+  "razmenjivati ideje, iskustva": {
+    "question": "razmenjivati ideje, iskustva",
+    "correct_answer": "sich austauschen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Lass uns unsere Ideen austauschen.“ – „Razmenimo ideje."
+  },
+  "emigrirati": {
+    "question": "emigrirati",
+    "correct_answer": "auswandern",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Warum wandern diese Menschen aus?"
+  },
+  "vidimo se preksutra": {
+    "question": "vidimo se preksutra",
+    "correct_answer": "wir sehen uns übermorgen",
+    "category": "unterricht_sri_28_10_2024"
+  },
+  "činjenica": {
+    "question": "činjenica",
+    "correct_answer": "die Tatsache",
+    "category": "unterricht_sri_28_10_2024"
+  },
+  "kukati": {
+    "question": "kukati",
+    "correct_answer": "jammern",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Ti puno kukaš – Du jammerst viel."
+  },
+  "izvorno": {
+    "question": "izvorno",
+    "correct_answer": "urspüglich",
+    "category": "unterricht_sri_28_10_2024",
+    "hint": "der Ursprung - izvor, podrijetlo"
+  },
+  "uzrok": {
+    "question": "uzrok",
+    "correct_answer": "die Ursache",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Die Ursache für den Unfall war ein technischer Fehler – Uzrok nesreće bila je tehnička greška."
+  },
+  "dobiti potporu npr. financijsku": {
+    "question": "dobiti potporu npr. financijsku",
+    "correct_answer": "eine (finanzielle) Färderung bekommen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "jemand fördert mich"
+  },
+  "polagati stručnu maturu": {
+    "question": "polagati stručnu maturu",
+    "correct_answer": "das Fachabitur machen",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Nach der Realschule möchte ich das Fachabitur machen – Nakon srednje škole želim polagati stručnu maturu."
+  },
+  "raznolikost, različitost": {
+    "question": "raznolikost, različitost",
+    "correct_answer": "vielfältig",
+    "category": "unterricht_sri_28_10_2024",
+    "hint": "homogen / divers / ___",
+    "example": "Die Stadt bietet ein vielfältiges kulturelles Angebot – Grad nudi raznoliku kulturnu ponudu."
+  },
+  "ugođaj, atmosfera": {
+    "question": "ugođaj, atmosfera",
+    "correct_answer": "die Stimmung",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Ihre Stimmung hat sich geändert, nachdem sie die Nachrich erhalten hatte."
+  },
+  "činiti se": {
+    "question": "činiti se",
+    "correct_answer": "wirken",
+    "category": "unterricht_sri_28_10_2024",
+    "example": "Sie wirken sehr freundlich und hilfsbereit – Djeluju vrlo prijateljski i spremni pomoći. Er wirkte - činio se (traurig, zufrieden...)"
+  },
+  "mjesto porijekla": {
+    "question": "mjesto porijekla",
+    "correct_answer": "die Herkunft",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "der Ort/das Land, aus jemand stammt",
+    "example": "Ich möchte mehr über meine Herkunft erfahren – Želim saznati više o svom porijeklu."
+  },
+  "mentalitet": {
+    "question": "mentalitet",
+    "correct_answer": "die Mentalität",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "die Einstellung; die Art, wie man (besonders in einem Kulturkreis) denkt"
+  },
+  "pristup ili metoda kojom se rješava problem ili situacija": {
+    "question": "pristup ili metoda kojom se rješava problem ili situacija",
+    "correct_answer": "die Herangehensweise",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "die Art und Weise, wie jemand ein Problem oder eine Aufgabe löst – način na koji netko rješava problem ili zadatak",
+    "explanation": "u kontekstu strategije, metode ili stila razmišljanja.",
+    "example": "Ihre Herangehensweise an das Projekt war sehr kreativ – Njezin pristup projektu bio je vrlo kreativan."
+  },
+  "imigracija, proces dolaska ljudi u drugu zemlju radi života, rada ili studiranja": {
+    "question": "imigracija, proces dolaska ljudi u drugu zemlju radi života, rada ili studiranja",
+    "correct_answer": "die Einwanderung",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "die Tatsache, dass Menschen in ein Land ziehen und dort wohnen – činjenica da ljudi doseljavaju u zemlju i tamo žive"
+  },
+  "ured koji se bavi poreznim savjetovanjem i računovodstvom": {
+    "question": "ured koji se bavi poreznim savjetovanjem i računovodstvom",
+    "correct_answer": "die Steuerkanzlei, -en",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "ein Unternehmen, das Kunden in Steuerfragen berät – tvrtka koja savjetuje klijente u poreznim pitanjima",
+    "example": "Die Steuerkanzlei bietet verschiedene Dienstleistungen an – Porezna kancelarija nudi različite usluge."
+  },
+  "preopterećen, zatrpan obavezama ili preplavljen": {
+    "question": "preopterećen, zatrpan obavezama ili preplavljen",
+    "correct_answer": "überfordert",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "wenn man zu viel auf einmal erledigen muss – kada se mora obaviti previše stvari odjednom",
+    "explanation": "kada se netko osjeća preopterećeno ili pod stresom zbog previše zadataka, obaveza ili očekivanja",
+    "example": "Er ist mit der Verantwortung überfordert – Preopterećen je odgovornošću."
+  },
+  "prepreka, barijera": {
+    "question": "prepreka, barijera",
+    "correct_answer": "die Hürde,-n",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "ein Hindernis, Problem; Schwierigkeit – prepreka, problem; teškoća",
+    "explanation": "u fizičkom, tako i u figurativnom smislu za opisivanje izazova ili teškoća koje je potrebno prevazići",
+    "example": "Sie hat viele Hürden auf ihrem Weg zum Erfolg überwunden – Prebrodila je mnoge prepreke na putu do uspjeha."
+  },
+  "raznolikost / raznolikost opcija": {
+    "question": "raznolikost / raznolikost opcija",
+    "correct_answer": "die Vielfalt",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "die Diversität",
+    "example": "Die Vielfalt der Kulturen bereichert unsere Gesellschaft – Raznolikost kultura obogaćuje naše društvo."
+  },
+  "migrant": {
+    "question": "migrant",
+    "correct_answer": "Migrant,-en/ Migrantin,-nen ",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "eine Person, die in ein Land kommt, um dort zu leben – osoba koja dolazi u zemlju kako bi tamo živjela"
+  },
+  "nekoga oraspoložiti, podići raspoloženje": {
+    "question": "nekoga oraspoložiti, podići raspoloženje",
+    "correct_answer": "jemanden aufmuntern ",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "\njemandem Mut machen / Antonym von: entmutigen – oraspoložiti nekoga / antonim: obeshrabrit",
+    "example": "Ich versuche, ihn aufzumuntern, weil er traurig ist – Pokušavam ga oraspoložiti jer je tužan."
+  },
+  "osoba zadužena za ljudske resurse": {
+    "question": "osoba zadužena za ljudske resurse",
+    "correct_answer": "der Personaler,-n; die Personalerin,-nen ",
+    "category": "unterricht_sri_28_10_2024_migration_wortschatz",
+    "hint": "jemand, der beruflich Bewerbungen bearbeitet und Mitarbeiter einstellt – osoba koja se profesionalno bavi obradom prijava i zapošljavanjem radnika"
   }
 }
