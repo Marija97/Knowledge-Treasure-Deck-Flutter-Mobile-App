@@ -273,8 +273,8 @@
     "hint": "zwischen",
     "example": "Zwischen den Bäumen befindet sich ein kleiner Teich. – Između drveća se nalazi mali ribnjak."
   },
-  "sjećati se na ": {
-    "question": "sjećati se na ",
+  "sjećati se na": {
+    "question": "sjećati se na",
     "correct_answer": "sich erinnern an + A. / sich erinnern + G.",
     "category": "vocabulary_from_the_book"
   },
@@ -668,7 +668,7 @@
     "correct_answer": "Strom verbrauchen",
     "category": "notebook_14_10_2024",
     "hint": "der Strom",
-    "example": "Der Stromverbrauch "
+    "example": "Der Stromverbrauch"
   },
   "potrošnja struje": {
     "question": "potrošnja struje",
@@ -763,7 +763,7 @@
     "correct_answer": "in Rage bringen",
     "category": "wordwall_romanauszuge_2_3",
     "hint": "jemanden ärgern",
-    "example": "Sein Verhalten hat mich in Rage gebracht. – Njegovo ponašanje me razbjesnilo.\n"
+    "example": "Sein Verhalten hat mich in Rage gebracht. – Njegovo ponašanje me razbjesnilo."
   },
   "upis, unos, registracija": {
     "question": "upis, unos, registracija",
@@ -917,8 +917,8 @@
     "hint": "zwei Alternativen (??)",
     "example": "Du musst entweder das Zimmer aufräumen oder mir beim Kochen helfen.(Moraš ili pospremiti sobu ili mi pomoći s kuhanjem.)"
   },
-  " ne samo ... nego i": {
-    "question": " ne samo ... nego i",
+  "ne samo ... nego i": {
+    "question": "ne samo ... nego i",
     "correct_answer": "nicht nur ..., sondern auch",
     "category": "zweiteilige_konjunktionen_regeln",
     "hint": "zusätzliche Betonung (++)",
@@ -1126,8 +1126,8 @@
     "category": "unterricht_sri_28_10_2024_migration_wortschatz",
     "hint": "die Tatsache, dass Menschen in ein Land ziehen und dort wohnen – činjenica da ljudi doseljavaju u zemlju i tamo žive"
   },
-  "ured koji se bavi poreznim savjetovanjem i računovodstvom": {
-    "question": "ured koji se bavi poreznim savjetovanjem i računovodstvom",
+  "ureda koji se bavi poreznim savjetovanjem i računovodstvom": {
+    "question": "ureda koji se bavi poreznim savjetovanjem i računovodstvom",
     "correct_answer": "die Steuerkanzlei, -en",
     "category": "unterricht_sri_28_10_2024_migration_wortschatz",
     "hint": "ein Unternehmen, das Kunden in Steuerfragen berät – tvrtka koja savjetuje klijente u poreznim pitanjima",
@@ -1158,21 +1158,436 @@
   },
   "migrant": {
     "question": "migrant",
-    "correct_answer": "Migrant,-en/ Migrantin,-nen ",
+    "correct_answer": "Migrant,-en/ Migrantin,-nen",
     "category": "unterricht_sri_28_10_2024_migration_wortschatz",
     "hint": "eine Person, die in ein Land kommt, um dort zu leben – osoba koja dolazi u zemlju kako bi tamo živjela"
   },
   "nekoga oraspoložiti, podići raspoloženje": {
     "question": "nekoga oraspoložiti, podići raspoloženje",
-    "correct_answer": "jemanden aufmuntern ",
+    "correct_answer": "jemanden aufmuntern",
     "category": "unterricht_sri_28_10_2024_migration_wortschatz",
-    "hint": "\njemandem Mut machen / Antonym von: entmutigen – oraspoložiti nekoga / antonim: obeshrabrit",
+    "hint": "jemandem Mut machen / Antonym von: entmutigen – oraspoložiti nekoga / antonim: obeshrabrit",
     "example": "Ich versuche, ihn aufzumuntern, weil er traurig ist – Pokušavam ga oraspoložiti jer je tužan."
   },
   "osoba zadužena za ljudske resurse": {
     "question": "osoba zadužena za ljudske resurse",
-    "correct_answer": "der Personaler,-n; die Personalerin,-nen ",
+    "correct_answer": "der Personaler,-n; die Personalerin,-nen",
     "category": "unterricht_sri_28_10_2024_migration_wortschatz",
     "hint": "jemand, der beruflich Bewerbungen bearbeitet und Mitarbeiter einstellt – osoba koja se profesionalno bavi obradom prijava i zapošljavanjem radnika"
+  },
+  "ekonomsko čudo": {
+    "question": "ekonomsko čudo",
+    "correct_answer": "das Wirtschaftswunder, -",
+    "category": "materialien_28_10_2024",
+    "hint": "wirtschaftlicher Aufschwung, besonders in der Bundesrepublik in den 1950-er Jahren - gospodarski procvat, posebno u Saveznoj Republici Njemačkoj u 1950-im godinama",
+    "explanation": "Ovaj izraz se često koristi za opisivanje brzog ekonomskog oporavka i rasta, posebno u kontekstu poslijeratnog razvoja Njemačke nakon Drugog svjetskog rata, kada je njemačka ekonomija brzo porasla.",
+    "example": "Dank des Wirtschaftswunders konnte sich die Bevölkerung ein besseres Leben leisten – Zahvaljujući ekonomskom čudu, stanovništvo si je moglo priuštiti bolji život."
+  },
+  "dati se regrutirati ili dati se angažirati": {
+    "question": "dati se regrutirati ili dati se angažirati",
+    "correct_answer": "anwerben lassen",
+    "category": "materialien_28_10_2024",
+    "example": "Deutsche Firmen ließen neue Arbeitskräfte anwerben. - Njemačke tvrtke dale su regrutirati nove radnike"
+  },
+  "oskudan, skroman ili tijesan": {
+    "question": "oskudan, skroman ili tijesan",
+    "correct_answer": "knapp",
+    "category": "materialien_28_10_2024",
+    "example": "In dieser Region sind die Wasserressourcen sehr knapp. (U ovoj regiji su vodni resursi vrlo oskudni."
+  },
+  "industrijska regija smještena u njemačkoj saveznoj pokrajini Sjeverna Rajna-Vestfalija": {
+    "question": "industrijska regija smještena u njemačkoj saveznoj pokrajini Sjeverna Rajna-Vestfalija",
+    "correct_answer": "das Ruhrgebiet",
+    "category": "materialien_28_10_2024"
+  },
+  "industrija čelika": {
+    "question": "industrija čelika",
+    "correct_answer": "die Stahlindustrie",
+    "category": "materialien_28_10_2024",
+    "hint": "der Stahl - čelik"
+  },
+  "bježati, pobjeći": {
+    "question": "bježati, pobjeći",
+    "correct_answer": "fliehen (floh, ist geflohen) aus + D",
+    "category": "materialien_28_10_2024",
+    "example": "Er floh aus dem Gefängnis. (Pobjegao je iz zatvora.)"
+  },
+  "iseljavati iz  (zemlje)": {
+    "question": "iseljavati iz  (zemlje)",
+    "correct_answer": "aus|wandern aus + D",
+    "category": "materialien_28_10_2024",
+    "example": "Er wandert aus Deutschland aus. (On se iseljava iz Njemačke.)"
+  },
+  "iseljavati u  (zemlju)": {
+    "question": "iseljavati u  (zemlju)",
+    "correct_answer": "aus|wandern in + Akk.",
+    "category": "materialien_28_10_2024",
+    "example": "Er wandert in die USA ein. (On se iseljava u SAD.)"
+  },
+  "useljavati se u (zemlju)": {
+    "question": "useljavati se u (zemlju)",
+    "correct_answer": "ein|wandern in + Akk.",
+    "category": "materialien_28_10_2024",
+    "explanation": "Perfekt: ist eingewandert\nPräteritum: wanderte ein",
+    "example": "Er ist in die USA eingewandert.(On se uselio u SAD.)"
+  },
+  "iseliti se u prekomorske zemlje": {
+    "question": "iseliti se u prekomorske zemlje",
+    "correct_answer": "nach Übersee auswandern",
+    "category": "materialien_28_10_2024",
+    "hint": "die Übersee",
+    "explanation": "doslovno se prevodi kao „preko mora“ ili „preko oceana“. Obično se odnosi na zemlje ili regije koje se nalaze izvan Europe, posebno one preko Atlantika (kao što su Sjedinjene Američke Države ili Kanada) ili drugih oceana. U kontekstu iseljavanja, to implicira selidbu u udaljenije strane zemlje."
+  },
+  "napustiti domovinu zauvijek": {
+    "question": "napustiti domovinu zauvijek",
+    "correct_answer": "die Heimat für immer verlassen",
+    "category": "materialien_28_10_2024"
+  },
+  "pobjeći od opasnosti": {
+    "question": "pobjeći od opasnosti",
+    "correct_answer": "von einer Gefahr (z. B. Krieg oder Verfolung) weglaufen",
+    "category": "materialien_28_10_2024",
+    "hint": "die Gefahr -opasnost"
+  },
+  "područje s druge strane oceana": {
+    "question": "područje s druge strane oceana",
+    "correct_answer": "das Gebiet jenseits des Ozeans",
+    "category": "materialien_28_10_2024",
+    "hint": "das Gebiet - područje, oblast, teritorij",
+    "example": "Viele Menschen träumen davon, das Gebiet jenseits des Ozeans zu bereisen. (Mnogi ljudi sanjaju o putovanju u područje s druge strane oceana.)"
+  },
+  "nastaniti se u stranoj zemlji": {
+    "question": "nastaniti se u stranoj zemlji",
+    "correct_answer": "sich in einem fremden Lande ansiedeln",
+    "category": "materialien_28_10_2024",
+    "hint": "immigrieren",
+    "example": "Viele Einwanderer entscheiden sich, sich in einem fremden Lande anzusiedeln, um ein neues Leben zu beginnen. (Mnogi imigranti odlučuju se nastaniti u stranoj zemlji kako bi započeli novi život.)"
+  },
+  "neko je aktivno potaknut od strane drugih da se odluči za određenu poziciju / radno mjesto": {
+    "question": "neko je aktivno potaknut od strane drugih da se odluči za određenu poziciju / radno mjesto",
+    "correct_answer": "jemand wird von anderen aktiv dazu gebracht, sich für eine bestimmte Position / Arbeitsstelle zu entscheiden",
+    "category": "materialien_28_10_2024",
+    "hint": "rekrutieren"
+  },
+  "nedostajati nečega, biti u oskudici": {
+    "question": "nedostajati nečega, biti u oskudici",
+    "correct_answer": "mangeln",
+    "category": "materialien_28_10_2024"
+  },
+  "vratiti se, imati povratak": {
+    "question": "vratiti se, imati povratak",
+    "correct_answer": "zurückkehren",
+    "category": "materialien_28_10_2024",
+    "example": "Die Soldaten kehrten nach dem Einsatz zurück. (Vojnici su se vratili nakon misije.)"
+  },
+  "odnositi se na, biti relevantan za nekoga, tiču se": {
+    "question": "odnositi se na, biti relevantan za nekoga, tiču se",
+    "correct_answer": "sich angehen",
+    "category": "seite_40_text_migration",
+    "example": "Die neuen Regeln gehen dich nichts an.(Nova pravila se tebe ne tiču.) Migration geht uns alle an!"
+  },
+  "hitan, urgent, pod hitno": {
+    "question": "hitan, urgent, pod hitno",
+    "correct_answer": "dringend",
+    "category": "seite_40_text_migration"
+  },
+  "ostaviti dopustiti ili narediti": {
+    "question": "ostaviti dopustiti ili narediti",
+    "correct_answer": "lassen, ließ, hat gelassen",
+    "category": "seite_40_text_migration",
+    "example": "Ich ließ das Fenster offen.(Ostavio sam prozor otvoren.)"
+  },
+  "angažirati, regrutirati, ili prikupiti (npr. radnu snagu ili klijente)": {
+    "question": "angažirati, regrutirati, ili prikupiti (npr. radnu snagu ili klijente)",
+    "correct_answer": "anwerben",
+    "category": "seite_40_text_migration",
+    "explanation": "warb an;  hat angeworben"
+  },
+  "takozvani": {
+    "question": "takozvani",
+    "correct_answer": "sogenannt",
+    "category": "seite_40_text_migration",
+    "explanation": "so - tako, na taj način + genannt - PP gl \"nennen\" - nazvati ili imenovati"
+  },
+  "do sada": {
+    "question": "do sada",
+    "correct_answer": "bisher",
+    "category": "unterricht_28.10.2024",
+    "example": "Benutzt bitte alle grammatische Konstruktionen, die wir bisher gemacht haben :)"
+  },
+  "izlagati, prezentirati": {
+    "question": "izlagati, prezentirati",
+    "correct_answer": "vortragen",
+    "category": "unterricht_28.10.2024",
+    "hint": "na satu neku temu"
+  },
+  "još uvijek": {
+    "question": "još uvijek",
+    "correct_answer": "immer noch",
+    "category": "unterricht_28.10.2024",
+    "example": "Ich bin immer noch krank."
+  },
+  "teškoća": {
+    "question": "teškoća",
+    "correct_answer": "die Schwierigkeit",
+    "category": "unterricht_28.10.2024"
+  },
+  "prednost": {
+    "question": "prednost",
+    "correct_answer": "der Vorteil (-s, -e)",
+    "category": "unterricht_28.10.2024",
+    "example": "Welche Vorteile kann Auswanderung fur das Aufnahmeland haben? Koje prednosti imigracija može imati za zemlju primateljicu?"
+  },
+  "zemlja koja prima (migrante)": {
+    "question": "zemlja koja prima (migrante)",
+    "correct_answer": "das Aufnahmeland",
+    "category": "unterricht_28.10.2024",
+    "hint": "aufnehmen = primiti, prihvatiti ili ugostiti.",
+    "explanation": "ein Land, das Einwanderer aufnimmt"
+  },
+  "ograničiti, postaviti granice": {
+    "question": "ograničiti, postaviti granice",
+    "correct_answer": "begrenzen",
+    "category": "unterricht_28.10.2024",
+    "example": "Welche Gründe haben Länder, Migration zu begrenzen oder zu fördern."
+  },
+  "prilagoditi se nečemu": {
+    "question": "prilagoditi se nečemu",
+    "correct_answer": "sich + Dativ anpassen",
+    "category": "unterricht_28.10.2024",
+    "example": "Er passt sich den neuen Umständen an. – On se prilagođava novim okolnostima."
+  },
+  "porez": {
+    "question": "porez",
+    "correct_answer": "die Steuer",
+    "category": "unterricht_28.10.2024"
+  },
+  "porez na dodanu vrijednost (PDV)": {
+    "question": "porez na dodanu vrijednost (PDV)",
+    "correct_answer": "die Mehrwertsteuer",
+    "category": "unterricht_28.10.2024",
+    "example": "Die Mehrwertsteuer ist in den Preisen enthalten. – Porez na dodanu vrijednost je uključen u cijene."
+  },
+  "imati utjecaj, utjecati na nešto": {
+    "question": "imati utjecaj, utjecati na nešto",
+    "correct_answer": "beeinflussen",
+    "category": "unterricht_28.10.2024",
+    "example": "Wie beeinflusst Migration die Kultur eines Landes?"
+  },
+  "predrasuda": {
+    "question": "predrasuda",
+    "correct_answer": "das Vorurteil, -e",
+    "category": "unterricht_28.10.2024"
+  },
+  "u potpunosti": {
+    "question": "u potpunosti",
+    "correct_answer": "völlig",
+    "category": "unterricht_28.10.2024",
+    "example": "Ich stimme völlig zu. - U potpunosti se slažem."
+  },
+  "samostalnost, neovisnost": {
+    "question": "samostalnost, neovisnost",
+    "correct_answer": "die Selbstständigkeit",
+    "category": "unterricht_28.10.2024",
+    "example": "Die Selbstständigkeit ist wichtig für persönliche Entwicklung. – Samostalnost je važna za osobni razvoj."
+  },
+  "nestati, izgubiti se": {
+    "question": "nestati, izgubiti se",
+    "correct_answer": "verschwinden, verschwand, ist verschwunden",
+    "category": "unterricht_28.10.2024",
+    "example": "Die Wolken sind verschwunden und die Sonne scheint. (Oblaci su nestali i sunce sija.)"
+  },
+  "minimalna plaća": {
+    "question": "minimalna plaća",
+    "correct_answer": "der Mindestohn",
+    "category": "unterricht_28.10.2024",
+    "example": "Der Mindestlohn in Deutschland beträgt derzeit 12 Euro pro Stunde.(Minimalna plaća u Njemačkoj trenutno iznosi 12 eura po satu.)"
+  },
+  "iznositi": {
+    "question": "iznositi",
+    "correct_answer": "betragen, betrug, betragen",
+    "category": "unterricht_28.10.2024",
+    "example": "Der Preis beträgt 50 Euro. – Cijena iznosi 50 eura."
+  },
+  "ostaviti dojam / utisak": {
+    "question": "ostaviti dojam / utisak",
+    "correct_answer": "einen Eindruck hinterlassen",
+    "category": "unterricht_28.10.2024",
+    "explanation": "hinterlassen = ostaviti (nešto iza sebe)"
+  },
+  "oblast": {
+    "question": "oblast",
+    "correct_answer": "das Gebiet",
+    "category": "unterricht_28.10.2024"
+  },
+  "područje, kraj": {
+    "question": "područje, kraj",
+    "correct_answer": "die Gegend",
+    "category": "unterricht_28.10.2024"
+  },
+  "uspon, zamah": {
+    "question": "uspon, zamah",
+    "correct_answer": "der Aufschwung",
+    "category": "unterricht_28.10.2024",
+    "hint": "npr. ekonomski, wirtschaftlicher...",
+    "explanation": "swung od swingen ~ to swing, ljuljati, zamahnuti, zanositi..."
+  },
+  "proizvoditi": {
+    "question": "proizvoditi",
+    "correct_answer": "erzeugen , produzieren, herstellen",
+    "category": "unterricht_28.10.2024"
+  },
+  "progon": {
+    "question": "progon",
+    "correct_answer": "die Verfolgung",
+    "category": "unterricht_28.10.2024",
+    "explanation": "vervolgen - (pro)goniti",
+    "example": "Die Verfolgung von Verbrechern ist die Aufgabe der Polizei. – Progon zločinaca je zadatak policije."
+  },
+  "između ostalog": {
+    "question": "između ostalog",
+    "correct_answer": "unter anderem",
+    "category": "unterricht_28.10.2024",
+    "example": "Wir haben viele Themen besprochen, unter anderem die Zukunft des Unternehmens. (Razgovarali smo o mnogim temama, između ostalog i o budućnosti tvrtke.)"
+  },
+  "vratiti se, ponovno doći": {
+    "question": "vratiti se, ponovno doći",
+    "correct_answer": "zurückkehren",
+    "category": "unterricht_28.10.2024",
+    "hint": "formali izraz za povratak",
+    "explanation": "\"kehren\" = okrenuti ili vratiti; zurückkommen - svakodnevni govor, vratiti se",
+    "example": "Nach vielen Jahren kehrte er in sein Heimatland zurück. (Nakon mnogo godina vratio se u svoju domovinu.)"
+  },
+  "ajpopularnije destinacije, najomiljenija odredišta.": {
+    "question": "ajpopularnije destinacije, najomiljenija odredišta.",
+    "correct_answer": "beliebtesten Ziel",
+    "category": "unterricht_28.10.2024",
+    "explanation": "beliebtesten je superlativ od beliebt, što znači popularan ili omiljen. Ziele je množina od Ziel, što znači cilj ili odredište.",
+    "example": "Die beliebtesten Ziele für Touristen in Europa sind Paris, Rom und Barcelona."
+  },
+  "društvo": {
+    "question": "društvo",
+    "correct_answer": "die Gesellschaft , -en",
+    "category": "unterricht_28.10.2024"
+  },
+  "krojačica": {
+    "question": "krojačica",
+    "correct_answer": "die Näherin",
+    "category": "unterricht_28.10.2024"
+  },
+  "uživaj za to vrijeme": {
+    "question": "uživaj za to vrijeme",
+    "correct_answer": "genieße die Zeit",
+    "category": "unterricht_28.10.2024",
+    "explanation": "genießen, genoss, genossen",
+    "example": "Genieße deinen Urlaub! (Uživaj u svom odmoru!)"
+  },
+  "neki, određeni (certain)": {
+    "question": "neki, određeni (certain)",
+    "correct_answer": "gewisse",
+    "category": "solino",
+    "hint": "ali ne definirani za razliku od bestimmt",
+    "example": "der Gasarbeiter = jemand, der im Ausland für eine gewisse Zeit arbeitet"
+  },
+  "nadati se nečemu": {
+    "question": "nadati se nečemu",
+    "correct_answer": "hoffen auf + Akk",
+    "category": "solino",
+    "hint": "Hoffung(f.) auf etwas haben",
+    "example": "Wir hoffen auf gutes Wetter für unser Picknick. (Nadamo se dobrom vremenu za naš piknik.)"
+  },
+  "nekoga poslužiti": {
+    "question": "nekoga poslužiti",
+    "correct_answer": "jemanden bedienen",
+    "category": "solino",
+    "hint": "die Speisen und Getränke bringen",
+    "example": "Kann ich Ihnen etwas zu trinken bringen? Ich möchte Sie gerne bedienen.(Mogu li vam donijeti nešto za piće? Želim vas poslužiti.)"
+  },
+  "rudnik": {
+    "question": "rudnik",
+    "correct_answer": "das Bergwerk",
+    "category": "solino"
+  },
+  "biti oduševljen nečim ili biti uzbuđen zbog nečega": {
+    "question": "biti oduševljen nečim ili biti uzbuđen zbog nečega",
+    "correct_answer": "begeistert von etwas sein",
+    "category": "solino",
+    "hint": "über eine Sache enthusiastisch sein",
+    "example": "Die Schüler sind begeistert von dem neuen Lehrbuch. (Učenici su oduševljeni novim udžbenikom.)"
+  },
+  "primiti nagradu": {
+    "question": "primiti nagradu",
+    "correct_answer": "den Preis in Empfang nehmen",
+    "category": "solino",
+    "hint": "den Preis bekommen",
+    "explanation": "in Empfang nehmen doslovno znači uzeti u prijem, što se koristi za opisivanje akcije primanja ili prihvaćanja nečega; der Empfang = prijem, \"receivement\"",
+    "example": "Es ist eine Ehre, diesen Preis in Empfang nehmen zu dürfen.(Čast mi je primiti ovu nagradu.)"
+  },
+  "brak se raspada": {
+    "question": "brak se raspada",
+    "correct_answer": "eine Ehe zerbricht (zerbrechen, zerbrach, zerbrochen) er zerbricht",
+    "category": "solino",
+    "explanation": "die Ehe = brak; zerbrechen = raspasti se, razbiti se, slomiti se",
+    "example": "Eine Ehe zerbricht oft wegen mangelnder Kommunikation.(Brak se često raspada zbog nedostatka komunikacije.)"
+  },
+  "stanovnička zajednica": {
+    "question": "stanovnička zajednica",
+    "correct_answer": "die Wohngemeinschaft (WG), -en",
+    "category": "solino",
+    "hint": "Grupppe von Personen die in einer Wohnung zusammenleben (keine Familie)"
+  },
+  "svađati se": {
+    "question": "svađati se",
+    "correct_answer": "(sich) streiten über + Akk. (stritt, h. gestritten)",
+    "category": "solino",
+    "hint": "einen Streit(m.) haben",
+    "example": "Wir streiten uns oft über die besten Filme. (Često se svađamo oko najboljih filmova.) Sie streiten über die Regeln des Spiels.(Oni se svađaju oko pravila igre.)"
+  },
+  "rodni grad": {
+    "question": "rodni grad",
+    "correct_answer": "die Heimatstadt, die Heimatstädte",
+    "category": "solino",
+    "hint": "die Stadt, aus der jemand kommt"
+  },
+  "ekonomija": {
+    "question": "ekonomija",
+    "correct_answer": "die Wirtschaft",
+    "category": "solino"
+  },
+  "stizati, pristizati, doći": {
+    "question": "stizati, pristizati, doći",
+    "correct_answer": "ankommen",
+    "category": "solino",
+    "example": "Die Amatos kommen in Duisburg an. - Obitelj Amatos stiže u Duisburg."
+  },
+  "čija / čiji": {
+    "question": "čija / čiji",
+    "correct_answer": "deren / dessen",
+    "category": "solino",
+    "explanation": "deren se koristi samo za žene i množinu. U slučaju muškog roda koristit će se dessen (čiji), a u kontekstu ženskog roda za jedinu formu koristi se deren (čija).",
+    "example": "(m. sg.) Das ist der Mann, dessen Auto vor dem Haus steht. (To je muškarac čiji auto stoji ispred kuće.)\n(n. sg.) Das ist das Bild, dessen Farben lebendig sind. (To je slika čije su boje živopisne.)\n(f. sg.) Ich kenne die Lehrerin, deren Unterricht sehr spannend ist. (Poznajem učiteljicu čiji je sat vrlo zanimljiv.)\n(_. pl.) Das sind die Leute, deren Meinungen ich respektiere. (To su ljudi čije mišljenje poštujem.)"
+  },
+  "otvoriti (restoran, pizeriju..)": {
+    "question": "otvoriti (restoran, pizeriju..)",
+    "correct_answer": "ein Restaurant / eine Pizzeria eröffnen",
+    "category": "solino",
+    "example": "Ich eröffnete ein neues Restaurant letztes Jahr. (Otvorio sam novi restoran prošle godine.)"
+  },
+  "snimati film": {
+    "question": "snimati film",
+    "correct_answer": "einen Film drehen",
+    "category": "solino",
+    "example": "Gigi dreht seinen ersten Dokumentarfilm."
+  },
+  "u međuvremenu": {
+    "question": "u međuvremenu",
+    "correct_answer": "in der Zwischenzeit",
+    "category": "solino"
+  },
+  "redatelj": {
+    "question": "redatelj",
+    "correct_answer": "der Regisseur",
+    "category": "solino",
+    "example": "Gigi(m.), dessen Traum es war, Regisseur zu werden, eröffnet mit Ada ein Kino in Solino."
   }
 }
