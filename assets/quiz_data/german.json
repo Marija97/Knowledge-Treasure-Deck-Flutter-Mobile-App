@@ -715,9 +715,8 @@
   },
   "događaj": {
     "question": "događaj",
-    "correct_answer": "das Ereignis / die Ereignisse",
-    "category": "notebook_14_10_2024",
-    "hint": "das Geschehen"
+    "correct_answer": "das Ereignis, -se",
+    "category": "unterricht 06.11.2024. (T11)"
   },
   "unuk/a": {
     "question": "unuk/a",
@@ -974,12 +973,16 @@
     "correct_answer": "aufwachsen?",
     "category": "notebook_16_10_2024"
   },
+  "iscrpljen": {
+    "question": "iscrpljen",
+    "correct_answer": "erschöpft",
+    "category": "solino"
+  },
   "povod za zabavu": {
     "question": "povod za zabavu",
     "correct_answer": "der Anlass zur Party",
     "category": "unterricht_sri_28_10_2024",
-    "hint": "der Anlass - povod ili razlog",
-    "example": "Wir können uns zumindest darauf einigen. (Možemo se barem oko toga složiti.)"
+    "hint": "der Anlass - povod ili razlog"
   },
   "također (još jedna, isto) laž": {
     "question": "također (još jedna, isto) laž",
@@ -1013,9 +1016,9 @@
   },
   "napustiti": {
     "question": "napustiti",
-    "correct_answer": "verlassen",
-    "category": "unterricht_sri_28_10_2024",
-    "example": "Er hat seine Heimat für ein besseres Leben verlassen."
+    "correct_answer": "verlassen, verließ, h. verlassen",
+    "category": "unterricht 04.11.2024. (T10)",
+    "hint": "irreg."
   },
   "domovina": {
     "question": "domovina",
@@ -1187,13 +1190,8 @@
     "question": "dati se regrutirati ili dati se angažirati",
     "correct_answer": "anwerben lassen",
     "category": "materialien_28_10_2024",
+    "hint": "jemand wird von anderen aktiv dazu gebracht, sich für eine bestimmte Position / Arbeitsstelle zu entscheiden = neko je aktivno potaknut od strane drugih da se odluči za određenu poziciju / radno mjesto",
     "example": "Deutsche Firmen ließen neue Arbeitskräfte anwerben. - Njemačke tvrtke dale su regrutirati nove radnike"
-  },
-  "oskudan, skroman ili tijesan": {
-    "question": "oskudan, skroman ili tijesan",
-    "correct_answer": "knapp",
-    "category": "materialien_28_10_2024",
-    "example": "In dieser Region sind die Wasserressourcen sehr knapp. (U ovoj regiji su vodni resursi vrlo oskudni."
   },
   "industrijska regija smještena u njemačkoj saveznoj pokrajini Sjeverna Rajna-Vestfalija": {
     "question": "industrijska regija smještena u njemačkoj saveznoj pokrajini Sjeverna Rajna-Vestfalija",
@@ -1228,6 +1226,7 @@
     "question": "useljavati se u (zemlju)",
     "correct_answer": "ein|wandern in + Akk.",
     "category": "materialien_28_10_2024",
+    "hint": "nastaniti se u stranoj zemlji = sich in einem fremden Lande ansiedeln; immigrieren",
     "explanation": "Perfekt: ist eingewandert\nPräteritum: wanderte ein",
     "example": "Er ist in die USA eingewandert.(On se uselio u SAD.)"
   },
@@ -1256,23 +1255,12 @@
     "hint": "das Gebiet - područje, oblast, teritorij",
     "example": "Viele Menschen träumen davon, das Gebiet jenseits des Ozeans zu bereisen. (Mnogi ljudi sanjaju o putovanju u područje s druge strane oceana.)"
   },
-  "nastaniti se u stranoj zemlji": {
-    "question": "nastaniti se u stranoj zemlji",
-    "correct_answer": "sich in einem fremden Lande ansiedeln",
-    "category": "materialien_28_10_2024",
-    "hint": "immigrieren",
-    "example": "Viele Einwanderer entscheiden sich, sich in einem fremden Lande anzusiedeln, um ein neues Leben zu beginnen. (Mnogi imigranti odlučuju se nastaniti u stranoj zemlji kako bi započeli novi život.)"
-  },
-  "neko je aktivno potaknut od strane drugih da se odluči za određenu poziciju / radno mjesto": {
-    "question": "neko je aktivno potaknut od strane drugih da se odluči za određenu poziciju / radno mjesto",
-    "correct_answer": "jemand wird von anderen aktiv dazu gebracht, sich für eine bestimmte Position / Arbeitsstelle zu entscheiden",
-    "category": "materialien_28_10_2024",
-    "hint": "rekrutieren"
-  },
   "nedostajati nečega, biti u oskudici": {
     "question": "nedostajati nečega, biti u oskudici",
     "correct_answer": "mangeln",
-    "category": "materialien_28_10_2024"
+    "category": "materialien_28_10_2024",
+    "hint": "knapp = oskudan, skroman, tijesan",
+    "example": "In dieser Region sind die Wasserressourcen sehr knapp. (U ovoj regiji su vodni resursi vrlo oskudni."
   },
   "vratiti se, imati povratak": {
     "question": "vratiti se, imati povratak",
@@ -1484,7 +1472,7 @@
   },
   "neki, određeni (certain)": {
     "question": "neki, određeni (certain)",
-    "correct_answer": "gewisse",
+    "correct_answer": "gewiss",
     "category": "solino",
     "hint": "ali ne definirani za razliku od bestimmt",
     "example": "der Gasarbeiter = jemand, der im Ausland für eine gewisse Zeit arbeitet"
@@ -1527,6 +1515,7 @@
     "question": "brak se raspada",
     "correct_answer": "eine Ehe zerbricht (zerbrechen, zerbrach, zerbrochen) er zerbricht",
     "category": "solino",
+    "hint": "die Eheleute lassen sich schneiden",
     "explanation": "die Ehe = brak; zerbrechen = raspasti se, razbiti se, slomiti se",
     "example": "Eine Ehe zerbricht oft wegen mangelnder Kommunikation.(Brak se često raspada zbog nedostatka komunikacije.)"
   },
@@ -1589,5 +1578,454 @@
     "correct_answer": "der Regisseur",
     "category": "solino",
     "example": "Gigi(m.), dessen Traum es war, Regisseur zu werden, eröffnet mit Ada ein Kino in Solino."
+  },
+  "prepričavati": {
+    "question": "prepričavati",
+    "correct_answer": "nach|erzählen",
+    "category": "solino"
+  },
+  "iskreno, ne znam": {
+    "question": "iskreno, ne znam",
+    "correct_answer": "ehrlich gesagt weiß ich es nicht",
+    "category": "solino"
+  },
+  "odgoditi (npr. termin), premjestiti, pomaknuti": {
+    "question": "odgoditi (npr. termin), premjestiti, pomaknuti",
+    "correct_answer": "verschieben, verschob, h. verschoben",
+    "category": "unterricht 04.11.2024. (T10)",
+    "hint": "irreg.",
+    "example": "Ich verschiebe den Tisch. (Premještam stol.)  Wir müssen das Meeting auf nächste Woche verschieben. (Moramo odgoditi sastanak za sljedeći tjedan.)"
+  },
+  "Dajem svoje stare cipele na popravak.": {
+    "question": "Dajem svoje stare cipele na popravak.",
+    "correct_answer": "Ich lasse meine alten Schuhe reparieren.",
+    "category": "unterricht 04.11.2024. (T10)"
+  },
+  "Dala sam svoje stare cipele na popravak.": {
+    "question": "Dala sam svoje stare cipele na popravak.",
+    "correct_answer": "Ich habe meine alten Schuhe reparieren lassen.",
+    "category": "unterricht 04.11.2024. (T10)",
+    "explanation": "nije gelassen zbog Ersatzinfinitiv, umjesto PP ide Infinitiv"
+  },
+  "posljednji put": {
+    "question": "posljednji put",
+    "correct_answer": "zuletzt",
+    "category": "unterricht 04.11.2024. (T10)",
+    "hint": "Što je zadnje što si dao nekome da napravi? - svoj stari mobitel na popravak",
+    "example": "Was haben Sie zuletzt machen lassen? Zuletzt habe ich mein altes Handy reparieren lassen."
+  },
+  "ugovoriti, zakazati (sastanak)": {
+    "question": "ugovoriti, zakazati (sastanak)",
+    "correct_answer": "vereinbaren",
+    "category": "unterricht 04.11.2024. (T10)",
+    "hint": "zakazati termin kod doktora",
+    "example": "einen Termin beim Arzt vereinbaren"
+  },
+  "guliti i rezati krompir": {
+    "question": "guliti i rezati krompir",
+    "correct_answer": "Kartoffeln schälen und schneiden",
+    "category": "unterricht 04.11.2024. (T10)"
+  },
+  "kratkoročno / dugoročno": {
+    "question": "kratkoročno / dugoročno",
+    "correct_answer": "kurzfristig / langfristig",
+    "category": "unterricht 04.11.2024. (T10)",
+    "explanation": "die Frist = rok, deadline"
+  },
+  "Kada sam završila faks, ostala sam u Hrvatskoj.": {
+    "question": "Kada sam završila faks, ostala sam u Hrvatskoj.",
+    "correct_answer": "Als ich mein Studium abgeschlossen habe, bin ich in Kroatien geblieben.",
+    "category": "unterricht 04.11.2024. (T10)"
+  },
+  "slagati se sa (u smislu dijeljenja mišljenja)": {
+    "question": "slagati se sa (u smislu dijeljenja mišljenja)",
+    "correct_answer": "zustimmen + Dat",
+    "category": "unterricht 04.11.2024. (T10)",
+    "example": "Katja stimmt mir zu, dass..."
+  },
+  "1964. je došau u Njemačku.": {
+    "question": "1964. je došau u Njemačku.",
+    "correct_answer": "1964 ist er nach Deutschland gekommen.",
+    "category": "unterricht 04.11.2024. (T10)",
+    "explanation": "Im Jahr 1964 ..., ali nikada im + godina!"
+  },
+  "1 000 000": {
+    "question": "1 000 000",
+    "correct_answer": "eine Million",
+    "category": "unterricht 04.11.2024. (T10)"
+  },
+  "100 000": {
+    "question": "100 000",
+    "correct_answer": "hunderttausend",
+    "category": "unterricht 04.11.2024. (T10)",
+    "explanation": "hunderttausend Menschen; Die Hunderttausend ist eine große Zahl."
+  },
+  "rudarstvo": {
+    "question": "rudarstvo",
+    "correct_answer": "der Bergbau",
+    "category": "unterricht 04.11.2024. (T10)"
+  },
+  "ozbilljan": {
+    "question": "ozbilljan",
+    "correct_answer": "ernst",
+    "category": "unterricht 04.11.2024. (T10)",
+    "example": "Die Atmosphäre im Film ist zwar lustig, aber auch ziemlich ernst."
+  },
+  "njemu / njoj": {
+    "question": "njemu / njoj",
+    "correct_answer": "er -> ihm; sie -> ihr",
+    "category": "unterricht 04.11.2024. (T10)",
+    "hint": "possesivpronomen in Dativ",
+    "example": "Es gefählt ihr / ihm nicht."
+  },
+  "žestoko, jako": {
+    "question": "žestoko, jako",
+    "correct_answer": "heftig",
+    "category": "unterricht 04.11.2024. (T10)",
+    "example": "Die Brüder haben sich heftig gestritten."
+  },
+  "čeznuti za nečim": {
+    "question": "čeznuti za nečim",
+    "correct_answer": "sich sehnen nach + D",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "Ich sehne mich nach meinem Haus, meinen Eltern, meinen Freunden."
+  },
+  "raspolagati sa": {
+    "question": "raspolagati sa",
+    "correct_answer": "verfügen über + Akk.",
+    "category": "unterricht 06.11.2024. (T11)",
+    "hint": "opisivanje nečega čime netko upravlja, ima pristup ili što posjeduje",
+    "example": "Es kann hemmend sein, wenn wir über keine Sprachkenntnisse in einem fremden Land verfügen."
+  },
+  "koji koči, ometa -> sputavajući": {
+    "question": "koji koči, ometa -> sputavajući",
+    "correct_answer": "hemmend",
+    "category": "unterricht 06.11.2024. (T11)",
+    "hint": "kada nešto usporava, sprječava ili ometa neki proces, razvoj ili radnju",
+    "example": "Hemmende Faktoren in der Wirtschaft.(Faktori koji koče gospodarstvo.)"
+  },
+  "bez ljudi (pridjev)": {
+    "question": "bez ljudi (pridjev)",
+    "correct_answer": "menschenleer",
+    "category": "unterricht 06.11.2024. (T11)",
+    "hint": "obicno za pusto napusteno mjesto",
+    "example": "menschenleer, eine menschenleere Umgebung (okruženje), menschenleere Straßen"
+  },
+  "okolina, okolica, područje oko nečega ili nekoga": {
+    "question": "okolina, okolica, područje oko nečega ili nekoga",
+    "correct_answer": "die Umgebung",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "Die Umgebung der Stadt. (Okolica grada)"
+  },
+  "čežnja za domovinom": {
+    "question": "čežnja za domovinom",
+    "correct_answer": "das Heimweh",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "19. stoljeće": {
+    "question": "19. stoljeće",
+    "correct_answer": "das 19. Jahrhundert",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "im 19. Jahrhundert wanderten die Deutschen nach Übersee."
+  },
+  "desetljeće": {
+    "question": "desetljeće",
+    "correct_answer": "das Jahrzehnt",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "im zweiten Jahrzent des 21. Jahrhunderts"
+  },
+  "nedavno": {
+    "question": "nedavno",
+    "correct_answer": "kürzlich / vor Kurzem",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "osim toga": {
+    "question": "osim toga",
+    "correct_answer": "außerdem",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "Ich habe keine Zeit und außerdem kein Geld. (Nemam vremena, a osim toga nemam ni novca.) Das Wetter ist schlecht. Außerdem habe ich keine Lust auszugehen. (Vrijeme je loše. Osim toga, nemam volje izlaziti.)"
+  },
+  "poznat, voljen, popularan": {
+    "question": "poznat, voljen, popularan",
+    "correct_answer": "beliebt",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "pasti na pamet": {
+    "question": "pasti na pamet",
+    "correct_answer": "einfallen + Dat;  fiel ein; ist eingefallen",
+    "category": "unterricht 06.11.2024. (T11)",
+    "hint": "irreg.",
+    "explanation": "Present: ich falle ein, du fällst ein, er fällt ein...",
+    "example": "Baš sam se sjetio/la : mir ist eben eingefallen …\nMir fällt nichts ein. (Ništa mi ne pada na pamet.)\nPlötzlich fiel ihm ein, dass er den Schlüssel vergessen hatte. (Odjednom se sjetio da je zaboravio ključ.)"
+  },
+  "Ne pada mi na pamet njeno ime.\nJedna glumica, čijeg se imena ne mogu sjetiti, je jako dobro glumila.": {
+    "question": "Ne pada mi na pamet njeno ime.\nJedna glumica, čijeg se imena ne mogu sjetiti, je jako dobro glumila.",
+    "correct_answer": "Ihr Name fällt mir gerade nicht ein. Eine Schauspielerin, deren Name mir gerade nicht einfällt, hat sehr gut gespielt.",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "namjeravati, imati u planu": {
+    "question": "namjeravati, imati u planu",
+    "correct_answer": "vorhaben",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "Ich habe vor, meine Wohnung zu renovieren. = Ich will meine Wohnung renovieren."
+  },
+  "pogoršati (se)": {
+    "question": "pogoršati (se)",
+    "correct_answer": "verschlechtern + Akk",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "Rosa, deren Gesundheit sich verschlechtert, geht zurück nach Italien."
+  },
+  "životni put": {
+    "question": "životni put",
+    "correct_answer": "der Lebensweg",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "ukupnost, cjelina": {
+    "question": "ukupnost, cjelina",
+    "correct_answer": "die Gesamtheit",
+    "category": "unterricht 06.11.2024. (T11)"
+  },
+  "proživjeti, doživjeti, iskusiti": {
+    "question": "proživjeti, doživjeti, iskusiti",
+    "correct_answer": "durchleben",
+    "category": "unterricht 06.11.2024. (T11)",
+    "example": "die Gesamtheit der Ereignisse, die jemand durchlebt"
+  },
+  "žarulje se mijenjaju": {
+    "question": "žarulje se mijenjaju",
+    "correct_answer": "Die Glühbirnen werden gewechselt.",
+    "category": "pasiv",
+    "explanation": "die Glühbirne"
+  },
+  "benzin se toči": {
+    "question": "benzin se toči",
+    "correct_answer": "Das Benzin wird getankt.",
+    "category": "pasiv"
+  },
+  "jabuka se guli": {
+    "question": "jabuka se guli",
+    "correct_answer": "Der Apfel wird geschält.",
+    "category": "pasiv"
+  },
+  "prozor se pere": {
+    "question": "prozor se pere",
+    "correct_answer": "Das Fenster wird geputzt.",
+    "category": "pasiv"
+  },
+  "juha se kuha": {
+    "question": "juha se kuha",
+    "correct_answer": "Die Suppe wird gekocht.",
+    "category": "pasiv"
+  },
+  "zidovi se bojaju, farbaju (kreče)": {
+    "question": "zidovi se bojaju, farbaju (kreče)",
+    "correct_answer": "Die Wände werden gestrichen.",
+    "category": "pasiv",
+    "example": "zid - die Wand, die Wände; streichen ; strich; hat gestrichen"
+  },
+  "zadaća se redovno radi": {
+    "question": "zadaća se redovno radi",
+    "correct_answer": "Die Hausaufgaben werden regelmäßig gemacht.",
+    "category": "pasiv"
+  },
+  "protiv rata se protestira": {
+    "question": "protiv rata se protestira",
+    "correct_answer": "Es wird gegen (den) Krieg protestiert.",
+    "category": "pasiv"
+  },
+  "oči se pregledavaju": {
+    "question": "oči se pregledavaju",
+    "correct_answer": "Die Augen werden untersucht.",
+    "category": "pasiv"
+  },
+  "istražiti, ispitati, pregledati (npr. pacijenta), analizirati": {
+    "question": "istražiti, ispitati, pregledati (npr. pacijenta), analizirati",
+    "correct_answer": "untersuchen",
+    "category": "pasiv",
+    "example": "Die Polizei hat den Tatort untersucht. (Policija je istražila mjesto zločina.)"
+  },
+  "preuzeti datoteku": {
+    "question": "preuzeti datoteku",
+    "correct_answer": "herunterladen",
+    "category": "pasiv",
+    "hint": "irreg.",
+    "explanation": "od \"laden\" = učitati, s prefiksom \"herunter-\" = dolje",
+    "example": "lud herunter; hat heruntergeladen; ich lade herunter, du lädst herunter, er lädt herunter"
+  },
+  "datoteka se preuzima": {
+    "question": "datoteka se preuzima",
+    "correct_answer": "Eine Datei wird heruntergeladen / gedownloadet.",
+    "category": "pasiv"
+  },
+  "ispit se polaže": {
+    "question": "ispit se polaže",
+    "correct_answer": "Eine Prüfung wird bestanden.",
+    "category": "pasiv"
+  },
+  "polagati (npr ispit); sastojati se": {
+    "question": "polagati (npr ispit); sastojati se",
+    "correct_answer": "bestehen; bestand; hat bestanden",
+    "category": "pasiv",
+    "example": "Der Kuchen besteht aus (+D)Mehl, Eiern und Zucker. (Kolač se sastoji od brašna, jaja i šećera.)"
+  },
+  "paziti, pripaziti, obraćati pažnju": {
+    "question": "paziti, pripaziti, obraćati pažnju",
+    "correct_answer": "achten",
+    "category": "unterricht 11.11.2024.",
+    "example": "Es wird auf Sauberkeit und Ordnung geachtet."
+  },
+  "pružati otpor, protiviti se nečemu": {
+    "question": "pružati otpor, protiviti se nečemu",
+    "correct_answer": "Widerstand(m.) leisten gegen + Akk",
+    "category": "unterricht 11.11.2024.",
+    "hint": "sich widersetzen = suprotstaviti se, opirati se, odbijati;  sich einer Sache widersetzen",
+    "explanation": "wider = protiv",
+    "example": "Seit drei Jahren wird Widerstand gegen den Autobahnbau geleistet."
+  },
+  "neprijatelj, neprijateljstvo": {
+    "question": "neprijatelj, neprijateljstvo",
+    "correct_answer": "der Feind, die Feindlichkeit",
+    "category": "unterricht 11.11.2024."
+  },
+  "sirov": {
+    "question": "sirov",
+    "correct_answer": "roh",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "gomolj": {
+    "question": "gomolj",
+    "correct_answer": "die Knolle",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "osvajač; osvojiti": {
+    "question": "osvajač; osvojiti",
+    "correct_answer": "der Eroberer, - ; erobern, eroberte, hat erobert",
+    "category": "Die Geschichte der kleinen Kartoffel",
+    "example": "die Spanier eroberten diese Gebiete. / haben diese Gebiete erobert"
+  },
+  "narod, narodi": {
+    "question": "narod, narodi",
+    "correct_answer": "das Volk, die Völker",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "pšenica": {
+    "question": "pšenica",
+    "correct_answer": "der Weizen",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "demonizirati": {
+    "question": "demonizirati",
+    "correct_answer": "verteufeln",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "zasitit(hrana)": {
+    "question": "zasitit(hrana)",
+    "correct_answer": "satt machen",
+    "category": "Die Geschichte der kleinen Kartoffel"
+  },
+  "nadati se boljem životu": {
+    "question": "nadati se boljem životu",
+    "correct_answer": "auf ein besseres Leben hoffen",
+    "category": "unterricht 13.11.2024."
+  },
+  "tražiti posao u susjednim zemljama": {
+    "question": "tražiti posao u susjednim zemljama",
+    "correct_answer": "Arbeit im Nachbarländern suchen",
+    "category": "unterricht 13.11.2024."
+  },
+  "trebati dodatne radne snage": {
+    "question": "trebati dodatne radne snage",
+    "correct_answer": "zusätzliche Arbeitskräfte brauchen",
+    "category": "unterricht 13.11.2024.",
+    "hint": "die Kraft, die Kräfte - snaga, moć"
+  },
+  "biti progonjen zbog političkog mišljenja, religije ili rase": {
+    "question": "biti progonjen zbog političkog mišljenja, religije ili rase",
+    "correct_answer": "wegen der politischen Meinung, Religion oder Rasse verfolgt werden",
+    "category": "unterricht 13.11.2024."
+  },
+  "zatražiti (predati zahtjev za) azil u zemlji imigracije": {
+    "question": "zatražiti (predati zahtjev za) azil u zemlji imigracije",
+    "correct_answer": "im Einwanderungsland ein Asyl beantragen",
+    "category": "unterricht 13.11.2024."
+  },
+  "odbijati / odobriti zahtjev za azil": {
+    "question": "odbijati / odobriti zahtjev za azil",
+    "correct_answer": "einen Asylantrag ablehnen / genehmigen",
+    "category": "unterricht 13.11.2024.",
+    "explanation": "odobriti (zahtjev) - genehmigen; genehmigte; hat genehmigt",
+    "example": "Der Antrag wurde genehmigt."
+  },
+  "izbjeglica": {
+    "question": "izbjeglica",
+    "correct_answer": "der Flüchtling, pl. die Flüchtlinge",
+    "category": "unterricht 13.11.2024.",
+    "example": "Die Flüchtlinge brauchen nicht nur einen Asylantrag zu genehmigen, sondern auch neue Arbeit zu suchen."
+  },
+  "sjećanje": {
+    "question": "sjećanje",
+    "correct_answer": "die Erinnerung, -en",
+    "category": "unterricht 13.11.2024."
+  },
+  "Nakon što je podnesen zahtjev za azil, on je odbijen.": {
+    "question": "Nakon što je podnesen zahtjev za azil, on je odbijen.",
+    "correct_answer": "Nachdem man ein Asyl beantragt hatte, wurde es abgelehnt.",
+    "category": "unterricht 13.11.2024."
+  },
+  "Turisti dolaze iz cijelog svijeta.": {
+    "question": "Turisti dolaze iz cijelog svijeta.",
+    "correct_answer": "Touristen kommen aus der ganzen Welt.",
+    "category": "unterricht 13.11.2024."
+  },
+  "(za)primiti narudžbu": {
+    "question": "(za)primiti narudžbu",
+    "correct_answer": "eine Bestellung aufnehmen",
+    "category": "unterricht 13.11.2024.",
+    "hint": "Narudžbe se također prihvaćaju (primaju) telefonski.",
+    "example": "Die Bestellungen werden auch telefonisch aufgenommen."
+  },
+  "sastojak": {
+    "question": "sastojak",
+    "correct_answer": "die Zutat, -en",
+    "category": "unterricht 13.11.2024."
+  },
+  "valuta": {
+    "question": "valuta",
+    "correct_answer": "die Währung, -en",
+    "category": "unterricht 13.11.2024."
+  },
+  "navesti prednosti i nedostatke": {
+    "question": "navesti prednosti i nedostatke",
+    "correct_answer": "Vorteile und Nachteile nennen (moze abgeben)",
+    "category": "unterricht 13.11.2024.",
+    "hint": "irreg.",
+    "explanation": "nennen; nannte; hat genannt"
+  },
+  "nadodati (npr. sastojke u jelo)": {
+    "question": "nadodati (npr. sastojke u jelo)",
+    "correct_answer": "hinzufügen; dazugeben",
+    "category": "unterricht 13.11.2024.",
+    "explanation": "hinzu|fügen; fügte hinzu; hinzugefügt"
+  },
+  "začiniti": {
+    "question": "začiniti",
+    "correct_answer": "abschmecken; schmeckte ab; abgeschmeckt",
+    "category": "unterricht 13.11.2024."
+  },
+  "zdjela": {
+    "question": "zdjela",
+    "correct_answer": "die Schlüssel",
+    "category": "unterricht 13.11.2024."
+  },
+  "(na, od)-rezati": {
+    "question": "(na, od)-rezati",
+    "correct_answer": "schneiden; schnitt; hat geschnitten",
+    "category": "unterricht 13.11.2024.",
+    "hint": "irreg."
+  },
+  "politi": {
+    "question": "politi",
+    "correct_answer": "gießen, goss, hat gegossen",
+    "category": "unterricht 13.11.2024."
   }
 }
