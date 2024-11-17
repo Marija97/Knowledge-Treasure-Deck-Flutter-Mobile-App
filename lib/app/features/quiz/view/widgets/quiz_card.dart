@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../theme/colors.dart';
 import '../../controllers/quiz_controller.dart';
 import '../../controllers/quiz_state.dart';
 
@@ -29,74 +28,94 @@ class QuizCard extends ConsumerWidget {
       borderRadius: QuizCard.cardBorderRadius,
       child: Ink(
         decoration: BoxDecoration(
-          color: AppColors.content,
+          color: Colors.blueGrey.shade600,
           borderRadius: QuizCard.cardBorderRadius,
         ),
         padding: EdgeInsets.all(20),
         child: SizedBox(
           width: double.infinity,
-          height: MediaQuery.of(context).size.height * 0.5,
+          height: MediaQuery.of(context).size.height * 0.6,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              if (state.obtained)
-                Row(children: [
-                  Icon(Icons.star),
-                  const Spacer(),
-                ]),
-              const SizedBox(height: 30),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Row(children: [
+                      Icon(
+                        Icons.star,
+                        color:
+                            state.obtained ? Colors.white : Colors.transparent,
+                      ),
+                      const Spacer(),
+                    ]),
 
-              /// --- Question view ---
-              Text(factoid.question, style: QuizCard.textStyle),
-              const SizedBox(height: 10),
+                    /// --- Question view ---
+                    Text(factoid.question, style: QuizCard.textStyle),
+                    const SizedBox(height: 10),
 
-              /// --- Hint view ---
-              if (factoid.hint != null)
-                Visibility(
-                  visible: state.showHint,
-                  replacement: IconButton(
-                    onPressed: controller.toggleHintVisibility,
-                    icon: Icon(Icons.info_outline),
+                    /// --- Hint view ---
+                    Visibility(
+                      visible: state.showHint,
+                      replacement: IconButton(
+                        onPressed: controller.toggleHintVisibility,
+                        icon: Icon(
+                          Icons.info_outline,
+                          color: Colors.white.withOpacity(
+                            factoid.hint != null ? 0.5 : 0,
+                          ),
+                        ),
+                      ),
+                      child: Text(
+                        factoid.hint ?? 'err',
+                        style: QuizCard.textStyle,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+
+                    /// --- Correct answer view ---
+                    Visibility(
+                      visible: state.showCorrectAnswer,
+                      replacement: Icon(
+                        Icons.question_mark,
+                        color: Colors.white.withOpacity(0.5),
+                      ),
+                      child: Text(
+                        factoid.correctAnswer,
+                        style: QuizCard.textStyle.copyWith(
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    Visibility(
+                      visible: state.showCorrectAnswer,
+                      child: Text(
+                        factoid.explanation ?? '',
+                        style: QuizCard.textStyle,
+                      ),
+                    ),
+                    const SizedBox(height: 25),
+                    Visibility(
+                      visible: state.showCorrectAnswer,
+                      child: Text(
+                        factoid.example ?? '',
+                        style: QuizCard.textStyle,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (state.mode == QuizMode.testing &&
+                  state.showCorrectAnswer &&
+                  !state.obtained)
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: OutlinedButton(
+                    child: Text('Totally knew that ✅'),
+                    onPressed: controller.markAsObtained,
                   ),
-                  child: Text(
-                    factoid.hint ?? 'err',
-                    style: QuizCard.textStyle
-                  ),
                 ),
-              const Spacer(),
-
-              /// --- Correct answer view ---
-              Visibility(
-                visible: state.showCorrectAnswer,
-                replacement: Icon(Icons.question_mark),
-                child: Text(
-                  factoid.correctAnswer,
-                  style: QuizCard.textStyle,
-                ),
-              ),
-              const Spacer(),
-              Visibility(
-                visible: state.showCorrectAnswer,
-                child: Text(
-                  factoid.explanation ?? '',
-                  style: QuizCard.textStyle,
-                ),
-              ),
-              const SizedBox(height: 25),
-              Visibility(
-                visible: state.showCorrectAnswer,
-                child: Text(
-                  factoid.example ?? '',
-                  style: QuizCard.textStyle,
-                ),
-              ),
-
-              if (state.mode == QuizMode.testing && state.showCorrectAnswer && !state.obtained)
-                OutlinedButton(
-                  child: Text('Totally knew that ✅'),
-                  onPressed: controller.markAsObtained,
-                ),
-
-              const SizedBox(height: 30),
             ],
           ),
         ),

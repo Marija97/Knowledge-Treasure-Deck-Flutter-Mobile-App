@@ -15,26 +15,31 @@ class CategoryView extends StatelessWidget {
   final int total;
   final int numberOfObtained;
 
+  Color get _cardColor {
+    if (isSelected) return Colors.blueGrey.shade600;
+    return Colors.blueGrey.shade700;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final cardColorOpacity = isSelected ? 0.95 : 0.8;
-    final statusIcon = numberOfObtained == total
-        ? Icons.check_box
-        : Icons.check_box_outline_blank;
+    final completed = numberOfObtained >= total;
+    Widget statusIcon = Icon(Icons.circle_outlined);
+    if (completed) {
+      statusIcon = Icon(Icons.star, color: Colors.amber);
+    }
     return GestureDetector(
       onTap: onTap,
       child: Card(
-        color: Colors.blueGrey.withOpacity(cardColorOpacity),
+        color: _cardColor,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 22),
           child: Row(
             children: [
-              Text(category),
-              const Spacer(),
+              Expanded(child: Text(category, maxLines: 2)),
               Text('$numberOfObtained/$total'),
               const SizedBox(width: 8),
               // Icon(statusIcon, color: AppColors.backgroundDark),
-              Icon(statusIcon),
+              statusIcon,
             ],
           ),
         ),

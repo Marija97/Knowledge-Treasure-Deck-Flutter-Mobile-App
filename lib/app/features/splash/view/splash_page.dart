@@ -26,10 +26,9 @@ class _SplashPageState extends ConsumerState<SplashPage> {
       body: Center(
         child: Hero(
           tag: 'splash',
-          child: Icon(
-            Icons.maps_home_work_sharp,
-            size: 80,
-            color: Theme.of(context).primaryColor,
+          child: Image.asset(
+            './assets/images/logos/owl_orange.png',
+            height: 100,
           ),
         ),
       ),

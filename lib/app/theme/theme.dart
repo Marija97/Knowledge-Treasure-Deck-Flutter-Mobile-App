@@ -63,7 +63,7 @@ class _AppDarkTheme implements AppTheme {
 
 class _AppLightTheme implements AppTheme {
   // Color(0xFF708090) // Color(0xFF778899);
-  static final foregroundColor = Colors.blueGrey.shade500;
+  static final foregroundColor = Colors.blueGrey.shade700;
 
   @override
   ThemeData get data =>
@@ -72,7 +72,7 @@ class _AppLightTheme implements AppTheme {
         primaryColorLight: Color(0xFFD6CFCF),
         primaryColorDark: Color(0xFFB2C4B8),
         brightness: Brightness.light,
-        scaffoldBackgroundColor: Color(0xFF7B3F2A),
+        scaffoldBackgroundColor: Color(0xFFB77F5C),
         textTheme: TextTheme(
           bodyMedium: GoogleFonts.lato(
             fontSize: 14,
@@ -104,7 +104,7 @@ class _AppLightTheme implements AppTheme {
           secondary: AppColors.accentLight,
         ),
         canvasColor: AppColors.canvasDark,
-        cardColor: foregroundColor,
+        cardColor: Colors.blueGrey.shade800,
         dividerColor: AppColors.attachmentBorder,
         dialogBackgroundColor: AppColors.cardDark,
         navigationBarTheme: NavigationBarThemeData(

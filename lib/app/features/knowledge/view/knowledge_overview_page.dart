@@ -24,7 +24,16 @@ class KnowledgeOverviewPage extends ConsumerWidget {
           child: Column(
             children: [
               const Spacer(),
-              AppText.large('Looking into the knowledge treasure...'),
+
+              Row(children: [
+                Image.asset(
+                  './assets/images/logos/owl_orange.png',
+                  height: 70,
+                ),
+                const SizedBox(width: 12),
+                AppText.large(':)'),
+              ]),
+
               const SizedBox(height: 12),
               Expanded(
                 flex: 8,

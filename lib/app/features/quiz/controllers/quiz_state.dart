@@ -21,6 +21,13 @@ class QuizState extends Equatable {
         obtained: false,
       );
 
+  factory QuizState.revisitedAfterCompleted() => QuizState(
+        factoid: null,
+        ordinalNumber: -1,
+        obtained: false,
+        completed: true,
+      );
+
   final Factoid? factoid;
   final bool obtained;
   final int ordinalNumber;

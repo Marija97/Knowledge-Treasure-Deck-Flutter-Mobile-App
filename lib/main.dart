@@ -16,7 +16,7 @@ class KnowFlowApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'KnowFlow',
+      title: 'Know Flow',
       debugShowCheckedModeBanner: false,
       routerDelegate: AppRouter.instance.routerDelegate,
       routeInformationParser: AppRouter.instance.routeInformationParser,

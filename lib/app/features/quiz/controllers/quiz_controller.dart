@@ -22,16 +22,23 @@ final quizControllerProvider = StateNotifierProvider.autoDispose
     (f) => !allObtained.contains(f.key),
   ).toList().cast<Factoid>();
 
-  assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
-  if (category == 'articles' || category.startsWith('irregular_verbs)')) {
+  // assert(filteredQuest.isNotEmpty, 'No data to learn in this category');
+  QuizState initialState;
+  if(filteredQuest.isEmpty) {
+    initialState = QuizState.revisitedAfterCompleted();
+  }
+  else {
     filteredQuest.shuffle(Random());
+    initialState = QuizState(
+      factoid: filteredQuest.first,
+      ordinalNumber: 0,
+      obtained: allObtained.contains(filteredQuest.first.key),
+    );
   }
 
-  final initialState = QuizState(
-    factoid: filteredQuest.first,
-    ordinalNumber: 0,
-    obtained: allObtained.contains(filteredQuest.first.key),
-  );
+  //if (category == 'articles' || category.startsWith('irregular_verbs)')) {
+
+  //}
 
   return QuizController(
     initialState,
