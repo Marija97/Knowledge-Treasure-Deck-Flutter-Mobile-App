@@ -659,9 +659,9 @@
   },
   "trošiti novac": {
     "question": "trošiti novac",
-    "correct_answer": "das Geld ausgeben",
-    "category": "notebook_14_10_2024",
-    "hint": "ausgeben"
+    "correct_answer": "Geld ausgeben",
+    "category": "unterricht 02.12.2024. (T18)",
+    "example": "Ich mag Black Friday nicht. Trotzdem gebe ich viel Geld aus."
   },
   "trošiti struju": {
     "question": "trošiti struju",
@@ -1541,7 +1541,10 @@
   "ekonomija": {
     "question": "ekonomija",
     "correct_answer": "die Wirtschaft",
-    "category": "solino"
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "učinkovitost + stvorenje, oblikovanje",
+    "explanation": "die Wirksamkeit (učinkovitost) + das Schaft (stvorenje, oblikovanje)",
+    "example": "Die Wirtschaft des Landes wächst schnell. - Ekonomija zemlje brzo raste."
   },
   "stizati, pristizati, doći": {
     "question": "stizati, pristizati, doći",
@@ -2027,5 +2030,769 @@
     "question": "politi",
     "correct_answer": "gießen, goss, hat gegossen",
     "category": "unterricht 13.11.2024."
+  },
+  "obaveza": {
+    "question": "obaveza",
+    "correct_answer": "die Pflicht",
+    "category": "unterricht 13.11.2024.",
+    "example": "Es ist deine Pflicht, zur Schule zu gehen."
+  },
+  "to meni omogućava": {
+    "question": "to meni omogućava",
+    "correct_answer": "das ermöglicht mir",
+    "category": "unterricht 13.11.2024."
+  },
+  "olakšavati": {
+    "question": "olakšavati",
+    "correct_answer": "erleichtern",
+    "category": "unterricht 13.11.2024.",
+    "example": "Das erleichtert mir die Arbeit.(To mi olakšava posao.)"
+  },
+  "pojednostaviti": {
+    "question": "pojednostaviti",
+    "correct_answer": "vereinfachen",
+    "category": "unterricht 13.11.2024.",
+    "example": "Diese neue Methode vereinfacht den Prozess. (Ova nova metoda pojednostavljuje proces.)"
+  },
+  "Sarajevo ima dobru ponudu raznovrsnih kulturnih događanja.": {
+    "question": "Sarajevo ima dobru ponudu raznovrsnih kulturnih događanja.",
+    "correct_answer": "die Veranstaltung; Sarajevo hat ein gutes Angebot an verschiedenen Kulturveranstaltungen.",
+    "category": "unterricht 20.11.2024.",
+    "hint": "\"veranstalten\", što znači organizirati ili prirediti"
+  },
+  "skijati": {
+    "question": "skijati",
+    "correct_answer": "Ski fahren",
+    "category": "unterricht 20.11.2024.",
+    "example": "Ich fahre im Winter gern Ski."
+  },
+  "početnik": {
+    "question": "početnik",
+    "correct_answer": "der Anfänger / die Anfängerin",
+    "category": "unterricht 20.11.2024."
+  },
+  "upasti, doći u, naletjeti na (irreg.); upasti u paniku": {
+    "question": "upasti, doći u, naletjeti na (irreg.); upasti u paniku",
+    "correct_answer": "geraten, geriet, geraten",
+    "category": "unterricht 20.11.2024.",
+    "hint": "završeno stanje + savjetovati, nagađati",
+    "explanation": "ge- (prefiks koji označava završeno stanje) + raten (savjetovati, nagađati)",
+    "example": "Er ist in Schwierigkeiten geraten. - Upao je u nevolje."
+  },
+  "potisnuti, ugnjetavati (kontrolirati ili suzbiti nešto (emocije, misli, informacije) ili vršiti pritisak na ljude radi ograničavanja slobode)": {
+    "question": "potisnuti, ugnjetavati (kontrolirati ili suzbiti nešto (emocije, misli, informacije) ili vršiti pritisak na ljude radi ograničavanja slobode)",
+    "correct_answer": "unterdrücken",
+    "category": "unterricht 20.11.2024.",
+    "hint": "ispod, pod + pritisnuti",
+    "explanation": "unter- (ispod, pod) + drücken (pritisnuti)",
+    "example": "Das Regime unterdrückt die freie Meinungsäußerung. - Režim potiskuje slobodu izražavanja mišljenja. Ich unterdrücke die Panikgefühle / die Angst."
+  },
+  "građevinarstvo; građevinski ing.": {
+    "question": "građevinarstvo; građevinski ing.",
+    "correct_answer": "das Bauwesen; Bauingenieur:in",
+    "category": "unterricht 20.11.2024.",
+    "hint": "gradnja + bit, sustav",
+    "explanation": "der Bau (gradnja) + das Wesen (bit, sustav)",
+    "example": "Er arbeitet im Bauwesen als Ingenieur. - On radi u građevinarstvu kao inženjer."
+  },
+  "drijemež (to take a nap)": {
+    "question": "drijemež (to take a nap)",
+    "correct_answer": "Nickerchen machen",
+    "category": "unterricht 20.11.2024.",
+    "hint": "klimnuti glavom, zadrijemati + umanjenica",
+    "explanation": "nicken (klimnuti glavom, zadrijemati) + sufiks -chen (umanjenica)",
+    "example": "Nach dem Mittagessen machte er ein Nickerchen. - Nakon ručka je malo odrijemao."
+  },
+  "i dalje, nastaviti": {
+    "question": "i dalje, nastaviti",
+    "correct_answer": "weiterhin",
+    "category": "unterricht 20.11.2024.",
+    "hint": "dalje + prema, u smjeru (koristi se za označavanje neprekidnog trajanja nečega, nastavak nečega u budućnosti)",
+    "explanation": "weiter (dalje) + hin (prema, u smjeru)",
+    "example": "Er wird weiterhin hart arbeiten, um sein Ziel zu erreichen. - On će i dalje naporno raditi kako bi postigao svoj cilj."
+  },
+  "izazov": {
+    "question": "izazov",
+    "correct_answer": "die Herausforderung",
+    "category": "unterricht 20.11.2024.",
+    "hint": "izvan + zahtjev, traženje",
+    "explanation": "heraus (izvan) + die Forderung (zahtjev, traženje)",
+    "example": "Die neue Aufgabe stellt eine große Herausforderung dar. - Novi zadatak predstavlja veliki izazov."
+  },
+  "premostiti, prevazići (prelaziti preko nečega, obično u kontekstu prevazilaženja prepreke ili teške situacije)": {
+    "question": "premostiti, prevazići (prelaziti preko nečega, obično u kontekstu prevazilaženja prepreke ili teške situacije)",
+    "correct_answer": "überbrücken",
+    "category": "unterricht 20.11.2024.",
+    "hint": "preko + most",
+    "explanation": "über (preko) + brücken (most)",
+    "example": "Wir müssen die schwierige Zeit überbrücken. - Moramo premostiti teško razdoblje."
+  },
+  "prevladati, svladati (uspješno se nositi s nečim, posebno s teškoćama ili izazovima)": {
+    "question": "prevladati, svladati (uspješno se nositi s nečim, posebno s teškoćama ili izazovima)",
+    "correct_answer": "bewältigen",
+    "category": "unterricht 20.11.2024.",
+    "hint": "usmjerenost na nešto + nositi, upravljati",
+    "explanation": "be- (prefiks koji označava usmjerenost na nešto) + wältigen (nositi, upravljati)",
+    "example": "Er hat die schwierige Situation gut bewältigt. - On je dobro svladao tešku situaciju."
+  },
+  "niski/visoki troškovi života": {
+    "question": "niski/visoki troškovi života",
+    "correct_answer": "niedrige/hohe Lebenshaltungskosten (f)",
+    "category": "unterricht 20.11.2024.",
+    "hint": "život + držanje, održavanje + troškovi",
+    "explanation": "das Leben (život) + die Haltung (držanje, održavanje) + die Kosten (troškovi)",
+    "example": "Die Lebenshaltungskosten in dieser Stadt sind sehr hoch. - Troškovi života u ovom gradu su vrlo visoki."
+  },
+  "pristup, imati pristup": {
+    "question": "pristup, imati pristup",
+    "correct_answer": "der Zugang; den Zugang zu etwas haben",
+    "category": "unterricht 20.11.2024.",
+    "hint": "prema + put, način",
+    "explanation": "zu (prema) + gang (put, način)",
+    "example": "Der Zugang zum Gebäude ist nur mit einem Schlüssel möglich. - Pristup zgradi moguć je samo s ključem. [ den Zugang zum guten Gesundheitssystem haben]"
+  },
+  "dostupan, pristupačan; na raspolaganju": {
+    "question": "dostupan, pristupačan; na raspolaganju",
+    "correct_answer": "zugänglich, verfügbar",
+    "category": "unterricht 20.11.2024.",
+    "hint": "sinonimi: \"prema + put, način\" ; prefiks koji označava promjenu + dodati, staviti",
+    "explanation": "zu (prema) + gang (put, način)",
+    "example": "Die Informationen sind für alle zugänglich. - Informacije su dostupne svima."
+  },
+  "predstavnik": {
+    "question": "predstavnik",
+    "correct_answer": "der Vertreter",
+    "category": "unterricht 20.11.2024.",
+    "hint": "usmjerenost na nešto + stupiti, nastupiti",
+    "explanation": "ver- (prefiks koji označava usmjerenost na nešto) + treten (stupiti, nastupiti)",
+    "example": "Er ist der Vertreter des Unternehmens auf der Messe. - On je predstavnik tvrtke na sajmu. (einen Vertreter / eine Vertreterin wählen)"
+  },
+  "država članica": {
+    "question": "država članica",
+    "correct_answer": "der Mitgliedstaat",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "član + država",
+    "explanation": "das Mitglied (član) + der Staat (država)",
+    "example": "Deutschland ist ein Mitgliedstaat der Europäischen Union. - Njemačka je država članica Europske unije."
+  },
+  "poslodavac": {
+    "question": "poslodavac",
+    "correct_answer": "der Arbeitgeber",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "rad + davatelj",
+    "explanation": "die Arbeit (rad) + der Geber (davatelj)",
+    "example": "Der Arbeitgeber hat neue Arbeitsplätze geschaffen. - Poslodavac je stvorio nova radna mjesta."
+  },
+  "uprava": {
+    "question": "uprava",
+    "correct_answer": "die Verwaltung",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "promjena + upravljanje; upravljati",
+    "explanation": "ver- (promjena) + die Verwaltung (upravljanje); verwalten (upravljati)",
+    "example": "Die Verwaltung des Unternehmens ist sehr effizient. - Uprava tvrtke je vrlo učinkovita."
+  },
+  "službeni jezik": {
+    "question": "službeni jezik",
+    "correct_answer": "die Amtssprache",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "ured, služba + jezik",
+    "explanation": "das Amt (ured, služba) + die Sprache (jezik)",
+    "example": "Deutsch ist die Amtssprache in Deutschland. - Njemački je službeni jezik u Njemačkoj."
+  },
+  "prijevod": {
+    "question": "prijevod",
+    "correct_answer": "die Übersetzung",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "preko + postavljanje; prevesti; prevoditelj",
+    "explanation": "über (preko) + die Setzung (postavljanje); übersetzen (prevesti); der Übersetzer:in",
+    "example": "Die Übersetzung dieses Textes war sehr schwierig. - Prijevod ovog teksta bio je vrlo težak."
+  },
+  "stanovnik": {
+    "question": "stanovnik",
+    "correct_answer": "der Einwohner",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "jedan + stanovnik, onaj koji boravi",
+    "explanation": "ein (jedan) + der Bewohner (stanovnik, onaj koji boravi)",
+    "example": "Die Einwohner der Stadt sind sehr freundlich. - Stanovnici grada su vrlo prijateljski."
+  },
+  "zakon": {
+    "question": "zakon",
+    "correct_answer": "das Gesetz",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "prefiks koji označava nešto što je postavljeno ili određeno + postavljanje, određivanje; razvijanje",
+    "explanation": "das Ge- (prefiks koji označava nešto što je postavljeno ili određeno) + das Setzen (postavljanje, određivanje)",
+    "example": "Das Gesetz verbietet das Rauchen in öffentlichen Gebäuden. - Zakon zabranjuje pušenje u javnim zgradama."
+  },
+  "razvoj": {
+    "question": "razvoj",
+    "correct_answer": "die Entwicklung",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "prefiks koji označava početak ili promjenu + namotavanje, proces uvijanja",
+    "explanation": "ent- (prefiks koji označava početak ili promjenu) + die Wicklung (namotavanje, proces uvijanja); entwickeln (razvijati)",
+    "example": "Die Entwicklung neuer Technologien ist sehr schnell. - Razvoj novih tehnologija je vrlo brz."
+  },
+  "visoka škola": {
+    "question": "visoka škola",
+    "correct_answer": "die Hochschule",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "visoko + škola",
+    "explanation": "hoch (visoko) + die Schule (škola)",
+    "example": "Sie studiert an einer Hochschule in Berlin. - Ona studira na jednoj visokoj školi u Berlinu."
+  },
+  "demokracija": {
+    "question": "demokracija",
+    "correct_answer": "die Demokratie",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "narod, u grčkom + vladati, vladavina",
+    "explanation": "demós (narod, u grčkom) + kratein (vladati, vladavina)",
+    "example": "In einer Demokratie haben die Bürger das Recht zu wählen. - U demokraciji građani imaju pravo glasovati."
+  },
+  "radnik": {
+    "question": "radnik",
+    "correct_answer": "der Arbeitnehmer",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "rad + onaj koji uzima, prima",
+    "explanation": "die Arbeit (rad) + der Nehmer (onaj koji uzima, prima)",
+    "example": "Der Arbeitnehmer hat Anspruch auf Urlaub. - Radnik ima pravo na odmor."
+  },
+  "biti na dijeti": {
+    "question": "biti na dijeti",
+    "correct_answer": "Diät machen",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "ugodan / neugodan": {
+    "question": "ugodan / neugodan",
+    "correct_answer": "angenehm / ungenehm",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "pridružiti se": {
+    "question": "pridružiti se",
+    "correct_answer": "beitreten",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "blizu, uz + koračati, stupiti",
+    "explanation": "bei- (blizu, uz) + treten (koračati, stupiti)",
+    "example": "Er tritt dem Verein bei. - On se pridružuje udruzi."
+  },
+  "ravnopravnost": {
+    "question": "ravnopravnost",
+    "correct_answer": "die Gleichberechtigung",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "jednako + pravo, ovlaštenje; ovlastiti",
+    "explanation": "gleich (jednako) + die Berechtigung (pravo, ovlaštenje); berechtigen (ovlastiti)",
+    "example": "Die Gleichberechtigung von Männern und Frauen ist ein wichtiges Ziel. - Ravnopravnost muškaraca i žena važan je cilj."
+  },
+  "pomirenje": {
+    "question": "pomirenje",
+    "correct_answer": "die Versöhnung",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "promjena ili završetak + pomirba; miriti; pomiriti se sa...",
+    "explanation": "ver- (prefiks koji označava promjenu ili završetak) + die Söhnung (pomirba, od glagola sühnen – miriti); sich versöhnen mit jmd / etw (D) - pomiriti se",
+    "example": "Nach dem Streit kam es zur Versöhnung. - Nakon svađe došlo je do pomirenja."
+  },
+  "zatražiti, podnijeti zahtjev (npr za azil)": {
+    "question": "zatražiti, podnijeti zahtjev (npr za azil)",
+    "correct_answer": "beantragen; ein Asyl beantragen / einen Asylantrag stellen = zatražiti azil",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "ciljanje na nešto + predložiti, zahtijevati",
+    "explanation": "be- (prefiks koji označava ciljanje na nešto) + antragen (predložiti, zahtijevati)",
+    "example": "Sie beantragt ein Visum für die USA. - Ona podnosi zahtjev za vizu za SAD."
+  },
+  "bojati se, strahovati": {
+    "question": "bojati se, strahovati",
+    "correct_answer": "befürchten",
+    "category": "unterricht 23.11.2024. (T15)",
+    "hint": "pojačava značenje + strahovati",
+    "explanation": "be- (prefiks koji pojačava značenje) + fürchten (strahovati)",
+    "example": "Er befürchtet, dass er die Prüfung nicht besteht. - On strahuje da neće položiti ispit.; In einer perfekten Welt braucht man keine Arbeitslosigkeit zu befürchten."
+  },
+  "mala placa, primanja": {
+    "question": "mala placa, primanja",
+    "correct_answer": "ein niedriges Gehalt / Einkommen",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "prije svega": {
+    "question": "prije svega",
+    "correct_answer": "vor allem",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "ugovor; potpisati ugovor": {
+    "question": "ugovor; potpisati ugovor",
+    "correct_answer": "der Vertrag = ugovor ; einen Vertrag unterzeichnen (unter- (ispod) + zeichnen (crtati, označiti))",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "biti oduševljen nečime": {
+    "question": "biti oduševljen nečime",
+    "correct_answer": "etw. begeistert mich / ich bin von etw. begeistert",
+    "category": "unterricht 23.11.2024. (T15)"
+  },
+  "bojati se nečega": {
+    "question": "bojati se nečega",
+    "correct_answer": "Angst vor etwas(Dat) haben",
+    "category": "unterricht 25.11.2024. (T16)",
+    "example": "Ich habe Angst vor dem Test"
+  },
+  "pismeni / usmeni ispit": {
+    "question": "pismeni / usmeni ispit",
+    "correct_answer": "schriftliche / mündliche Prüfung",
+    "category": "unterricht 25.11.2024. (T16)"
+  },
+  "Sutra ne moram rano ustati jer imam slobodan dan.": {
+    "question": "Sutra ne moram rano ustati jer imam slobodan dan.",
+    "correct_answer": "Morgen brauche ich nicht früh aufzustehen, weil ich einen freien Tag habe.",
+    "category": "unterricht 25.11.2024. (T16)"
+  },
+  "[prometna, ekonomska, društvena] povezanost, mobilnost, sposobnost kretanja ili promjene mjesta, često u kontekstu fizičke, društvene ili profesionalne fleksibilnosti": {
+    "question": "[prometna, ekonomska, društvena] povezanost, mobilnost, sposobnost kretanja ili promjene mjesta, često u kontekstu fizičke, društvene ili profesionalne fleksibilnosti",
+    "correct_answer": "die Mobilität",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "pokretan + stanje ili svojstvo",
+    "explanation": "mobil (pokretan) + sufiks -ität (stanje ili svojstvo)",
+    "example": "Die Mobilität der Arbeitskräfte ist in der modernen Wirtschaft sehr wichtig. - Mobilnost radne snage je vrlo važna u modernoj ekonomiji."
+  },
+  "izbor (čin odabira između različitih mogućnosti, često u političkom, osobnom ili profesionalnom kontekstu)": {
+    "question": "izbor (čin odabira između različitih mogućnosti, često u političkom, osobnom ili profesionalnom kontekstu)",
+    "correct_answer": "die Wahl",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "birati, odabrati",
+    "explanation": "wählen (birati, odabrati)",
+    "example": "Die Wahl des richtigen Berufs ist entscheidend. - Izbor pravog zanimanja je presudan."
+  },
+  "vlada (organ vlasti koji upravlja državom i donosi odluke na političkoj razini)": {
+    "question": "vlada (organ vlasti koji upravlja državom i donosi odluke na političkoj razini)",
+    "correct_answer": "die Regierung",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "vladati + proces ili stanje",
+    "explanation": "regieren (vladati) + sufiks -ung (označava proces ili stanje)",
+    "example": "Die Regierung hat neue Gesetze verabschiedet. - Vlada je donijela nove zakone."
+  },
+  "zahtjev (izneseni zahtjev ili traženje nečega, često u kontekstu prava, obveza ili potreba)": {
+    "question": "zahtjev (izneseni zahtjev ili traženje nečega, često u kontekstu prava, obveza ili potreba)",
+    "correct_answer": "die Forderung",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "zahtijevati + proces ili stanje",
+    "explanation": "fordern (zahtijevati) + sufiks -ung (označava proces ili stanje)",
+    "example": "Die Gewerkschaft stellt Forderungen nach höheren Löhnen. - Sindikat postavlja zahtjeve za većim plaćama."
+  },
+  "kritika": {
+    "question": "kritika",
+    "correct_answer": "die Kritik; kritisieren",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "suditi, ocjenjivati",
+    "explanation": "krītikēn (grčki: suditi, ocjenjivati)",
+    "example": "Die Kritik an dem neuen Gesetz war sehr negativ. - Kritika na novi zakon bila je vrlo negativna."
+  },
+  "podrška (pomaganje ili pružanje pomoći nekome, bilo emocionalno, financijski ili praktično)": {
+    "question": "podrška (pomaganje ili pružanje pomoći nekome, bilo emocionalno, financijski ili praktično)",
+    "correct_answer": "die Unterstützung",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "ispod + podupirati, osloniti",
+    "explanation": "unter- (ispod) + stützen (podupirati, osloniti)",
+    "example": "Die Regierung bietet finanzielle Unterstützung für Unternehmen an. - Vlada nudi financijsku podršku tvrtkama."
+  },
+  "odluka": {
+    "question": "odluka",
+    "correct_answer": "die Entscheidung; sich entscheiden",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "odlučiti + proces ili stanje",
+    "explanation": "entscheiden (odlučiti) + sufiks -ung (označava proces ili stanje)",
+    "example": "Die Entscheidung, welchen Beruf sie wählen soll, ist sehr schwer. - Odluka koji bi zanimanje trebala odabrati, vrlo je teška."
+  },
+  "argument; argumentirati": {
+    "question": "argument; argumentirati",
+    "correct_answer": "das Argument; argumentieren",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "raspravljati, iznositi razlog",
+    "explanation": "argumentare (latinski: raspravljati, iznositi razlog)",
+    "example": "Er hat ein starkes Argument für seine Meinung vorgebracht. - On je iznio snažan argument za svoje mišljenje."
+  },
+  "koristan": {
+    "question": "koristan",
+    "correct_answer": "nützlich",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "koristiti + sufiks -lich (koji ima svojstvo)",
+    "explanation": "nutzen (koristiti) + sufiks -lich (koji ima svojstvo)",
+    "example": "Die Kritik kann nützlich sein, weil wir etwas Neues lernen können."
+  },
+  "pomiriti se (dovesti dvije strane u stanje mira nakon nesuglasica ili sukoba)": {
+    "question": "pomiriti se (dovesti dvije strane u stanje mira nakon nesuglasica ili sukoba)",
+    "correct_answer": "sich versöhnen",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "promjena-prefix + pomiriti",
+    "explanation": "ver- (prefiks koji označava promjenu) + söhnen (pomiriti, od glagola \"sühnen\" - pomiriti)",
+    "example": "Sie konnten sich nach dem Streit endlich versöhnen. - Konačno su se pomirili nakon svađe."
+  },
+  "skoro nikada": {
+    "question": "skoro nikada",
+    "correct_answer": "fast nie",
+    "category": "unterricht 25.11.2024. (T16)"
+  },
+  "misliti na": {
+    "question": "misliti na",
+    "correct_answer": "denken an + Akk",
+    "category": "unterricht 25.11.2024. (T16)",
+    "example": "Woran denkst du? Ich denke daran, dass ich morgen eine Prüfung habe / an die Prüfung."
+  },
+  "mali, neznatan (opisivanje nečega što je male vrijednosti, značaja ili veličine)": {
+    "question": "mali, neznatan (opisivanje nečega što je male vrijednosti, značaja ili veličine)",
+    "correct_answer": "gering",
+    "category": "unterricht 25.11.2024. (T16)",
+    "hint": "izvorno iz starog njemačkog \"gering\" (mali, skroman)",
+    "explanation": "gering = malo > geringer > geringere Arbeitslosigkeit (manja nezaposlenost)",
+    "example": "Das Einkommen ist in dieser Region gering. - Prihod je u ovoj regiji mali."
+  },
+  "Socijaldemokratska partija Njemačke": {
+    "question": "Socijaldemokratska partija Njemačke",
+    "correct_answer": "die SPD = die sozialdemokratische Partei Deutschlands",
+    "category": "unterricht 25.11.2024. (T16)"
+  },
+  "preuzeti (preuzimanje podataka ili datoteka s interneta ili nekog drugog izvora na uređaj)": {
+    "question": "preuzeti (preuzimanje podataka ili datoteka s interneta ili nekog drugog izvora na uređaj)",
+    "correct_answer": "herunterladen",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "dolje + učitati, puniti",
+    "explanation": "herunter (dolje) + laden (učitati, puniti)",
+    "example": "Ich werde die Datei von der Website herunterladen. - Preuzet ću datoteku sa stranice."
+  },
+  "još ne": {
+    "question": "još ne",
+    "correct_answer": "noch nicht",
+    "category": "unterricht 27.11.2024. (T17)"
+  },
+  "do kraja": {
+    "question": "do kraja",
+    "correct_answer": "bis Ende",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich möchte das Büch bis Ende / zu Ende lesen."
+  },
+  "imati predrasude prema nekom": {
+    "question": "imati predrasude prema nekom",
+    "correct_answer": "Vorurteile gegenüber (+D) etwas/jemandem haben",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Er hat Vorurteile gegenüber modernen Technologien. (Ima predrasude prema modernim tehnologijama.)"
+  },
+  "odreći se nečega": {
+    "question": "odreći se nečega",
+    "correct_answer": "verzichten auf + Akk",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich verzichte auf Süßigkeiten, Kaffee, irgendeine schlechte Gewohnheit..."
+  },
+  "savjet, savjeti": {
+    "question": "savjet, savjeti",
+    "correct_answer": "der Rat, die Räte",
+    "category": "unterricht 27.11.2024. (T17)"
+  },
+  "moja starija / najstarija sestra": {
+    "question": "moja starija / najstarija sestra",
+    "correct_answer": "meine ältere / älteste Schwester",
+    "category": "unterricht 27.11.2024. (T17)"
+  },
+  "nepravda": {
+    "question": "nepravda",
+    "correct_answer": "das Unrecht",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "negacija + pravda, pravo",
+    "explanation": "un- (negacija) + recht (pravda, pravo)",
+    "example": "Es ist Unrecht, jemanden ohne Beweise zu beschuldigen. - Nepravda je optuživati nekoga bez dokaza."
+  },
+  "zahvaliti za": {
+    "question": "zahvaliti za",
+    "correct_answer": "danken für * Akk",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich danke dir für deine Hilfe. (Zahvaljujem ti na tvojoj pomoći.) Sie hat ihm für das Geschenk gedankt. (Zahvalila mu je za poklon.)"
+  },
+  "veseliti se nečemu (budućnost)": {
+    "question": "veseliti se nečemu (budućnost)",
+    "correct_answer": "sich freuen auf + Akk",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "rado iščekivati",
+    "example": "Ich freue mich auf Winterferien."
+  },
+  "veseliti se nečemu (prošlost)": {
+    "question": "veseliti se nečemu (prošlost)",
+    "correct_answer": "sich freuen über + Akk",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich freue mich über das Geschenk, das ich von meiner Mutter bekommen habe."
+  },
+  "preuzeti odgovornost": {
+    "question": "preuzeti odgovornost",
+    "correct_answer": "Verantwortung übernehmen",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich habe die Verantwortung übernommen (untrennbar)"
+  },
+  "zakasniti (zakasniti na nešto ili propustiti priliku ili događaj)": {
+    "question": "zakasniti (zakasniti na nešto ili propustiti priliku ili događaj)",
+    "correct_answer": "verpassen",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "pogrešan smjer ili promašaj + odgovarati",
+    "explanation": "ver- (prefiks koji označava pogrešan smjer ili promašaj) + passen (pasti, odgovarati)",
+    "example": "Ich habe den Zug verpasst. - Zakasnio sam za vlak (ich habe den letzten Bus verpasst)"
+  },
+  "donijeti odluku": {
+    "question": "donijeti odluku",
+    "correct_answer": "eine Entscheidung treffen",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich habe die Entscheidung getroffen, nicht mehr zu rauchen. Was war die letzte Entscheidung, die du getroffen hast?"
+  },
+  "upisati, registrirati (upisati se na nešto, često u kontekstu obrazovanja, ili poslati nešto putem registrirane pošte)": {
+    "question": "upisati, registrirati (upisati se na nešto, često u kontekstu obrazovanja, ili poslati nešto putem registrirane pošte)",
+    "correct_answer": "einschreiben",
+    "category": "unterricht 27.11.2024. (T17)",
+    "explanation": "ein (u) + schreiben (pisati)",
+    "example": "Er hat sich für den Kurs eingeschrieben. - Upisao se na tečaj. Meine letzte Entscheidung war, einen Deutschkurs einzuschreiben."
+  },
+  "čavrljati": {
+    "question": "čavrljati",
+    "correct_answer": "plaudern",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "In meiner Freizet plaudere ich gerne mit meiner besten Freundin."
+  },
+  "kraj radnog vremena, slobodno vrijeme nakon posla (vrijeme nakon završetka radnog dana kada ljudi obično završavaju svoje radne obaveze i imaju slobodno vrijeme)": {
+    "question": "kraj radnog vremena, slobodno vrijeme nakon posla (vrijeme nakon završetka radnog dana kada ljudi obično završavaju svoje radne obaveze i imaju slobodno vrijeme)",
+    "correct_answer": "der Feierabend",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "slaviti + večer",
+    "explanation": "feiern (slaviti) + abend (večer)",
+    "example": "Heute habe ich nach dem Feierabend noch etwas zu erledigen. - Danas imam još nešto za obaviti nakon radnog vremena. (nach dem Feierabend gehen wir ins Cafe)"
+  },
+  "ovdje != ovamo": {
+    "question": "ovdje != ovamo",
+    "correct_answer": "hier / hierher",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Ich lebe hier. (ovdje) Ich bin hierher gezogen. (ovamo)"
+  },
+  "slijediti, pratiti": {
+    "question": "slijediti, pratiti",
+    "correct_answer": "folgen + Dat",
+    "category": "unterricht 27.11.2024. (T17)",
+    "example": "Er folgt ihr überallhin. - On je prati svuda. Folgen Sie Ihren Träumen!"
+  },
+  "timski duh": {
+    "question": "timski duh",
+    "correct_answer": "der Teamgeist",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "tim + duh, spirit",
+    "explanation": "das Team (tim) + der Geist (duh, spirit)",
+    "example": "Der Teamgeist in dieser Gruppe ist sehr stark. - Timski duh u ovoj grupi je vrlo snažan."
+  },
+  "freelancer; samostalno raditi": {
+    "question": "freelancer; samostalno raditi",
+    "correct_answer": "der Freiberufler; selbstständig arbeiten",
+    "category": "unterricht 27.11.2024. (T17)",
+    "hint": "slobodan + zanimanje, profesija",
+    "explanation": "frei (slobodan) + Beruf (zanimanje, profesija)",
+    "example": "Als Freiberufler arbeitet er als Grafikdesigner. - Kao slobodnjak, radi kao grafički dizajner."
+  },
+  "produbiti (fizički ili figurativno (znanje, odnosi))": {
+    "question": "produbiti (fizički ili figurativno (znanje, odnosi))",
+    "correct_answer": "vertiefen",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "duboko",
+    "explanation": "ver- (prefiks koji označava pojačanje ili promjenu) + tief (duboko)",
+    "example": "Er möchte sein Wissen in diesem Bereich vertiefen. - Želi produbiti svoje znanje u ovom području."
+  },
+  "javno": {
+    "question": "javno",
+    "correct_answer": "öffentlich",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "otvoreno + koji ima svojstvo",
+    "explanation": "offen (otvoreno) + sufiks -lich (koji ima svojstvo)",
+    "example": "Die Diskussion fand öffentlich statt. - Rasprava se odvijala javno."
+  },
+  "održati se, dogoditi se (npr događaj, event)": {
+    "question": "održati se, dogoditi se (npr događaj, event)",
+    "correct_answer": "stattfinden",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "umjesto + naći, pronaći",
+    "explanation": "statt (mjesto, umjesto) + finden (naći, pronaći)",
+    "example": "Die Konferenz findet morgen statt. - Konferencija se održava sutra."
+  },
+  "najčešće": {
+    "question": "najčešće",
+    "correct_answer": "am häufigsten",
+    "category": "unterricht 02.12.2024. (T18)",
+    "explanation": "häufig (često)"
+  },
+  "stupiti, kročiti": {
+    "question": "stupiti, kročiti",
+    "correct_answer": "treten, trat, getreten;  vor die Presse treten",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "irreg. glagol koji označava čin kretanja ili postavljanja stopala na određeno mjesto, kao i metaforičke radnje poput ulaska u situaciju ili odnos",
+    "example": "Er trat leise in den Raum. - Tiho je stupio u prostoriju."
+  },
+  "povjerenje; osloniti se na nekoga": {
+    "question": "povjerenje; osloniti se na nekoga",
+    "correct_answer": "das Vertrauen; sich auf jemanden verlassen",
+    "category": "unterricht 02.12.2024. (T18)",
+    "example": "Das Vertrauen zwischen den Kollegen ist sehr stark. - Povjerenje između kolega je vrlo snažno."
+  },
+  "kućanstvo, gospodarstvo": {
+    "question": "kućanstvo, gospodarstvo",
+    "correct_answer": "der Haushalt",
+    "category": "unterricht 02.12.2024. (T18)",
+    "explanation": "Može se koristiti u kontekstu kućanskih poslova, ali također označava i ekonomsku organizaciju kuće ili obiteljskih financija. Također, „Haushalt“ može označavati i financijsko upravljanje u obitelji ili državi."
+  },
+  "osloniti se na nekoga": {
+    "question": "osloniti se na nekoga",
+    "correct_answer": "sich auf jemanden verlassen",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "razbiti , slomiti (razbiti nešto na komade, često se koristi i u figurativnom smislu za opisivanje emocionalnog sloma)": {
+    "question": "razbiti , slomiti (razbiti nešto na komade, često se koristi i u figurativnom smislu za opisivanje emocionalnog sloma)",
+    "correct_answer": "zerbrechen",
+    "category": "unterricht 02.12.2024. (T18)",
+    "explanation": "zer- (prefiks koji označava uništenje) + brechen (slomiti, slomiti se)",
+    "example": "Das Glas ist auf den Boden gefallen und zerbrochen. - Čaša je pala na pod i razbila se."
+  },
+  "dosta je bilo, fraza": {
+    "question": "dosta je bilo, fraza",
+    "correct_answer": "Das Maß ist voll",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "figurativni izraz koji često izražava frustraciju ili odlučnost da se prekine s nečim nepodnošljivim",
+    "explanation": "das Maß = mjera; messen - mjeriti"
+  },
+  "dostajati, dovoljno je": {
+    "question": "dostajati, dovoljno je",
+    "correct_answer": "reicht",
+    "category": "unterricht 02.12.2024. (T18)",
+    "explanation": "od glagola reichen",
+    "example": "Das Geld reicht für den Einkauf. - Novac je dovoljan za kupovinu."
+  },
+  "zemljotres; prirodna katastrofa kod koje se zemlja trese": {
+    "question": "zemljotres; prirodna katastrofa kod koje se zemlja trese",
+    "correct_answer": "das Erdbeben; Naturkatastrofe, bei der die Erde bebt",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "izmaknuti kontroli": {
+    "question": "izmaknuti kontroli",
+    "correct_answer": "außer Kontrolle geraten",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "dosl. \"upasti izvan kontrole\""
+  },
+  "uzeti dug, zadužiti se": {
+    "question": "uzeti dug, zadužiti se",
+    "correct_answer": "Schulden aufnehmen",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "olakšati": {
+    "question": "olakšati",
+    "correct_answer": "erleichtern",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "Radim naporno kako bih si priuštio/la lijep odmor.": {
+    "question": "Radim naporno kako bih si priuštio/la lijep odmor.",
+    "correct_answer": "Ich arbeite hart, um mir einen schönen Urlaub zu leisten.",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "požuriti se": {
+    "question": "požuriti se",
+    "correct_answer": "sich beeilen",
+    "category": "unterricht 02.12.2024. (T18)",
+    "example": "Beeil dich! Ich muss mich beeilen, weil ich pünktlich zur Arbeit kommen muss."
+  },
+  "izlog": {
+    "question": "izlog",
+    "correct_answer": "das Schaufenster, -",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "gledati + prozor",
+    "explanation": "schauen (gledati) + das Fenster (prozor)",
+    "example": "Die neuen Schuhe sind im Schaufenster ausgestellt. - Nove cipele su izložene u izlogu."
+  },
+  "korak": {
+    "question": "korak",
+    "correct_answer": "der Schritt, -e",
+    "category": "unterricht 02.12.2024. (T18)"
+  },
+  "govor; održati govor": {
+    "question": "govor; održati govor",
+    "correct_answer": "die Rede, eine Rede halten (halten, hielt, gehalten)",
+    "category": "unterricht 02.12.2024. (T18)",
+    "explanation": "reden - govoriti",
+    "example": "Er hielt eine lange Rede auf der Konferenz."
+  },
+  "uvjerenje": {
+    "question": "uvjerenje",
+    "correct_answer": "die Überzeugung",
+    "category": "unterricht 02.12.2024. (T18)",
+    "hint": "preko, iznad + dokaz, znak + sufiks koji označava imenicu",
+    "explanation": "über (preko, iznad) + Zeug (dokaz, znak) + sufiks -ung (koji označava imenicu)",
+    "example": "Er hat die Überzeugung, dass harte Arbeit zum Erfolg führt. - Ima uvjerenje da naporan rad vodi do uspjeha."
+  },
+  "razgledavati znamenitosti": {
+    "question": "razgledavati znamenitosti",
+    "correct_answer": "Sehenswürdigkeit(f) besichtigen, besichtigte, besichtigt",
+    "category": "unterricht 04.12.2024. (T19)",
+    "hint": "; vidjeti + vrijedan + sufiks koji označava imenicu",
+    "explanation": "sehen (vidjeti) + würdig (vrijedan) + sufiks -keit (koji označava imenicu)",
+    "example": "Die Eiffelturm ist eine der bekanntesten Sehenswürdigkeiten in Paris. - Eiffelov toranj je jedna od najpoznatijih znamenitosti u Parizu."
+  },
+  "ponijeti putovnicu": {
+    "question": "ponijeti putovnicu",
+    "correct_answer": "der Reisepass ; den Reisepass mitnehmen",
+    "category": "unterricht 04.12.2024. (T19)",
+    "hint": "putovati + putovnica, dozvola",
+    "explanation": "reisen (putovati) + der Pass (putovnica, dozvola)",
+    "example": "Er hat seinen Reisepass für die Reise nach Amerika vorbereitet. - Pripremio je svoju putovnicu za putovanje u Ameriku."
+  },
+  "planirati putovanje": {
+    "question": "planirati putovanje",
+    "correct_answer": "eine Reise planen",
+    "category": "unterricht 04.12.2024. (T19)"
+  },
+  "donijeti suvenire": {
+    "question": "donijeti suvenire",
+    "correct_answer": "Souvenirs mitbringen",
+    "category": "unterricht 04.12.2024. (T19)",
+    "explanation": "das Souvenir; mitbringen, brachte mit, mitgebracht"
+  },
+  "izmijeniti novac (promijenit valutu)": {
+    "question": "izmijeniti novac (promijenit valutu)",
+    "correct_answer": "Gelt wechseln",
+    "category": "unterricht 04.12.2024. (T19)"
+  },
+  "obaviti pripreme za putovanje": {
+    "question": "obaviti pripreme za putovanje",
+    "correct_answer": "die Reisevorbereitung; Reisevorbereitungen treffen",
+    "category": "unterricht 04.12.2024. (T19)",
+    "hint": "putovanje + priprema; gl pogoditi, sresti",
+    "explanation": "die Reise (putovanje) + die Vorbereitung (priprema)",
+    "example": "Die Reisevorbereitung hat viel Zeit in Anspruch genommen. - Priprema za putovanje oduzela je puno vremena."
+  },
+  "birati destinaciju za putovanje": {
+    "question": "birati destinaciju za putovanje",
+    "correct_answer": "das Reiseziel; ein Reiseziel wählen",
+    "category": "unterricht 04.12.2024. (T19)",
+    "hint": "putovanje + odredište",
+    "explanation": "die Reise (putovanje) + das Ziel (cilj, odredište)",
+    "example": "Unser Reiseziel ist die Insel Kreta. - Naše odredište putovanja je otok Kreta."
+  },
+  "fotografirati": {
+    "question": "fotografirati",
+    "correct_answer": "Fotos machen",
+    "category": "unterricht 04.12.2024. (T19)",
+    "explanation": "das Foto"
+  },
+  "spakovati kofer": {
+    "question": "spakovati kofer",
+    "correct_answer": "die Koffer packen",
+    "category": "unterricht 04.12.2024. (T19)"
+  },
+  "pisati razglednicu": {
+    "question": "pisati razglednicu",
+    "correct_answer": "Postkarten schreiben",
+    "category": "unterricht 04.12.2024. (T19)",
+    "explanation": "die Postkarte = die Post (pošta) + die Karte (kartica)"
+  },
+  "istražiti, otkriti (istraživati nepoznate ili nove teritorije, prostor ili ideje, često u kontekstu putovanja ili istraživanja)": {
+    "question": "istražiti, otkriti (istraživati nepoznate ili nove teritorije, prostor ili ideje, često u kontekstu putovanja ili istraživanja)",
+    "correct_answer": "erkunden",
+    "category": "unterricht 04.12.2024. (T19)",
+    "explanation": "er- (prefiks koji označava početak ili potpunost) + der Kunde - mušterija",
+    "example": "Wir haben die Stadt zu Fuß erkundet. - Istraživali smo grad pješice."
+  },
+  "Samo nas tuđina uči onome što imamo u domovini.": {
+    "question": "Samo nas tuđina uči onome što imamo u domovini.",
+    "correct_answer": "Erst die Fremde lehrt uns, was wir an der Heimat haben.",
+    "category": "unterricht 04.12.2024. (T19)",
+    "explanation": "lehren, lehrte, gelehrt - poučiti/avati; die Fremde - stranina, inozemstvo;  fremd = stran, nepoznat; mjesto ili zemlja koja je strana ili nepoznata, obično u kontekstu drugih zemalja ili kultura"
   }
 }
