@@ -1,0 +1,16 @@
+{
+  "zbog": {
+    "question": "zbog",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "wegen",
+    "example": "Wegen des Staus kamen wir zu spät zur Arbeit. – Zbog gužve smo zakasnili na posao."
+  },
+  "usprkos": {
+    "question": "usprkos",
+    "correct_answer": "Genitiv",
+    "category": "articles",
+    "hint": "trotz",
+    "example": "Trotz des Regens gingen wir spazieren. – Iako je padala kiša, otišli smo u šetnju."
+  }
+}
