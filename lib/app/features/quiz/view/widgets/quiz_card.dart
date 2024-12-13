@@ -36,74 +36,77 @@ class QuizCard extends ConsumerWidget {
           width: double.infinity,
           height: MediaQuery.of(context).size.height * 0.6,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Row(children: [
-                      Icon(
-                        Icons.star,
-                        color:
-                            state.obtained ? Colors.white : Colors.transparent,
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 20),
+                      Row(children: [
+                        Icon(
+                          Icons.star,
+                          color:
+                              state.obtained ? Colors.white : Colors.transparent,
+                        ),
+                        const Spacer(),
+                      ]),
+
+                      /// --- Question view ---
+                      Text(factoid.question, style: QuizCard.textStyle),
+                      const SizedBox(height: 10),
+
+                      /// --- Hint view ---
+                      Visibility(
+                        visible: state.showHint,
+                        replacement: IconButton(
+                          onPressed: controller.toggleHintVisibility,
+                          icon: Icon(
+                            Icons.info_outline,
+                            color: Colors.white.withOpacity(
+                              factoid.hint != null ? 0.5 : 0,
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          factoid.hint ?? 'err',
+                          style: QuizCard.textStyle,
+                        ),
                       ),
-                      const Spacer(),
-                    ]),
+                      const SizedBox(height: 20),
 
-                    /// --- Question view ---
-                    Text(factoid.question, style: QuizCard.textStyle),
-                    const SizedBox(height: 10),
-
-                    /// --- Hint view ---
-                    Visibility(
-                      visible: state.showHint,
-                      replacement: IconButton(
-                        onPressed: controller.toggleHintVisibility,
-                        icon: Icon(
-                          Icons.info_outline,
-                          color: Colors.white.withOpacity(
-                            factoid.hint != null ? 0.5 : 0,
+                      /// --- Correct answer view ---
+                      Visibility(
+                        visible: state.showCorrectAnswer,
+                        replacement: Icon(
+                          Icons.question_mark,
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                        child: Text(
+                          factoid.correctAnswer,
+                          style: QuizCard.textStyle.copyWith(
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                       ),
-                      child: Text(
-                        factoid.hint ?? 'err',
-                        style: QuizCard.textStyle,
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-
-                    /// --- Correct answer view ---
-                    Visibility(
-                      visible: state.showCorrectAnswer,
-                      replacement: Icon(
-                        Icons.question_mark,
-                        color: Colors.white.withOpacity(0.5),
-                      ),
-                      child: Text(
-                        factoid.correctAnswer,
-                        style: QuizCard.textStyle.copyWith(
-                          fontWeight: FontWeight.w900,
+                      const SizedBox(height: 20),
+                      Visibility(
+                        visible: state.showCorrectAnswer,
+                        child: Text(
+                          factoid.explanation ?? '',
+                          style: QuizCard.textStyle,
                         ),
                       ),
-                    ),
-                    const SizedBox(height: 20),
-                    Visibility(
-                      visible: state.showCorrectAnswer,
-                      child: Text(
-                        factoid.explanation ?? '',
-                        style: QuizCard.textStyle,
+                      const SizedBox(height: 25),
+                      Visibility(
+                        visible: state.showCorrectAnswer,
+                        child: Text(
+                          factoid.example ?? '',
+                          style: QuizCard.textStyle,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 25),
-                    Visibility(
-                      visible: state.showCorrectAnswer,
-                      child: Text(
-                        factoid.example ?? '',
-                        style: QuizCard.textStyle,
-                      ),
-                    ),
-                  ],
+                      const SizedBox(height: 20),
+                    ],
+                  ),
                 ),
               ),
               if (state.mode == QuizMode.testing &&

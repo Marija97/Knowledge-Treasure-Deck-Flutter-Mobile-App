@@ -103,7 +103,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               // AppButton(title: '🌟 Expand the knowledge treasure 🌟'),
               const SizedBox(height: 12),
               AppButton(
-                title: 'Start the quest',
+                title: 'Start the quest ✨',
                 onTap: state.selectedCategory != null
                     ? () => GoRouter.of(context).push(
                           RoutePaths.quiz,
