@@ -25,6 +25,10 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     return ref.read(knowledgeRepositoryProvider).obtainedCount(category);
   }
 
+  void setDataRefreshingStatus(String status){
+    state = state.copyWith(status: status);
+  }
+
   @override
   KnowledgeState build() {
     return KnowledgeState(selectedCategory: null);
