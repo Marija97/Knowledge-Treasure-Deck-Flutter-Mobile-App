@@ -1,12 +1,17 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../data/knowledge_repository/knowledge_repository.dart';
 import '../../../routing/router.dart';
 import '../../../widgets/button.dart';
 import '../../../widgets/text.dart';
 import '../controllers/knowledge_controller.dart';
 import 'widgets/category_view.dart';
+import 'package:http/http.dart' as http;
 
 class KnowledgeOverviewPage extends ConsumerWidget {
   const KnowledgeOverviewPage();
@@ -15,6 +20,31 @@ class KnowledgeOverviewPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final controller = ref.read(knowledgeControllerProvider.notifier);
     final state = ref.watch(knowledgeControllerProvider);
+
+    Future<void> updateData() async {
+      controller.setDataRefreshingStatus('...');
+
+      await dotenv.load(fileName: '.env');
+      final token = dotenv.env['GITHUB_ACCESS_TOKEN'];;
+      final url = 'https://api.github.com/repos/Marija97/Knowledge-Treasure-Deck-Flutter-Mobile-App/contents/assets/quiz_data/german.json';
+
+      try {
+        final response = await http.get(
+          Uri.parse(url),
+          headers: {'Authorization': 'Bearer $token'},
+        );
+        final temp = jsonDecode(response.body)['content'].replaceAll('\n', '');
+        final data = utf8.decode(base64Decode(temp));
+        debugPrint('Success!');
+
+        await ref.read(knowledgeRepositoryProvider).setupInitialKnowledge(data);
+        controller.setDataRefreshingStatus(':)');
+      } catch (e, s) {
+        controller.setDataRefreshingStatus(':(');
+        debugPrint('Failed to read user data. Status Code: $e');
+        debugPrint(s.toString());
+      }
+    }
 
     return Scaffold(
       body: SafeArea(
@@ -26,12 +56,15 @@ class KnowledgeOverviewPage extends ConsumerWidget {
               const Spacer(),
 
               Row(children: [
-                Image.asset(
-                  './assets/images/logos/owl_orange.png',
-                  height: 70,
+                GestureDetector(
+                  onLongPress: updateData,
+                  child: Image.asset(
+                    './assets/images/logos/owl_orange.png',
+                    height: 70,
+                  ),
                 ),
                 const SizedBox(width: 12),
-                AppText.large(':)'),
+                AppText.large(state.status),
               ]),
 
               const SizedBox(height: 12),
