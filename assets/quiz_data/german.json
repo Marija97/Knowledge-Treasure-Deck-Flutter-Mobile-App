@@ -2794,5 +2794,635 @@
     "correct_answer": "Erst die Fremde lehrt uns, was wir an der Heimat haben.",
     "category": "unterricht 04.12.2024. (T19)",
     "explanation": "lehren, lehrte, gelehrt - poučiti/avati; die Fremde - stranina, inozemstvo;  fremd = stran, nepoznat; mjesto ili zemlja koja je strana ili nepoznata, obično u kontekstu drugih zemalja ili kultura"
+  },
+  "baviti se s, zaokupiti, \"zabaviti se s\"": {
+    "question": "baviti se s, zaokupiti, \"zabaviti se s\"",
+    "correct_answer": "sich beschäftigen mit + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Rado se bavim biljkama.",
+    "example": "Ich beschäftige mich gern mit Pflanzen. - Rado se bavim biljkama."
+  },
+  "biti protiv": {
+    "question": "biti protiv",
+    "correct_answer": "sein gegen + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Mnogi su protiv povećanja poreza.",
+    "example": "Viele sind gegen Steuererhöhungen. - Mnogi su protiv povećanja poreza."
+  },
+  "boriti se za": {
+    "question": "boriti se za",
+    "correct_answer": "kämpfen für + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Sindikat se bori za veće plaće.",
+    "example": "Die Gewerkschaft kämpft für höhere Löhne. - Sindikat se bori za veće plaće."
+  },
+  "brinuti se o": {
+    "question": "brinuti se o",
+    "correct_answer": "sich kümmern um + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "U staračkom domu brinu se o starijim ljudima koji su bolesni.",
+    "example": "Im Pflegeheim kümmert man sich um alte Leute, die krank sind. - U staračkom domu brinu se o starijim ljudima koji su bolesni."
+  },
+  "brinuti se za": {
+    "question": "brinuti se za",
+    "correct_answer": "sorgen für + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Djeca se moraju brinuti za svoje roditelje u starosti.",
+    "example": "Kinder müssen im Alter für ihre Eltern sorgen. - Djeca se moraju brinuti za svoje roditelje u starosti."
+  },
+  "čekati na": {
+    "question": "čekati na",
+    "correct_answer": "warten auf + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Ovdje se dugo čeka na autobus.",
+    "example": "Hier wartet man lange auf einen Bus. - Ovdje se dugo čeka na autobus."
+  },
+  "čestitati na": {
+    "question": "čestitati na",
+    "correct_answer": "gratulieren zu + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Čestitamo ti za 18. rođendan.",
+    "example": "Wir gratulieren dir zum 18. Geburtstag. - Čestitamo ti za 18. rođendan."
+  },
+  "čuditi se (diviti) zbog": {
+    "question": "čuditi se (diviti) zbog",
+    "correct_answer": "sich wundern über + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Mnogi Nijemci čude se iznenada tako visokim troškovima struje.",
+    "example": "Viele Deutsche wundern sich über die plötzlich so hohen Stromkosten. - Mnogi Nijemci čude se iznenada tako visokim troškovima struje."
+  },
+  "čuti od": {
+    "question": "čuti od",
+    "correct_answer": "hören von + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Nisam ništa čuo od Pieta od nedjelje.",
+    "example": "Ich habe seit Sonntag nichts von Piet gehört. - Nisam ništa čuo od Pieta od nedjelje."
+  },
+  "diskutirati o": {
+    "question": "diskutirati o",
+    "correct_answer": "diskutieren über + A",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Kabinet diskutira o novom porezu.",
+    "example": "Das Kabinett diskutiert über eine neue Steuer. - Kabinet diskutira o novom porezu."
+  },
+  "dolazi do": {
+    "question": "dolazi do",
+    "correct_answer": "kommen zu + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Na sastanku je došlo do svađe.",
+    "example": "In der Besprechung kam es zu einem Streit. - Na sastanku je došlo do svađe."
+  },
+  "gledati pri": {
+    "question": "gledati pri",
+    "correct_answer": "zusehen bei + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Hoćeš li mi gledati pri kuhanju?",
+    "example": "Willst du mir beim Kochen zusehen? - Hoćeš li mi gledati pri kuhanju?"
+  },
+  "gledati pri (motriti)": {
+    "question": "gledati pri (motriti)",
+    "correct_answer": "zuschauen bei + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Mogu li ti gledati pri popravku?",
+    "example": "Kann ich dir bei der Reparatur zuschauen? - Mogu li ti gledati pri popravku?"
+  },
+  "imati okus po": {
+    "question": "imati okus po",
+    "correct_answer": "schmecken nach + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Plodovi mora imaju okus po morskoj vodi.",
+    "example": "Muscheln schmecken nach Meerwasser. - Plodovi mora imaju okus po morskoj vodi."
+  },
+  "raspitati(raspitivati) se o": {
+    "question": "raspitati(raspitivati) se o",
+    "correct_answer": "sich erkundigen nach + D",
+    "category": "Verben mit Präpositionen (1)",
+    "hint": "Baka se često informira o mojim planovima.",
+    "example": "Oma erkundigt sich oft nach meinen Plänen. - Baka se često informira o mojim planovima."
+  },
+  "informirati se o": {
+    "question": "informirati se o",
+    "correct_answer": "sich informieren über + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Na sajmu se možeš informirati o novoj tehnologiji.",
+    "example": "Auf der Messe kann man sich über die neue Technologie informieren. - Na sajmu se možeš informirati o novoj tehnologiji."
+  },
+  "insistirati na": {
+    "question": "insistirati na",
+    "correct_answer": "bestehen auf + D",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Insistiram na odmahšnjoj isplati automobila.",
+    "example": "Ich bestehe auf sofortiger Bezahlung des Autos. - Insistiram na odmahšnjoj isplati automobila."
+  },
+  "ispričati se kome": {
+    "question": "ispričati se kome",
+    "correct_answer": "sich entschuldigen bei + D",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Tom se ispričava njezinom mužu.",
+    "example": "Tom entschuldigt sich bei ihrem Mann. - Tom se ispričava njezinom mužu."
+  },
+  "ispričati se zbog": {
+    "question": "ispričati se zbog",
+    "correct_answer": "sich entschuldigen für + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Ispričavam se zbog ponašanja moje mačke.",
+    "example": "Ich entschuldige mich für das Verhalten meiner Katze. - Ispričavam se zbog ponašanja moje mačke."
+  },
+  "izvještavati o": {
+    "question": "izvještavati o",
+    "correct_answer": "berichten über + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Novinar izvještava o izborima.",
+    "example": "Der Reporter berichtet über die Wahlen. - Novinar izvještava o izborima."
+  },
+  "ljutiti se na": {
+    "question": "ljutiti se na",
+    "correct_answer": "sich ärgern über + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Ljutimo se zbog kiše.",
+    "example": "Wir ärgern uns über den Regen. - Ljutimo se zbog kiše."
+  },
+  "mirisati na": {
+    "question": "mirisati na",
+    "correct_answer": "riechen nach + D",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Ovdje miriše na kolač.",
+    "example": "Hier riecht es nach Kuchen. - Ovdje miriše na kolač."
+  },
+  "moliti za": {
+    "question": "moliti za",
+    "correct_answer": "bitten um + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Govornik moli za pažnju.",
+    "example": "Der Redner bittet um Aufmerksamkeit. - Govornik moli za pažnju."
+  },
+  "nadati se": {
+    "question": "nadati se",
+    "correct_answer": "hoffen auf + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "U ožujku se svi nadaju toplim proljetnim danima.",
+    "example": "Im März hoffen alle auf warme Frühlingstage. - U ožujku se svi nadaju toplim proljetnim danima."
+  },
+  "nagovoriti na": {
+    "question": "nagovoriti na",
+    "correct_answer": "überreden zu + D",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Mogu li te nagovoriti na čašu vina?",
+    "example": "Kann ich dich zu einem Glas Wein überreden? - Mogu li te nagovoriti na čašu vina?"
+  },
+  "naviknuti se na": {
+    "question": "naviknuti se na",
+    "correct_answer": "sich gewöhnen an + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Ne mogu se naviknuti na promjenu vremena.",
+    "example": "Ich kann mich nicht an die Zeitumstellung gewöhnen. - Ne mogu se naviknuti na promjenu vremena."
+  },
+  "nervirati se zbog": {
+    "question": "nervirati se zbog",
+    "correct_answer": "sich aufregen über + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Nijemci se nerviraju zbog kašnjenja (netočnosti).",
+    "example": "Deutsche regen sich über Unpünktlichkeit auf. - Nijemci se nerviraju zbog neurednosti."
+  },
+  "obratiti pozornost na, paziti na, voditi računa": {
+    "question": "obratiti pozornost na, paziti na, voditi računa",
+    "correct_answer": "achten auf + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Molim te obrati pažnju na novu jaknu.",
+    "example": "Bitte achte auf den neuen Mantel. - Molim te obrati pažnju na novu jaknu."
+  },
+  "odgovoriti na": {
+    "question": "odgovoriti na",
+    "correct_answer": "antworten auf + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Molim vas da danas odgovorite na pismo.",
+    "example": "Bitte antworten Sie heute auf den Brief. - Molim vas da danas odgovorite na pismo."
+  },
+  "odlučiti se za": {
+    "question": "odlučiti se za",
+    "correct_answer": "sich entscheiden für + A",
+    "category": "Verben mit Präpositionen (2)",
+    "hint": "Djeca se rado odlučuju za čokoladu.",
+    "example": "Kinder entscheiden sich gern für Schokolade. - Djeca se često odluče za čokoladu."
+  },
+  "odnositi se na": {
+    "question": "odnositi se na",
+    "correct_answer": "sich beziehen auf + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Moje pitanje se odnosi na vašu ponudu.",
+    "example": "Meine Frage bezieht sich auf Ihr Angebot. - Moje pitanje se odnosi na vašu ponudu."
+  },
+  "oporaviti se od": {
+    "question": "oporaviti se od",
+    "correct_answer": "sich erholen von + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Od šoka se moram prvo oporaviti.",
+    "example": "Von dem Schock muss ich mich erst erholen. - Od šoka se moram prvo oporaviti."
+  },
+  "oprostiti se od": {
+    "question": "oprostiti se od",
+    "correct_answer": "sich verabschieden von + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Sada se želimo pozdraviti s vama.",
+    "example": "Nun wollen wir uns von euch verabschieden. - Sada se želimo pozdraviti s vama."
+  },
+  "osloniti se na": {
+    "question": "osloniti se na",
+    "correct_answer": "sich verlassen auf + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Na mene se može osloniti.",
+    "example": "Auf mich kann man sich verlassen. - Na mene se može osloniti."
+  },
+  "ovisiti o": {
+    "question": "ovisiti o",
+    "correct_answer": "abhängen von + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Hoćemo li voziti, ovisi o vremenu.",
+    "example": "Ob wir fahren, hängt vom Wetter ab. -  Hoćemo li voziti, ovisi o vremenu."
+  },
+  "paziti na": {
+    "question": "paziti na",
+    "correct_answer": "aufpassen auf + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Babysitter pazi na malu djecu.",
+    "example": "Ein Babysitter passt auf kleine Kinder auf. - Babysitter pazi na malu djecu."
+  },
+  "pisati nekomu": {
+    "question": "pisati nekomu",
+    "correct_answer": "schreiben an + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Molim te, napiši još danas svojoj majci.",
+    "example": "Bitte schreibe noch heute an deine Mutter. - Molim te, napiši još danas svojoj majci."
+  },
+  "pitati za": {
+    "question": "pitati za",
+    "correct_answer": "fragen nach + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Novinarka pita za posljedice izmjene zakona.",
+    "example": "Die Journalistin fragt nach den Konsequenzen der Gesetzesänderung. - Novinarka pita za posljedice izmjene zakona."
+  },
+  "pomagati u, pri": {
+    "question": "pomagati u, pri",
+    "correct_answer": "helfen bei + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Mogu li ti pomoći u postavljanju stola?",
+    "example": "Kann ich dir beim Tischdecken helfen? - Mogu li ti pomoći u postavljanju stola?"
+  },
+  "poslati k": {
+    "question": "poslati k",
+    "correct_answer": "schicken zu + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Liječnik opće prakse šalje pacijenta k specijalistu.",
+    "example": "Der Allgemeinmediziner schickt den Patienten zu einem Spezialisten. - Liječnik opće prakse šalje pacijenta k specijalistu."
+  },
+  "poslati nekomu": {
+    "question": "poslati nekomu",
+    "correct_answer": "schicken an + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "E-mail ću ti poslati sutra.",
+    "example": "Die E-Mail schicke ich dir morgen. - E-mail ću ti poslati sutra."
+  },
+  "pozvati na": {
+    "question": "pozvati na",
+    "correct_answer": "einladen zu + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Pozivam te na svoj rođendan.",
+    "example": "Ich lade dich zu meinem Geburtstag ein. - Pozivam te na svoj rođendan."
+  },
+  "preplašiti se nečega": {
+    "question": "preplašiti se nečega",
+    "correct_answer": "erschrecken über + A",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Kuhar se preplaši zbog miša.",
+    "example": "Der Koch erschrickt über eine Maus. - Kuhar se preplaši zbog miša."
+  },
+  "prepoznati po": {
+    "question": "prepoznati po",
+    "correct_answer": "erkennen an + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Pinocchio se prepoznaje po svom dugom nosu.",
+    "example": "Man erkennt Pinocchio an seiner langen Nase. - Pinocchio se prepoznaje po svom dugom nosu."
+  },
+  "prestati s": {
+    "question": "prestati s",
+    "correct_answer": "aufhören mit + D",
+    "category": "Verben mit Präpositionen (3)",
+    "hint": "Prestao je s poslom u 17:00.",
+    "example": "Er hört um 17.00 Uhr mit der Arbeit auf. - Prestao je s poslom u 17:00."
+  },
+  "pretvoriti se u": {
+    "question": "pretvoriti se u",
+    "correct_answer": "werden zu + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Ispod nule voda postaje led.",
+    "example": "Unter null Grad wird Wasser zu Eis. - Ispod nule voda postaje led."
+  },
+  "pripovijedati o": {
+    "question": "pripovijedati o",
+    "correct_answer": "erzählen über + A / von + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Jedan istočnoberlinski stanovnik priča o svom životu u bivšoj DDR.",
+    "example": "Ein Ostberliner erzählt über sein Leben in der ehemaligen DDR. - Jedan istočnoberlinski stanovnik priča o svom životu u bivšoj DDR."
+  },
+  "govoriti, pričati (talk) o": {
+    "question": "govoriti, pričati (talk) o",
+    "correct_answer": "reden über + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Tvoja mama voli pričati o bolestima.",
+    "example": "Deine Mutter redet gern über Krankheiten. - Tvoja mama voli pričati o bolestima."
+  },
+  "govoriti, pričati (speak) o": {
+    "question": "govoriti, pričati (speak) o",
+    "correct_answer": "sprechen über + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Hajde da pričamo o tvojoj budućnosti.",
+    "example": "Lass uns über deine Zukunft sprechen. - Hajde da pričamo o tvojoj budućnosti."
+  },
+  "prijaviti se za, natjecati se npr za radno mjesto": {
+    "question": "prijaviti se za, natjecati se npr za radno mjesto",
+    "correct_answer": "sich bewerben um + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Ona se prijavljuje za posao tajnice.",
+    "example": "Sie bewirbt sich um eine Stelle als Sekretärin. - Ona se prijavljuje za posao tajnice."
+  },
+  "pripadati": {
+    "question": "pripadati",
+    "correct_answer": "gehören zu + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Elzas pripada Francuskoj.",
+    "example": "Das Elsass gehört zu Frankreich. - Elzas pripada Francuskoj."
+  },
+  "pripremiti se za": {
+    "question": "pripremiti se za",
+    "correct_answer": "sich vorbereiten auf + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Karl se priprema za prezentaciju.",
+    "example": "Karl bereitet sich auf eine Präsentation vor. - Karl se priprema za prezentaciju."
+  },
+  "protestirati protiv": {
+    "question": "protestirati protiv",
+    "correct_answer": "protestieren gegen + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Mnogi ljudi protestiraju protiv nuklearne energije.",
+    "example": "Viele Menschen protestieren gegen Atomkraft. - Mnogi ljudi protestiraju protiv nuklearne energije."
+  },
+  "računati na (da će se desiti)": {
+    "question": "računati na (da će se desiti)",
+    "correct_answer": "rechnen mit + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "U siječnju treba računati na snijeg.",
+    "example": "Im Januar muss man mit Schnee rechnen. - U siječnju treba računati na snijeg."
+  },
+  "raditi se o": {
+    "question": "raditi se o",
+    "correct_answer": "gehen um + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Uvijek se radi o novcu.",
+    "example": "Immer geht es um Geld. - Uvijek se radi o novcu."
+  },
+  "razgovarati o": {
+    "question": "razgovarati o",
+    "correct_answer": "sich unterhalten über + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Modni dizajneri razgovaraju o najnovijim trendovima.",
+    "example": "Die Modedesigner unterhalten sich über die neuesten Trends. - Modni dizajneri razgovaraju o najnovijim trendovima."
+  },
+  "pričati (speak) s": {
+    "question": "pričati (speak) s",
+    "correct_answer": "sprechen mit + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Još jednom ću razgovarati s tvojim ocem.",
+    "example": "Ich spreche noch einmal mit deinem Vater. - Još jednom ću razgovarati s tvojim ocem."
+  },
+  "razgovarati s": {
+    "question": "razgovarati s",
+    "correct_answer": "sich unterhalten mit + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Pjevač razgovara s basistom.",
+    "example": "Der Sänger unterhält sich mit dem Bassisten. - Pjevač razgovara s basistom."
+  },
+  "razmišljati o": {
+    "question": "razmišljati o",
+    "correct_answer": "nachdenken über + A",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Državni službenici ne moraju razmišljati o svojoj mirovini.",
+    "example": "Beamte müssen nicht über ihre Rente nachdenken. - Državni službenici ne moraju razmišljati o svojoj mirovini."
+  },
+  "razumjeti se s": {
+    "question": "razumjeti se s",
+    "correct_answer": "sich verstehen mit + D",
+    "category": "Verben mit Präpositionen (4)",
+    "hint": "Daniel se dobro razumije sa svojim šefom.",
+    "example": "Daniel versteht sich gut mit seinem Chef. - Daniel se dobro razumije sa svojim šefom."
+  },
+  "razumjeti se u": {
+    "question": "razumjeti se u",
+    "correct_answer": "verstehen von + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Razumiješ li nešto o elektrotehnici?",
+    "example": "Verstehst du etwas von Elektrik? - Razumiješ li nešto o elektrotehnici?"
+  },
+  "reći o": {
+    "question": "reći o",
+    "correct_answer": "sagen über + A",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Brigitte kaže o Dietmaru da često laže.",
+    "example": "Brigitte sagt über Dietmar, dass er oft lügt. - Brigitte kaže o Dietmaru da često laže."
+  },
+  "sastajati se radi": {
+    "question": "sastajati se radi",
+    "correct_answer": "sich treffen zu + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Sastaju se radi kratkog razgovora.",
+    "example": "Sie treffen sich nur zu einem kurzen Gespräch. - Sastaju se radi kratkog razgovora."
+  },
+  "sastajati se s": {
+    "question": "sastajati se s",
+    "correct_answer": "sich treffen mit + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Kancelarka se svakodnevno sastaje sa svojim glasnogovornikom.",
+    "example": "Die Kanzlerin trifft sich täglich mit ihrem Pressesprecher. - Kancelarka se svakodnevno sastaje sa svojim glasnogovornikom."
+  },
+  "sastojati se od": {
+    "question": "sastojati se od",
+    "correct_answer": "bestehen aus + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Vjenčani prstenovi se sastoje od zlata.",
+    "example": "Eheringe bestehen aus Gold. - Vjenčani prstenovi se sastoje od zlata."
+  },
+  "sjećati se": {
+    "question": "sjećati se",
+    "correct_answer": "sich erinnern an + A",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Rado se sjećamo naše prve godine braka.",
+    "example": "Wir erinnern uns gern an unser erstes Ehejahr. - Rado se sjećamo naše prve godine braka."
+  },
+  "smijati se nečemu": {
+    "question": "smijati se nečemu",
+    "correct_answer": "lachen über + A",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Na dobar vic treba se glasno smijati.",
+    "example": "Über einen guten Witz muss man laut lachen. - Na dobar vic treba se glasno smijati."
+  },
+  "štititi se od": {
+    "question": "štititi se od",
+    "correct_answer": "sich schützen vor + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Računalo se mora zaštititi od hakera.",
+    "example": "Den Computer muss man vor Hackern schützen. - Računalo se mora zaštititi od hakera."
+  },
+  "sudjelovati u": {
+    "question": "sudjelovati u",
+    "correct_answer": "teilnehmen an + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Sjeverna Koreja sudjeluje na Svjetskom prvenstvu u nogometu.",
+    "example": "Nordkorea nimmt an der Fußball-WM teil. - Sjeverna Koreja sudjeluje na Svjetskom prvenstvu u nogometu."
+  },
+  "sumnjati u": {
+    "question": "sumnjati u",
+    "correct_answer": "zweifeln an + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "John sumnja u to da je njegov sin rekao istinu.",
+    "example": "John zweifelt daran, dass sein Sohn die Wahrheit gesagt hat. - John sumnja u to da je njegov sin rekao istinu."
+  },
+  "svađati se s": {
+    "question": "svađati se s",
+    "correct_answer": "streiten mit + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Ne želim se svađati s tobom.",
+    "example": "Ich möchte nicht mit dir streiten. - Ne želim se svađati s tobom."
+  },
+  "svađati se zbog": {
+    "question": "svađati se zbog",
+    "correct_answer": "streiten über + A",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "SAD i Njemačka se svađaju zbog nove strategije.",
+    "example": "Die USA und Deutschland streiten über eine neue Strategie. - SAD i Njemačka se svađaju zbog nove strategije."
+  },
+  "telefonirati s": {
+    "question": "telefonirati s",
+    "correct_answer": "telefonieren mit + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Jesi li već telefonirao s liječnikom?",
+    "example": "Hast du schon mit dem Arzt telefoniert? - Jesi li već telefonirao s liječnikom?"
+  },
+  "trošiti na": {
+    "question": "trošiti na",
+    "correct_answer": "ausgeben für + A",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Neki troše puno novca na cipele.",
+    "example": "Manche geben viel Geld für Schuhe aus. - Neki troše puno novca na cipele."
+  },
+  "trpjeti zbog": {
+    "question": "trpjeti zbog",
+    "correct_answer": "leiden an + D",
+    "category": "Verben mit Präpositionen (5)",
+    "hint": "Svaki peti menadžer pati od burn-outa.",
+    "example": "Jeder fünfte Manager leidet an Burn-out. - Svaki peti menadžer pati od burn-outa."
+  },
+  "truditi se oko": {
+    "question": "truditi se oko",
+    "correct_answer": "sich bemühen um + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Karla se trudi oko posla.",
+    "example": "Karla bemüht sich um eine Arbeit. - Karla se trudi za posao."
+  },
+  "umrijeti od": {
+    "question": "umrijeti od",
+    "correct_answer": "sterben an + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Dva Nijemca su umrla od gripe.",
+    "example": "Zwei Deutsche sind an der Grippe gestorben. - Dva Nijemca su umrla od gripe."
+  },
+  "upozoriti na": {
+    "question": "upozoriti na",
+    "correct_answer": "warnen vor + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Upozorili su ga na visoke troškove starog automobila.",
+    "example": "Man hatte ihn vor den hohen Kosten für das alte Auto gewarnt. - Upozorili su ga na visoke troškove starog automobila."
+  },
+  "usporediti s": {
+    "question": "usporediti s",
+    "correct_answer": "vergleichen mit + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Usporedite München s Berlinom.",
+    "example": "Vergleichen Sie München mit Berlin. - Usporedite München s Berlinom."
+  },
+  "usredotočiti se na": {
+    "question": "usredotočiti se na",
+    "correct_answer": "sich konzentrieren auf + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Karl se usredotočuje na svoje zadaće.",
+    "example": "Karl konzentriert sich auf seine Hausaufgaben. - Karl se usredotočuje na svoje zadaće."
+  },
+  "veseliti se nečemu": {
+    "question": "veseliti se nečemu",
+    "correct_answer": "sich freuen über + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Svi se vesele povećanju plaće.",
+    "example": "Jeder freut sich über eine Gehaltserhöhung. - Svi se vesele povećanju plaće."
+  },
+  "vjerovati u": {
+    "question": "vjerovati u",
+    "correct_answer": "glauben an + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Tinejdžeri vjeruju u veliku ljubav.",
+    "example": "Teenager glauben an die große Liebe. - Tinejdžeri vjeruju u veliku ljubav."
+  },
+  "zahvaliti na": {
+    "question": "zahvaliti na",
+    "correct_answer": "danken für + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Sam se zahvaljuje na Ritinoj pomoći.",
+    "example": "Sam dankt für Ritas Hilfe. - Sam se zahvaljuje na Ritinoj pomoći."
+  },
+  "zahvaliti se na": {
+    "question": "zahvaliti se na",
+    "correct_answer": "sich bedanken für + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Martin se zahvaljuje na poklonu.",
+    "example": "Martin bedankt sich für das Geschenk. - Martin se zahvaljuje na poklonu."
+  },
+  "zalagati se za": {
+    "question": "zalagati se za",
+    "correct_answer": "sein für + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Zalažem se za ukidanje dječjeg rada.",
+    "example": "Ich bin für die Abschaffung der Kinderarbeit. - Zalažem se za ukidanje dječjeg rada."
+  },
+  "zaljubiti se u": {
+    "question": "zaljubiti se u",
+    "correct_answer": "sich verlieben in + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Britta se zaljubila u staru seosku kuću.",
+    "example": "Britta hat sich in das alte Bauernhaus verliebt. - Britta se zaljubila u staru seosku kuću."
+  },
+  "zanimati se za": {
+    "question": "zanimati se za",
+    "correct_answer": "sich interessieren für + A",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Monika se zanima za pametni telefon.",
+    "example": "Monika interessiert sich für ein Smartphone. - Monika se zanima za pametni telefon."
+  },
+  "započeti s": {
+    "question": "započeti s",
+    "correct_answer": "anfangen mit + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Počeo sam s vježbom.",
+    "example": "Ich fange mit der Übung an. - Počeo sam s vježbom."
+  },
+  "početi s": {
+    "question": "početi s",
+    "correct_answer": "beginnen mit + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Počeli smo točno s tečajem njemačkog.",
+    "example": "Wir beginnen pünktlich mit dem Deutschkurs. - Počeli smo točno s tečajem njemačkog."
+  },
+  "znati o": {
+    "question": "znati o",
+    "correct_answer": "wissen von + D",
+    "category": "Verben mit Präpositionen (6)",
+    "hint": "Ne znam ništa o novim računalima za naš tim.",
+    "example": "Ich weiß nichts von neuen Computern für unser Team. - Ne znam ništa o novim računalima za naš tim."
   }
 }
