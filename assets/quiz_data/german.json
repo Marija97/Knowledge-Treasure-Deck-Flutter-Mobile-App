@@ -390,9 +390,10 @@
   },
   "držati": {
     "question": "držati",
-    "correct_answer": "halten, hielt, hat gehalten; er hält",
-    "category": "irregular_verbs_common",
-    "hint": "halten"
+    "correct_answer": "halten",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "irreg.",
+    "explanation": "halten,hielt, gehalten; ich halte, du hältst, sie hält"
   },
   "zvati se": {
     "question": "zvati se",
@@ -444,9 +445,8 @@
   },
   "uzeti": {
     "question": "uzeti",
-    "correct_answer": "nehmen, nahm, hat genommen; er nimmt",
-    "category": "irregular_verbs_common",
-    "hint": "nehmen"
+    "correct_answer": "nehmen",
+    "category": "LND 2. Das darf nicht wahr sein!"
   },
   "zvati": {
     "question": "zvati",
@@ -1755,11 +1755,9 @@
   },
   "pasti na pamet": {
     "question": "pasti na pamet",
-    "correct_answer": "einfallen + Dat;  fiel ein; ist eingefallen",
-    "category": "unterricht 06.11.2024. (T11)",
-    "hint": "irreg.",
-    "explanation": "Present: ich falle ein, du fällst ein, er fällt ein...",
-    "example": "Baš sam se sjetio/la : mir ist eben eingefallen …\nMir fällt nichts ein. (Ništa mi ne pada na pamet.)\nPlötzlich fiel ihm ein, dass er den Schlüssel vergessen hatte. (Odjednom se sjetio da je zaboravio ključ.)"
+    "correct_answer": "sich(Dativ) einfallen",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Mir fällt gerade nichts ein. (Trenutno se ne mogu ničega sjetiti.)"
   },
   "Ne pada mi na pamet njeno ime.\nJedna glumica, čijeg se imena ne mogu sjetiti, je jako dobro glumila.": {
     "question": "Ne pada mi na pamet njeno ime.\nJedna glumica, čijeg se imena ne mogu sjetiti, je jako dobro glumila.",
@@ -2428,9 +2426,9 @@
   },
   "misliti na": {
     "question": "misliti na",
-    "correct_answer": "denken an + Akk",
-    "category": "unterricht 25.11.2024. (T16)",
-    "example": "Woran denkst du? Ich denke daran, dass ich morgen eine Prüfung habe / an die Prüfung."
+    "correct_answer": "denken an + A",
+    "category": "LND 5. Offene Worte",
+    "explanation": "Sie hat an mich gedacht."
   },
   "mali, neznatan (opisivanje nečega što je male vrijednosti, značaja ili veličine)": {
     "question": "mali, neznatan (opisivanje nečega što je male vrijednosti, značaja ili veličine)",
@@ -3217,10 +3215,10 @@
   },
   "razumjeti se u": {
     "question": "razumjeti se u",
-    "correct_answer": "verstehen von + D",
-    "category": "Verben mit Präpositionen (5)",
-    "hint": "Razumiješ li nešto o elektrotehnici?",
-    "example": "Verstehst du etwas von Elektrik? - Razumiješ li nešto o elektrotehnici?"
+    "correct_answer": "verstehen von (D)",
+    "category": "LND 7. Sie singt wirklich!",
+    "hint": "muziku npr.",
+    "example": "Von Musik verstehst du leider nichsts."
   },
   "reći o": {
     "question": "reći o",
@@ -3424,5 +3422,781 @@
     "category": "Verben mit Präpositionen (6)",
     "hint": "Ne znam ništa o novim računalima za naš tim.",
     "example": "Ich weiß nichts von neuen Computern für unser Team. - Ne znam ništa o novim računalima za naš tim."
+  },
+  "barem": {
+    "question": "barem",
+    "correct_answer": "wenigstens",
+    "category": "LND 2. Das darf nicht wahr sein!"
+  },
+  "ponijeti": {
+    "question": "ponijeti",
+    "correct_answer": "mitnehmen",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "čitati naglas": {
+    "question": "čitati naglas",
+    "correct_answer": "vorlesen",
+    "category": "LND 2. Das darf nicht wahr sein!"
+  },
+  "predati (npr. mob)": {
+    "question": "predati (npr. mob)",
+    "correct_answer": "abgeben",
+    "category": "LND 2. Das darf nicht wahr sein!"
+  },
+  "čvrsto": {
+    "question": "čvrsto",
+    "correct_answer": "fest",
+    "category": "LND 2. Das darf nicht wahr sein!"
+  },
+  "prelijevati se": {
+    "question": "prelijevati se",
+    "correct_answer": "überlaufen",
+    "category": "LND 2. Das darf nicht wahr sein!",
+    "example": "Das Wasser läuft über. (Voda se prelijeva.)"
+  },
+  "položiti": {
+    "question": "položiti",
+    "correct_answer": "legen",
+    "category": "LND 3. Die Tollste und Beste",
+    "hint": "Položila je kartu na pod.",
+    "example": "Sie legt die Landkarte auf den Boden."
+  },
+  "smjer, pravac": {
+    "question": "smjer, pravac",
+    "correct_answer": "die Richtung",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "strana svijeta": {
+    "question": "strana svijeta",
+    "correct_answer": "die Himmelsrichtung, -en",
+    "category": "LND 3. Die Tollste und Beste",
+    "hint": "nebo + smjer",
+    "explanation": "der Himmel - nebo"
+  },
+  "u svakom slučaju": {
+    "question": "u svakom slučaju",
+    "correct_answer": "auf jeden Fall",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "zataknuti": {
+    "question": "zataknuti",
+    "correct_answer": "stecken",
+    "category": "LND 3. Die Tollste und Beste",
+    "hint": "Zataknula je kartu u svoju torbu.",
+    "example": "Sie steckt die Karte in ihre Tasche."
+  },
+  "Moramo ići ovim putem.": {
+    "question": "Moramo ići ovim putem.",
+    "correct_answer": "Wir müssen diesen Weg nehmen.",
+    "category": "LND 3. Die Tollste und Beste",
+    "hint": "...desno",
+    "explanation": "nach rechts"
+  },
+  "dok se ne smrači": {
+    "question": "dok se ne smrači",
+    "correct_answer": "bis es dunkel wird",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "sjesti": {
+    "question": "sjesti",
+    "correct_answer": "sich hinsetzen",
+    "category": "LND 3. Die Tollste und Beste",
+    "example": "Julia setzt sich hin."
+  },
+  "to je još gore": {
+    "question": "to je još gore",
+    "correct_answer": "das ist noch schlimmer",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "Njene noge postaju sve teže i teže.": {
+    "question": "Njene noge postaju sve teže i teže.",
+    "correct_answer": "Ihre Beine werden immer schwerer.",
+    "category": "LND 3. Die Tollste und Beste",
+    "explanation": "das Bein - noga"
+  },
+  "ona gleda svakih 10 min na sat": {
+    "question": "ona gleda svakih 10 min na sat",
+    "correct_answer": "Sie sieht alle 10 Minuten auf die Uhr.",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "izvaditi (npr iz torbe)": {
+    "question": "izvaditi (npr iz torbe)",
+    "correct_answer": "holen",
+    "category": "LND 3. Die Tollste und Beste",
+    "explanation": "aus der Tasche holen"
+  },
+  "jednak isti; odmah": {
+    "question": "jednak isti; odmah",
+    "correct_answer": "gleich",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "dozvoliti, dopustiti": {
+    "question": "dozvoliti, dopustiti",
+    "correct_answer": "erlauben",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "potom": {
+    "question": "potom",
+    "correct_answer": "danach",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "pokazao mi je \"kako se to radi\"": {
+    "question": "pokazao mi je \"kako se to radi\"",
+    "correct_answer": "Er hat mir gezeigt, wie man es macht",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "slušati": {
+    "question": "slušati",
+    "correct_answer": "zuhören",
+    "category": "LND 3. Die Tollste und Beste",
+    "example": "Julia hört zu"
+  },
+  "svugdje": {
+    "question": "svugdje",
+    "correct_answer": "überall",
+    "category": "LND 3. Die Tollste und Beste"
+  },
+  "župnik": {
+    "question": "župnik",
+    "correct_answer": "der Pfarrer, -",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "tu": {
+    "question": "tu",
+    "correct_answer": "da",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "tamo": {
+    "question": "tamo",
+    "correct_answer": "dort",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "Tu ćemo sigurno nešto dobit.": {
+    "question": "Tu ćemo sigurno nešto dobit.",
+    "correct_answer": "Da bekommen wir sicher was.",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "Neću moliti strance za hranu,": {
+    "question": "Neću moliti strance za hranu,",
+    "correct_answer": "Ich bitte keine fremden Menschen um Essen.",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "neugodno, nezgodno, nelagodno, mučno": {
+    "question": "neugodno, nezgodno, nelagodno, mučno",
+    "correct_answer": "peinlich",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "klupa": {
+    "question": "klupa",
+    "correct_answer": "die Bank",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "zvoniti": {
+    "question": "zvoniti",
+    "correct_answer": "klingeln",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "pođi ((\"za mnom\")) u kuhinju": {
+    "question": "pođi ((\"za mnom\")) u kuhinju",
+    "correct_answer": "Komm mit in die Küche",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "imam nešto malo juhe": {
+    "question": "imam nešto malo juhe",
+    "correct_answer": "ich habe noch etwas Suppe",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "mirisati, vonjati (smell)": {
+    "question": "mirisati, vonjati (smell)",
+    "correct_answer": "riechen, roch, gerochen",
+    "category": "LND 4. Kartoffeln und Gemüse          ",
+    "hint": "irreg."
+  },
+  "tanjur": {
+    "question": "tanjur",
+    "correct_answer": "der Teller",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "Ona postavlja jedan tanjur sa juhom.": {
+    "question": "Ona postavlja jedan tanjur sa juhom.",
+    "correct_answer": "Sie stellt einen Teller mit Suppe hin.",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "u dvoje": {
+    "question": "u dvoje",
+    "correct_answer": "zu zweit",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "ona ide do prozora": {
+    "question": "ona ide do prozora",
+    "correct_answer": "Sie geht ans Fenster.",
+    "category": "LND 4. Kartoffeln und Gemüse          ",
+    "explanation": "1. gehen zu - Koristi se kada se ide prema osobi, mjestu ili objektu s naglaskom na odredište, bez nužne interakcije s površinom ili granicom tog objekta. \nzu opisuje opće odredište (osoba, zgrada, mjesto).\n\n2. gehen an - Koristi se kada se ide prema površini, granici ili rubu nečega, s naglaskom na dolazak u kontakt ili blizinu te površine. \nan opisuje približavanje nečemu s površinom ili granicom."
+  },
+  "napokon gotov": {
+    "question": "napokon gotov",
+    "correct_answer": "endlich vorbei",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "tek, samo": {
+    "question": "tek, samo",
+    "correct_answer": "Es ist doch gerade erst Mittag.",
+    "category": "LND 4. Kartoffeln und Gemüse          ",
+    "hint": "Tek je podne."
+  },
+  "gledati (s posebnim interesom, značajno pogledati?)": {
+    "question": "gledati (s posebnim interesom, značajno pogledati?)",
+    "correct_answer": "ansehen",
+    "category": "LND 4. Kartoffeln und Gemüse          ",
+    "example": "Die beiden Mädchen sehen sich an. - obje se međusobno značajno pogledaše"
+  },
+  "Ne dam da mi (itko) pokvari ovaj dan.": {
+    "question": "Ne dam da mi (itko) pokvari ovaj dan.",
+    "correct_answer": "Ich lasse mir diesen Tag nicht kaputt machen.",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "unutra": {
+    "question": "unutra",
+    "correct_answer": "drinnen",
+    "category": "LND 4. Kartoffeln und Gemüse          ",
+    "explanation": "(slang, skraceno moze drin)"
+  },
+  "staviti": {
+    "question": "staviti",
+    "correct_answer": "stellen",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "vrećica": {
+    "question": "vrećica",
+    "correct_answer": "die Tüte",
+    "category": "LND 4. Kartoffeln und Gemüse          "
+  },
+  "biti odsutan, otici, nestati": {
+    "question": "biti odsutan, otici, nestati",
+    "correct_answer": "weg sein",
+    "category": "LND 5. Offene Worte",
+    "hint": "netko nije prisutan ili je otišao",
+    "explanation": "weg - nestao"
+  },
+  "otvoriti (npr. kesu)": {
+    "question": "otvoriti (npr. kesu)",
+    "correct_answer": "aufmachen",
+    "category": "LND 5. Offene Worte",
+    "explanation": "Julia macht die Tüte auf."
+  },
+  "ljubazan": {
+    "question": "ljubazan",
+    "correct_answer": "freundlich",
+    "category": "LND 5. Offene Worte"
+  },
+  "draga, simpa": {
+    "question": "draga, simpa",
+    "correct_answer": "nett",
+    "category": "LND 5. Offene Worte"
+  },
+  "krenuti, poći": {
+    "question": "krenuti, poći",
+    "correct_answer": "los gehen",
+    "category": "LND 5. Offene Worte"
+  },
+  "viknuti": {
+    "question": "viknuti",
+    "correct_answer": "rufen",
+    "category": "LND 5. Offene Worte"
+  },
+  "lipati, kucati": {
+    "question": "lipati, kucati",
+    "correct_answer": "klopfen",
+    "category": "LND 5. Offene Worte",
+    "hint": "npr srce",
+    "explanation": "das Herz klopft",
+    "example": "Julia fühlt ihr Herz schneller klopfen."
+  },
+  "ispraviti, nadoknaditi (npr grešku)": {
+    "question": "ispraviti, nadoknaditi (npr grešku)",
+    "correct_answer": "wiedergutmachen",
+    "category": "LND 5. Offene Worte",
+    "explanation": "ich mache ... wiedergut."
+  },
+  "na drugoj strani ulice": {
+    "question": "na drugoj strani ulice",
+    "correct_answer": "auf der anderen Straßenseite",
+    "category": "LND 5. Offene Worte"
+  },
+  "gledati, viriti": {
+    "question": "gledati, viriti",
+    "correct_answer": "gucken",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "u trgovini: \"samo gledatii\"",
+    "explanation": "gucken je jednostavniji i opušteniji način za reći \"gledati\".",
+    "example": "Wir möchten nur ein bisschen gucken."
+  },
+  "\"uzmite si vremena\"": {
+    "question": "\"uzmite si vremena\"",
+    "correct_answer": "Lass euch Zeit",
+    "category": "LND 6. Kein Geld, keine Klamotten"
+  },
+  "držati visoko, podići": {
+    "question": "držati visoko, podići",
+    "correct_answer": "hochhalten",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "npr neku majicu",
+    "example": "Sie hält eine Bluse hoch. Die Schüler halten verschiedene Dinge hoch."
+  },
+  "pojas, remen, kajš": {
+    "question": "pojas, remen, kajš",
+    "correct_answer": "der Gürtel",
+    "category": "LND 6. Kein Geld, keine Klamotten"
+  },
+  "tek sada; osjeti (primjećivati), u smislu primijeti šta reče": {
+    "question": "tek sada; osjeti (primjećivati), u smislu primijeti šta reče",
+    "correct_answer": "erst jetzt; merken",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "example": "Erst jetzt metkt Julia, was sie gesagt hat."
+  },
+  "minutu kasnije, ...": {
+    "question": "minutu kasnije, ...",
+    "correct_answer": "nach einer Minute",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "nakon jedne minute"
+  },
+  "imati pravo, biti u pravu": {
+    "question": "imati pravo, biti u pravu",
+    "correct_answer": "recht haben",
+    "category": "LND 6. Kein Geld, keine Klamotten"
+  },
+  "slagati se sa, odgovaraju ( npr majica se slaže sa očima)": {
+    "question": "slagati se sa, odgovaraju ( npr majica se slaže sa očima)",
+    "correct_answer": "passen zu",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "example": "Die Farben passen sehr gut zu deinen Augen."
+  },
+  "isprobavati odjeću": {
+    "question": "isprobavati odjeću",
+    "correct_answer": "Klamotten anprobieren",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "example": "Lea probiert viele verschiedene Sachen an."
+  },
+  "džep od hlača": {
+    "question": "džep od hlača",
+    "correct_answer": "die Hosentasche",
+    "category": "LND 6. Kein Geld, keine Klamotten"
+  },
+  "pritom; uz sebe": {
+    "question": "pritom; uz sebe",
+    "correct_answer": "dabei",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "npr nemam kod sebe novaca",
+    "example": "Ich habe ja gar kein Geld dabei."
+  },
+  "prebaciti, uplatiti novac": {
+    "question": "prebaciti, uplatiti novac",
+    "correct_answer": "Geld überweisen",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "example": "Kann Lea das Geld nicht einfach überweisen?"
+  },
+  "dati da poneseš": {
+    "question": "dati da poneseš",
+    "correct_answer": "mitgeben",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "\"dati sa sobom\" ili \"poslati s nekim\", kada nekome nešto dajete da ponese ili ponese sa sobom",
+    "example": "Ohne Geld kann ich euch die Sachen nicht mitgeben."
+  },
+  "ostaviti": {
+    "question": "ostaviti",
+    "correct_answer": "liegen lassen",
+    "category": "LND 6. Kein Geld, keine Klamotten",
+    "hint": "npr slučajno ostaviti ključeve ili ostaviti robu na čuvanje",
+    "example": "Aber ich lasse sie hier liegen. Ich habe meinen Schlüssel zu Hause liegen lassen. (Ostavio sam svoj ključ kod kuće.)"
+  },
+  "razmišljati": {
+    "question": "razmišljati",
+    "correct_answer": "nachdenken",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Sie denken nach."
+  },
+  "zaradila sam skoro 200 eura": {
+    "question": "zaradila sam skoro 200 eura",
+    "correct_answer": "Ich habe fast 200 Euro verdient.",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "sudjelovati, pridružiti se": {
+    "question": "sudjelovati, pridružiti se",
+    "correct_answer": "mitmachen",
+    "category": "LND 7. Sie singt wirklich!",
+    "hint": "sudjelovati",
+    "example": "Nein, da mache ich nicht mit. \"Ne, u tome ne sudjelujem\" ili \"Ne, ne pridružujem se tome.\""
+  },
+  "Stanem tamo na trgu ispred crkve": {
+    "question": "Stanem tamo na trgu ispred crkve",
+    "correct_answer": "Ich stelle mich dort auf den Kirchplatz.",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "staviti se negdje": {
+    "question": "staviti se negdje",
+    "correct_answer": "(sich) hinstellen",
+    "category": "LND 7. Sie singt wirklich!",
+    "explanation": "Hinstellen znači \"staviti\" ili \"postaviti\" nešto na određeno mjesto, obično u smislu postavljanja nečega na tlo ili na površinu.",
+    "example": "Das ist peinlich, wenn du dich da hinstellst und singst."
+  },
+  "zatvoriti (npr oči)": {
+    "question": "zatvoriti (npr oči)",
+    "correct_answer": "schließen",
+    "category": "LND 7. Sie singt wirklich!",
+    "hint": "irreg",
+    "explanation": "schließen, schloss, geschlossen",
+    "example": "Lea schließt die Augen."
+  },
+  "povrijediti": {
+    "question": "povrijediti",
+    "correct_answer": "verletzen",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "zamisliti, predočiti si": {
+    "question": "zamisliti, predočiti si",
+    "correct_answer": "sich vorstellen",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Ich kann mir ein Leben ohne Musik nicht vorstellen."
+  },
+  "Pjevam već mnogo godina.": {
+    "question": "Pjevam već mnogo godina.",
+    "correct_answer": "Ich singe schon seit vielen Jahren",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "pokuša se sjetit dobre riječi (za opisat)": {
+    "question": "pokuša se sjetit dobre riječi (za opisat)",
+    "correct_answer": "Sie denkt über ein gutes Wort nach.",
+    "category": "LND 7. Sie singt wirklich!",
+    "hint": "razmišlja o nekoj dobroj riječi",
+    "example": "Sie denkt über ein gutes Wort nach, aber ihr fällt keins ein."
+  },
+  "imati dobar ukus za": {
+    "question": "imati dobar ukus za",
+    "correct_answer": "einen Guten Geschmack bei etw(D) haben",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Bei Klamotten hast du wirklich einen guten Geschmack. Aber bei der Musik ist es anders."
+  },
+  "Onda stani tamo i pjevaj.": {
+    "question": "Onda stani tamo i pjevaj.",
+    "correct_answer": "Dann stell dich hin und sing.",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "takav,takve": {
+    "question": "takav,takve",
+    "correct_answer": "solch, solche",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Warum macht Lea solche verrückten Sachen?"
+  },
+  "odavdje": {
+    "question": "odavdje",
+    "correct_answer": "von hier aus",
+    "category": "LND 7. Sie singt wirklich!",
+    "hint": "npr. odavdje može dobro čuti i vidjeti cijeli trg",
+    "example": "Von hier aus kann sie gut hören und den ganzen Platz sehen."
+  },
+  "poznavati (npr neke operne pjesme)": {
+    "question": "poznavati (npr neke operne pjesme)",
+    "correct_answer": "kennen",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "već je jednom čula": {
+    "question": "već je jednom čula",
+    "correct_answer": "sie hat es schon mal gehört",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "stajati oko nečega": {
+    "question": "stajati oko nečega",
+    "correct_answer": "um + A herum stehen",
+    "category": "LND 7. Sie singt wirklich!",
+    "example": "Sie stehen um den Baum herum. Sie stehen im Kreis um Lea herum."
+  },
+  "kovanica": {
+    "question": "kovanica",
+    "correct_answer": "die Münze, -n",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "najvažnije (a stvar) na cijelom svijetu": {
+    "question": "najvažnije (a stvar) na cijelom svijetu",
+    "correct_answer": "das Wichtigste auf der ganzen Welt",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "\"Koji sam ja idiot.\"": {
+    "question": "\"Koji sam ja idiot.\"",
+    "correct_answer": "Was bin ich für ein Idiot",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "aplauz": {
+    "question": "aplauz",
+    "correct_answer": "der Applaus",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "ovaj put, ovoga puta": {
+    "question": "ovaj put, ovoga puta",
+    "correct_answer": "diesmal",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "Njegove oči su zatvorene.": {
+    "question": "Njegove oči su zatvorene.",
+    "correct_answer": "Seine Augen sind zu.",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "ali odmah otvara (oči)": {
+    "question": "ali odmah otvara (oči)",
+    "correct_answer": "sie macht (die Augen) aber gleich wieder auf",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "napola puno (pola puna)": {
+    "question": "napola puno (pola puna)",
+    "correct_answer": "halbvoll",
+    "category": "LND 7. Sie singt wirklich!"
+  },
+  "čuje se (ona) \"i\" do šume": {
+    "question": "čuje se (ona) \"i\" do šume",
+    "correct_answer": "Man hört sie bis in den Wald.",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "pustite je na miru": {
+    "question": "pustite je na miru",
+    "correct_answer": "Lasst sie in Ruhe.",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "ponoviti": {
+    "question": "ponoviti",
+    "correct_answer": "wiederholen",
+    "category": "LND 8. Nina hat kein Glück",
+    "example": "..., widerholt Hanna."
+  },
+  "nastaviti pjevati": {
+    "question": "nastaviti pjevati",
+    "correct_answer": "wieitersingen",
+    "category": "LND 8. Nina hat kein Glück",
+    "explanation": "trennbar",
+    "example": "Sie hat das Lied angefangen und dann weitergesungen. (Započela je pjesmu i onda je nastavila pjevati.)"
+  },
+  "odjednom": {
+    "question": "odjednom",
+    "correct_answer": "auf einmal",
+    "category": "LND 8. Nina hat kein Glück",
+    "example": "Auf einmal begann es zu regnen. (Odjednom je počelo padati.) Sie stand auf einmal vor mir. (Odjednom je stajala ispred mene.)"
+  },
+  "obraz": {
+    "question": "obraz",
+    "correct_answer": "die Wange, -n",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "Odjednom potekoše suze preko Julijinih obraza.": {
+    "question": "Odjednom potekoše suze preko Julijinih obraza.",
+    "correct_answer": "Auf einmal laufen Tränen über Julias Wangen.",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "tko je sad taj momak tu": {
+    "question": "tko je sad taj momak tu",
+    "correct_answer": "Wer ist denn der Junge da?",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "okrenuti se": {
+    "question": "okrenuti se",
+    "correct_answer": "sich umdrehen",
+    "category": "LND 8. Nina hat kein Glück",
+    "hint": "Julija se okreće.",
+    "example": "Julia dreht sich um."
+  },
+  "klicati, veseliti se": {
+    "question": "klicati, veseliti se",
+    "correct_answer": "jubeln",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "jedan od (mnogih)": {
+    "question": "jedan od (mnogih)",
+    "correct_answer": "einer der",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "Ona upravo razgovara s jednim od mnogih slušatelja.": {
+    "question": "Ona upravo razgovara s jednim od mnogih slušatelja.",
+    "correct_answer": "Sie spricht gerade mit einem der vielen Zuhörer.",
+    "category": "LND 8. Nina hat kein Glück",
+    "explanation": "slušatelj - der Zuhörer:in; pl die Zuhörer"
+  },
+  "razgovor": {
+    "question": "razgovor",
+    "correct_answer": "das Gespräch",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "\"Misliš?\" xD": {
+    "question": "\"Misliš?\" xD",
+    "correct_answer": "Findest du?",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "Oni se pomiču malo sa strane.": {
+    "question": "Oni se pomiču malo sa strane.",
+    "correct_answer": "Sie gehen ein Stück zur Seite.",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "komad": {
+    "question": "komad",
+    "correct_answer": "das Stück",
+    "category": "LND 8. Nina hat kein Glück"
+  },
+  "prazan": {
+    "question": "prazan",
+    "correct_answer": "leer",
+    "category": "LND 9. Sitzen und warten",
+    "example": "Der Kirchplatz ist fast leer."
+  },
+  "vjerojatno (nekad znaci dobro, ugodno)": {
+    "question": "vjerojatno (nekad znaci dobro, ugodno)",
+    "correct_answer": "wohl",
+    "category": "LND 9. Sitzen und warten",
+    "example": "Was Hanna wohl gerade macht? znači \"Što Hanna vjerojatno sada radi?\""
+  },
+  "Zar Hanna zaista ne primjećuje kakva je Nina?": {
+    "question": "Zar Hanna zaista ne primjećuje kakva je Nina?",
+    "correct_answer": "Merkt Hanna denn nicht, wie Nina ist?",
+    "category": "LND 9. Sitzen und warten",
+    "explanation": "Riječ \"denn\" u ovom kontekstu dodaje naglasak na pitanje, izražavajući iznenađenje ili nevjericu."
+  },
+  "Mali pas trči preko trga.": {
+    "question": "Mali pas trči preko trga.",
+    "correct_answer": "Ein kleiner Hund läuft über den Platz.",
+    "category": "LND 9. Sitzen und warten"
+  },
+  "on skrece pogled": {
+    "question": "on skrece pogled",
+    "correct_answer": "er sieht weg",
+    "category": "LND 9. Sitzen und warten",
+    "explanation": "weg - \"daleko\" ili \"odsutan.\"; U kombinaciji s glagolima: označava radnju uklanjanja ili udaljavanja.\n\nEr sieht weg. (On skreće pogled / gleda ustranu.)\nNimm das weg! (Makni to!)"
+  },
+  "doviknuti": {
+    "question": "doviknuti",
+    "correct_answer": "zurufen",
+    "category": "LND 9. Sitzen und warten",
+    "example": "Ruft Tim Julia zu. Sie hat mir von weitem zugerufen. (Doviknula mi je izdaleka.)"
+  },
+  "zacrveni se": {
+    "question": "zacrveni se",
+    "correct_answer": "sie wird rot",
+    "category": "LND 9. Sitzen und warten"
+  },
+  "na povratku": {
+    "question": "na povratku",
+    "correct_answer": "auf dem Weg zurück",
+    "category": "LND 10. Julia hat eine Idee",
+    "hint": "na putu prema natrag"
+  },
+  "Julia iznenada stane": {
+    "question": "Julia iznenada stane",
+    "correct_answer": "Julia bleibt plötzlich stehen.",
+    "category": "LND 10. Julia hat eine Idee"
+  },
+  "ne, \"ne može to tako\"": {
+    "question": "ne, \"ne može to tako\"",
+    "correct_answer": "Nein, das geht nicht.",
+    "category": "LND 10. Julia hat eine Idee",
+    "hint": "to ne ide"
+  },
+  "ništa ti ne pada na pamet?": {
+    "question": "ništa ti ne pada na pamet?",
+    "correct_answer": "Fällt dir nichts ein?",
+    "category": "LND 10. Julia hat eine Idee"
+  },
+  "ček ček, samo momenat, samo malo": {
+    "question": "ček ček, samo momenat, samo malo",
+    "correct_answer": "Momment mal!",
+    "category": "LND 10. Julia hat eine Idee",
+    "example": "Moment mal, was hast du gesagt? (Trenutak, što si rekao?)"
+  },
+  "najradije": {
+    "question": "najradije",
+    "correct_answer": "am liebsten",
+    "category": "LND 10. Julia hat eine Idee",
+    "hint": "\"Najradije pjevam pod tušem.\"",
+    "example": "Am liebsten singe ich unter der Dusche."
+  },
+  "pjesma": {
+    "question": "pjesma",
+    "correct_answer": "das Lied, die Lieder",
+    "category": "LND 10. Julia hat eine Idee"
+  },
+  "odakle": {
+    "question": "odakle",
+    "correct_answer": "woher",
+    "category": "LND 10. Julia hat eine Idee"
+  },
+  "vatra, oganj": {
+    "question": "vatra, oganj",
+    "correct_answer": "das Feuer, -",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "odmah uz logorsku vatru": {
+    "question": "odmah uz logorsku vatru",
+    "correct_answer": "gleich am Lagerfeuer",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "kakva sreća!": {
+    "question": "kakva sreća!",
+    "correct_answer": "so ein Glück!",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "stolica": {
+    "question": "stolica",
+    "correct_answer": "der Stuhl",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "skroz drukčije": {
+    "question": "skroz drukčije",
+    "correct_answer": "ganz anders",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "vjerojatno": {
+    "question": "vjerojatno",
+    "correct_answer": "wahrscheinlich",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "Bila je stvarno ljubomorna zbog Lee.": {
+    "question": "Bila je stvarno ljubomorna zbog Lee.",
+    "correct_answer": "Sie war richtig eifersüchtig wegen Lea.",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "Zaista? Iskreno, stvaarno?": {
+    "question": "Zaista? Iskreno, stvaarno?",
+    "correct_answer": "ehrlich",
+    "category": "LND 11. Ein wichtiges Geschpräch",
+    "hint": "skren, pošten"
+  },
+  "poswađale smo se": {
+    "question": "poswađale smo se",
+    "correct_answer": "wir haben uns gestritten",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "doista + pridjev": {
+    "question": "doista + pridjev",
+    "correct_answer": "richtig + pridjev",
+    "category": "LND 11. Ein wichtiges Geschpräch"
+  },
+  "Svi govore odjednom.": {
+    "question": "Svi govore odjednom.",
+    "correct_answer": "Alle sprechen auf einmal.",
+    "category": "LND 12. Das Andenken"
+  },
+  "Nemam više volje za tvoje loše raspoloženje.": {
+    "question": "Nemam više volje za tvoje loše raspoloženje.",
+    "correct_answer": "Ich habe keine Lust mehr auf deine schlechte Laune.",
+    "category": "LND 12. Das Andenken"
+  },
+  "Meni to nije zabavno.": {
+    "question": "Meni to nije zabavno.",
+    "correct_answer": "Mir macht es keinen Spaß.",
+    "category": "LND 12. Das Andenken"
+  },
+  "Hanna tiho kaže Juliji.": {
+    "question": "Hanna tiho kaže Juliji.",
+    "correct_answer": "Sagt Hanna leise zu Julia.",
+    "category": "LND 12. Das Andenken"
+  },
+  "Njeno srce kuca do grla.": {
+    "question": "Njeno srce kuca do grla.",
+    "correct_answer": "Ihr Herz klopft bis zum Hals.",
+    "category": "LND 12. Das Andenken",
+    "explanation": "der Hals - vrat"
   }
 }
