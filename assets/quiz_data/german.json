@@ -5048,5 +5048,484 @@
     "question": "prije svega",
     "correct_answer": "vor allem",
     "category": "die Schönheit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: pri čemu": {
+    "question": "pri čemu",
+    "correct_answer": "wobei",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: pritom": {
+    "question": "pritom",
+    "correct_answer": "dabei",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: na temelju toga": {
+    "question": "na temelju toga",
+    "correct_answer": "basierend darauf",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: prednost": {
+    "question": "prednost",
+    "correct_answer": "der Vorteil",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: pažnja": {
+    "question": "pažnja",
+    "correct_answer": "die Aufmerksamkeit",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: ostavit (prvi) dojam": {
+    "question": "ostavit (prvi) dojam",
+    "correct_answer": "einen (ersten) Eindruck hinterlassen",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: presudan": {
+    "question": "presudan",
+    "correct_answer": "entscheidend",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: odnos": {
+    "question": "odnos",
+    "correct_answer": "die Beziehung",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: nešto se zasniva na nečemu": {
+    "question": "nešto se zasniva na nečemu",
+    "correct_answer": "etwas gründet sich auf (+ Akkusativ)",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit",
+    "explanation": "Razlika između \"sich gründen auf\" i \"auf ... begründet sein\"\n\"sich gründen auf\" (+ AKK) → naglašava proces temeljenja na nečemu\n\nDie Idee gründet sich auf klare Prinzipien. (Ideja se temelji na jasnim principima.)\n\n\"auf ... begründet sein\" (+ DAT) → naglašava već postojeće stanje\n\nDie Entscheidung ist auf falschen Informationen begründet. (Odluka je zasnovana na pogrešnim informacijama.)"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: poput": {
+    "question": "poput",
+    "correct_answer": "wie",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: zrelost": {
+    "question": "zrelost",
+    "correct_answer": "die Reife",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: nešto slično važi i za...": {
+    "question": "nešto slično važi i za...",
+    "correct_answer": "etwas Ähnliches gilt auch für...",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: trud, napor": {
+    "question": "trud, napor",
+    "correct_answer": "die Mühe",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit",
+    "example": "Vielen Dank für Ihre Mühe! Hvala vam na trudu!"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: faktor, čimbenik": {
+    "question": "faktor, čimbenik",
+    "correct_answer": "der Faktor, die Faktoren",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: uspjeh": {
+    "question": "uspjeh",
+    "correct_answer": "der Erfolg, die Erfolge",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: umjesto toga": {
+    "question": "umjesto toga",
+    "correct_answer": "stattdessen",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: u tu svrhu": {
+    "question": "u tu svrhu",
+    "correct_answer": "zu diesem Zweck",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: oslanjati se (isključivo) na": {
+    "question": "oslanjati se (isključivo) na",
+    "correct_answer": "sich ausschließlich auf (+ Akkusativ) verlassen",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit",
+    "explanation": "verlassen = napustiti; sich verlassen auf+Akk = pouzdati se u",
+    "example": "Man sollte sich nicht ausschließlich auf das Aussehen verlassen. Ne treba se oslanjati isključivo na izgled."
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: osim toga": {
+    "question": "osim toga",
+    "correct_answer": "außerdem",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: prolazno": {
+    "question": "prolazno",
+    "correct_answer": "vergänglich",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit",
+    "hint": "kada se misli na nešto što je prolazno u širem smislu (npr. lepota, život)",
+    "example": "Schönheit ist vergänglich. Lepota je prolazna."
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: istinski": {
+    "question": "istinski",
+    "correct_answer": "tatsächlich",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit"
+  },
+  "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit: u slučaju da": {
+    "question": "u slučaju da",
+    "correct_answer": "Falls",
+    "category": "1. Aufsatz: die Bedeutung von Schönheit in der heutigen Zeit",
+    "explanation": "Falls = im Falle, dass...",
+    "example": "„Falls Sie ihn korrigieren möchten, würde ich mich freuen.“ = „Im Falle, dass Sie ihn korrigieren möchten, würde ich mich freuen.“"
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : T1 Google: Nachfrage nach Tattoos steigt": {
+    "question": "T1 Google: Nachfrage nach Tattoos steigt",
+    "correct_answer": "Die Häufigkeit der Suchanfragen bei Google zeigt, dass Tattoos weltweit nach wie vor „in\" sind. Mehr noch: Sie sind ein \"Sc? wetterthema\", denn vor allem im Frühjahr und Sommer wird nach Tattoo-Motiven gesucht. Die sollte man auch wirklich gut überlegen: Was bei einem 20-jährigen Skateboarder cool aussieht, kann 40 Jahre später ganz anders wirken!",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt "
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : potražnja, upit": {
+    "question": "potražnja, upit",
+    "correct_answer": "die Nachfrage",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt ",
+    "hint": "kao u ekonomskom smislu",
+    "example": "Die Nachfrage nach umweltfreundlichen Produkten steigt. - Potražnja za ekološkim proizvodima raste."
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : upit za pretraživanje, pretraga (na Googleu recimo)": {
+    "question": "upit za pretraživanje, pretraga (na Googleu recimo)",
+    "correct_answer": "die Suchanfrage",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt "
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : širom svijeta": {
+    "question": "širom svijeta",
+    "correct_answer": "weltweit",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt "
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : štaviše; još više, što je još važnije, štoviše": {
+    "question": "štaviše; još više, što je još važnije, štoviše",
+    "correct_answer": "mehr noch",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt ",
+    "example": "Er ist nicht nur schnell, mehr noch, er ist der schnellste Läufer.- Nije samo brz, štoviše, on je najbrži trkač."
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : još uvijek, i dalje": {
+    "question": "još uvijek, i dalje",
+    "correct_answer": "nach wie vor",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt ",
+    "example": "Nach wie vor ist er der beste Spieler im Team. - I dalje je najbolji igrač u timu."
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : prvenstveno, prije svega, ponajviše": {
+    "question": "prvenstveno, prije svega, ponajviše",
+    "correct_answer": "vor allem",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt "
+  },
+  "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt : promisliti": {
+    "question": "promisliti",
+    "correct_answer": "überlegen",
+    "category": "S52. Text: Echt extrem - 1. Google: Nachfrage nach Tattoos steigt ",
+    "example": "Die sollte man auch wirklich gut überlegen. - To bi stvarno trebalo dobro promisliti."
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : T2 Kitesurfen - zwischen Himmel und Wasser": {
+    "question": "T2 Kitesurfen - zwischen Himmel und Wasser",
+    "correct_answer": "Geschwindigkeiten von über 90 km/h, 10m hohe und 200m weite Sprünge - kein Wassersport bietet so viel Nervenkitzel wie das Kitesurfen.,,Kiten ist, als würde man zwischen Himmel und Wasser schweben\", so Florian Gerber, Kitesurfer des Jahres. Vom 22. bis 25. Juli kämpfen die besten Kitesurfer Deutschlands auf der Insel Fehmarn um den Titel Deutscher Meister. Infos zu Kitekursen und zur optimalen Ausrüstung: www.pro-kite.de",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser "
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : zračni surf": {
+    "question": "zračni surf",
+    "correct_answer": "das Kitesurfen",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser ",
+    "example": "Im Sommer liebe ich es, Kitesurfen zu gehen. - U ljeto volim ići kitesurfing."
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : brzina": {
+    "question": "brzina",
+    "correct_answer": "die Geschwindigkeit",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser ",
+    "example": "Moderne Autos erreichen hohe Geschwindigkeiten. - Moderna auta postižu velike brzine."
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : širok, dalek, dug": {
+    "question": "širok, dalek, dug",
+    "correct_answer": "weit",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser "
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : skok, skokovi": {
+    "question": "skok, skokovi",
+    "correct_answer": "der Sprung, die Sprünge",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser "
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : škakljati; škakljanje": {
+    "question": "škakljati; škakljanje",
+    "correct_answer": "kitzeln; der Kitzel",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser ",
+    "example": "der Nervenkitzel - uzbuđenje, napetost, adrenalin (dosl. \"škakljanje živaca\")"
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : lebdjeti": {
+    "question": "lebdjeti",
+    "correct_answer": "schweben",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser ",
+    "hint": "moze biti irreg.",
+    "example": "schwebte/schwob, h. geschwebt/geschwoben"
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : boriti se za": {
+    "question": "boriti se za",
+    "correct_answer": "kämpfen um + Akk",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser "
+  },
+  "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser : oprema": {
+    "question": "oprema",
+    "correct_answer": "die Ausrüstung",
+    "category": "S52. Text: Echt extrem - 2. Kitesurfen - zwischen Himmel und Wasser "
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: T3 Eine 100-stellige Zahl in fünf Minuten": {
+    "question": "T3 Eine 100-stellige Zahl in fünf Minuten",
+    "correct_answer": "Sich Zahlenreihen wie 154265726371985 zu merken ist für Gedächtnissportler kein Problem, man muss nur ein paar Tricks beherrschen! So wie Gedächtnismeister Frank Otto. Er verknüpft alles, was er sich merken will, mit Bildern. Je kreativer die sind, umso besser kann er sich erinnern. Das liegt, wie Studien zeigen, an unserem Gehirn, das sich am besten an „merk-würdige“ Ereignisse erinnern kann.",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: X-znamenkast broj": {
+    "question": "X-znamenkast broj",
+    "correct_answer": "X-stellige Zahl",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "example": "einstellig, zweistellig, 100-stellig.."
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: red, niz, serija": {
+    "question": "red, niz, serija",
+    "correct_answer": "die Reihe",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "hint": "npr. brojeva",
+    "example": "die Zahlenreihe - niz brojeva"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: zapamtiti": {
+    "question": "zapamtiti",
+    "correct_answer": "sich merken",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "explanation": "merken - opaziti, uočiti ; bemerken - primijetiti",
+    "example": "Kannst du dir das für später merken? - Možeš li to zapamtiti za kasnije?"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: pamćenje": {
+    "question": "pamćenje",
+    "correct_answer": "das Gedächtnis, des Gedächtnisses, die Gedächtnisse",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "hint": "(N, G, pl.)"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: vladati, gospodariti, savladati": {
+    "question": "vladati, gospodariti, savladati",
+    "correct_answer": "beherrschen",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "example": "sich beherrschen = vladati sobom ; eine Sprache beherrschen = vladati jezikom"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: kao što, kao": {
+    "question": "kao što, kao",
+    "correct_answer": "so wie + N",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "example": "So wie der Lehrer, so auch die Schüler. Kao što učitelj, tako i učenici."
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: majstor, prvak, stručnjak": {
+    "question": "majstor, prvak, stručnjak",
+    "correct_answer": "der Meister",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten",
+    "example": "der Gedächtnismeister ; der Meister im Schach"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: povezivati, spajati": {
+    "question": "povezivati, spajati",
+    "correct_answer": "verknüpfen",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten"
+  },
+  "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten: mozak": {
+    "question": "mozak",
+    "correct_answer": "das Gehirn",
+    "category": "S52. Text: Echt extrem - 3. Eine 100-stellige Zahl in fünf Minuten"
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : T4 Auch mehr als 25 Paare im Schrank?": {
+    "question": "T4 Auch mehr als 25 Paare im Schrank?",
+    "correct_answer": "Dann sind Sie wahrscheinlich eine Frau, denn Studien belegen: Frauen lieben Schuhe. 45% der deutschen Frauen besitzen mehr als 25 Paar, 38% kommen auf zehn bis 25. Männer haben dafür kein Verständnis. Ihnen reichen ein Paar braune und ein Paar schwarze Schuhe. Die Erklärung der Frauen für ihren Schuhtick: Die Mode erfordere eben den je nach Farbe und Jahreszeit passenden Schuh - einen für jede Gelegenheit gibt es nicht!",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : ormar, ormari": {
+    "question": "ormar, ormari",
+    "correct_answer": "der Schrank, die Schränke",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : dokazati, potvrditi, zauzeti (mjesto), popuniti (nešto)": {
+    "question": "dokazati, potvrditi, zauzeti (mjesto), popuniti (nešto)",
+    "correct_answer": "belegen",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "example": "Die Studie belegt die Wirksamkeit der Behandlung. - Studija dokazuje učinkovitost liječenja. ; Ich habe den Platz für das Treffen belegt. - Zauzeo sam mjesto za sastanak."
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : posjedovati": {
+    "question": "posjedovati",
+    "correct_answer": "besitzen",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "hint": "irreg.",
+    "explanation": "besitzen, besaß, h. besessen"
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : dostići, (doći do) + neki broj": {
+    "question": "dostići, (doći do) + neki broj",
+    "correct_answer": "kommen auf",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "example": "38% kommen auf zehn bis 25 - 38% njih doseže 10-25 (para cipela)"
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : biti dovoljan, dostajati": {
+    "question": "biti dovoljan, dostajati",
+    "correct_answer": "reichen + D",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "explanation": "Pazi! riechen = mirisati / vonjati",
+    "example": "Ihnen(den Männern) reichen ein Paar braune und ein Paar schwarze Schuhe."
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : opsesija cipelama, manija za cipelama": {
+    "question": "opsesija cipelama, manija za cipelama",
+    "correct_answer": "der Schuhtick",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "explanation": "der Tick - tik (nervni ili ponašajni), opsesija, čudna navika"
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : iziskivati, zahtijevati": {
+    "question": "iziskivati, zahtijevati",
+    "correct_answer": "erfordern",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : baš, upravo": {
+    "question": "baš, upravo",
+    "correct_answer": "eben",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : cipela": {
+    "question": "cipela",
+    "correct_answer": "der Schuh",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : upravo onaj ikada najviše": {
+    "question": "upravo onaj ikada najviše",
+    "correct_answer": "eben den je",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       ",
+    "example": "Er ist eben der größte Denker, den je die Menschheit hervorgebracht hat. - On je upravo najveći mislilac kojeg je čovječanstvo ikada stvorilo."
+  },
+  "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       : -": {
+    "question": "-",
+    "correct_answer": "erfordern - zahtijevati, iziskivati\nfordern - tražiti, zahtijevati\nüberfordern - preopteretiti ; das überfordert mich = to prelazi moje snage\nfördern - unaprijediti, unaprjeđivati ; jemand fördert mich - netko me podupire, potiče, razvija ; eine (finanzielle) Förderung bekommen",
+    "category": "S52. Text: Echt extrem - 4. Auch mehr als 25 Paare im Schrank?                       "
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : T5 Aufräumen unbekannt": {
+    "question": "T5 Aufräumen unbekannt",
+    "correct_answer": "Schmutziges Geschirr und verdorbene Lebensmittel in der Küche, Zeitschriftenberge und Müll, wohin man blickt - so werden Wohnungen von Messies beschrieben. Messies sammeln zielund wahllos Sachen, können nicht zwischen wichtig und unwichtig, brauchbar und unbrauchbar unterscheiden. Oft leben sie sozial isoliert, als hätten sie eine ansteckende Krankenheit. Circa zwei Millionen Menschen sind in Deutschland von der Krankheit betroffen. Informationen und Hilfe bieten Selbsthilfegruppen, www.messie-selbsthilfe.de.",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  "
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : prljav, nečist, blatan": {
+    "question": "prljav, nečist, blatan",
+    "correct_answer": "schmutzig",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "example": "schmutziges Geschirr - prljavo posuđe"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : pokvaren (hrana)": {
+    "question": "pokvaren (hrana)",
+    "correct_answer": "verdorben",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "hint": "od irreg, glagola",
+    "explanation": "verderben, verdarb, ist verdorben",
+    "example": "verdorbene Lebensmittel in der Küche"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : gomila časopisa": {
+    "question": "gomila časopisa",
+    "correct_answer": "die Zeitschriftenberge",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "hint": "časopis + brdo",
+    "explanation": "der Zeitschriftenberg = složenica od die Zeitschrift (časopis) + der Berg (brdo)"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : kamo god pogledaš": {
+    "question": "kamo god pogledaš",
+    "correct_answer": "wohin man blickt",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "explanation": "koristi se za opis situacije kada je nešto prisutno posvuda, u svakom pravcu pogleda ; blicken - pogledati"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : besciljan, bez svrhe": {
+    "question": "besciljan, bez svrhe",
+    "correct_answer": "ziellos",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  "
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : random": {
+    "question": "random",
+    "correct_answer": "wahllos",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "explanation": "random, nasumično, bez odabira (razmišljanja)"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : uporabljiv, upotrebljiv": {
+    "question": "uporabljiv, upotrebljiv",
+    "correct_answer": "brauchbar",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "explanation": "unbrauchbar - neuporabljiv,  neupotrebljiv"
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : zaraziti; zarazan": {
+    "question": "zaraziti; zarazan",
+    "correct_answer": "zaraziti = anstecken ; zarazan = ansteckend",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "example": "Er hat mich mit einer Grippe angesteckt. - Zarazio me gripom."
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : odnositi se, ticati se": {
+    "question": "odnositi se, ticati se",
+    "correct_answer": "D (jemandem) betreffen",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "example": "was mich betrifft … - što se mene tiče ..."
+  },
+  "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  : biti \"pogođen\" (npr. bolešću)": {
+    "question": "biti \"pogođen\" (npr. bolešću)",
+    "correct_answer": "von D (der Krankheit) betroffen sein",
+    "category": "S52. Text: Echt extrem - 5. Aufräumen unbekannt                  ",
+    "explanation": "betreffen - odnositi se, ticati se",
+    "example": "Sie sind von der Krankenheit betroffen. Oni su pogođeni tom bolešću."
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : T6 Michael-Jackson-Flashmob in München": {
+    "question": "T6 Michael-Jackson-Flashmob in München",
+    "correct_answer": "Nach einem Aufruf im Internet haben sich am Wochenende mehrere hundert Fans zum Geburtstag des toten „King of Pop\" in vielen großen Städten Deutschlands, Österreichs und der Schweiz getroffen. Einige der Teilnehmer erschienen in Michael-Jackson-Kostümen. Es wurde zur Musik von „Beat it!\" oder „Thriller\" getanzt. Typisch für einen Flashmob: Gleich nach dem Tanz löste sich die Menge wieder auf, als wäre nichts passiert. Nach fünf Minuten war alles vorbei!",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : prozivka, apel, poziv na nešto (donaciju i sl.)": {
+    "question": "prozivka, apel, poziv na nešto (donaciju i sl.)",
+    "correct_answer": "der Aufruf",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "explanation": "prozivka u smislu kod zubara npr, ali inace vise neki poziv potaknut na internetu, npr. Area65 haha",
+    "example": "der Flashmob = iznenadno okupljanje grupe ljudi radi izvođenja neke kratke, često zabavne ili simbolične akcije, najčešće dogovorene putem interneta ili društvenih mreža"
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : naći se, sastati se, sresti se": {
+    "question": "naći se, sastati se, sresti se",
+    "correct_answer": "sich treffen",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : nekoliko stotina fanova": {
+    "question": "nekoliko stotina fanova",
+    "correct_answer": "mehrere hundert Fans",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : obožavatelj (nečega)": {
+    "question": "obožavatelj (nečega)",
+    "correct_answer": "der Fan + G ili der Fan von + D",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "example": "Ich bin ein großer Fan (von) der Serie \"Das Büro\"."
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : neki od (nečega / nekoga)": {
+    "question": "neki od (nečega / nekoga)",
+    "correct_answer": "einige + G",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "explanation": "„Einige“ je množina – koristi se samo s množinskim imenicama. Dakle, uvijek ide \"einige der + imenica pl.\"",
+    "example": "Einige der Gäste sind schon gegangen. Neki od gostiju su već otišli."
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : sudionik, sudionici": {
+    "question": "sudionik, sudionici",
+    "correct_answer": "der Teilnehmer, die Teilnehmer (pl.)",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : pojaviti se": {
+    "question": "pojaviti se",
+    "correct_answer": "erscheinen",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "hint": "irreg.",
+    "explanation": "erscheinen, erschien, ist erschienen"
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : plesati uz (muziku neke pjesme)": {
+    "question": "plesati uz (muziku neke pjesme)",
+    "correct_answer": "tanzen zu + D ;  zur Musik tanzen",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "example": "Es wurde zur Musik von „Beat it!\" oder „Thriller\" getanzt."
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : gotovo": {
+    "question": "gotovo",
+    "correct_answer": "vorbei",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "example": "Nach fünf Minuten war alles vorbei, als ob nichts passiert wäre."
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : razilatizi se, nestajati": {
+    "question": "razilatizi se, nestajati",
+    "correct_answer": "sich auflösen",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        ",
+    "hint": "od gl za raspustit nešto",
+    "explanation": "auflösen - raspustiti"
+  },
+  "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        : moštvo": {
+    "question": "moštvo",
+    "correct_answer": "die Menge",
+    "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
   }
 }
