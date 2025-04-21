@@ -25,7 +25,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
       controller.setDataRefreshingStatus('...');
 
       await dotenv.load(fileName: '.env');
-      final token = dotenv.env['GITHUB_ACCESS_TOKEN'];;
+      final token = dotenv.env['GITHUB_ACCESS_TOKEN'];
       final url = 'https://api.github.com/repos/Marija97/Knowledge-Treasure-Deck-Flutter-Mobile-App/contents/assets/quiz_data/german.json';
 
       try {
@@ -67,6 +67,12 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                 AppText.large(state.status),
               ]),
 
+              const SizedBox(height: 12),
+              TextButton(
+                onPressed: controller.testRemoteDatabaseRead, 
+                child: Text('Test Database Read'),
+              ),
+              
               const SizedBox(height: 12),
               Expanded(
                 flex: 8,

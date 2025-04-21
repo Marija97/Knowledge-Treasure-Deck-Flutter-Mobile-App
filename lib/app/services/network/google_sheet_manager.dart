@@ -1,48 +1,51 @@
-import 'dart:io';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 import 'dart:async';
 
-String deploymentID = "<Your-deploymentID>";
-String sheetID = "<Your-google-sheet-ID>"; // can be extracted from your google sheets url.
+class GoogleSheetManager {
+  static final _deploymentID =
+      dotenv.env['GOOGLE_SHEET_PROJECT_DEPLOYMENT_ID']!;
 
-Future<Map> triggerWebAPP({required Map body}) async {
-  Map dataDict = {};
-  Uri URL =
-  Uri.parse("https://script.google.com/macros/s/${deploymentID}/exec");
-  try {
-    await http.post(URL, body: body).then((response) async {
-      if ([200, 201].contains(response.statusCode)) {
-        dataDict = jsonDecode(response.body);
-      }
-      if (response.statusCode == 302) {
-        String redirectedUrl = response.headers['location'] ?? "";
-        if (redirectedUrl.isNotEmpty) {
-          Uri url = Uri.parse(redirectedUrl);
-          await http.get(url).then((response) {
+  static final _sheetID = dotenv.env['GOOGLE_SHEET_DATASET_ID']!;
 
-            if ([200, 201].contains(response.statusCode)) {
+  static final _webAppPath =
+      'https://script.google.com/macros/s/$_deploymentID/exec';
+  
+  static final _sheetTabName = 'test';
 
-              dataDict = jsonDecode(response.body);
-            }
-          });
+  Future<Map<String, dynamic>> _triggerWebAPP(Map<String, String> body) async {
+    Map<String, dynamic> dataDict = {};
+    final webAppURL = Uri.parse(_webAppPath);
+    try {
+      await http.post(webAppURL, body: body).then((response) async {
+        if ([200, 201].contains(response.statusCode)) {
+          dataDict = jsonDecode(response.body);
         }
-      } else {
-        print("Other StatusCOde: ${response.statusCode}");
-      }
-    });
-  } catch (e) {
-    print("FAILED: $e");
+        if (response.statusCode == 302) {
+          String redirectedUrl = response.headers['location'] ?? '';
+          if (redirectedUrl.isNotEmpty) {
+            Uri url = Uri.parse(redirectedUrl);
+            await http.get(url).then((response) {
+              if ([200, 201].contains(response.statusCode)) {
+                dataDict = jsonDecode(response.body);
+              }
+            });
+          }
+        } else {
+          print('Other StatusCOde: ${response.statusCode}');
+        }
+      });
+    } catch (e) {
+      print('FAILED: $e');
+    }
+
+    return dataDict;
   }
 
-  return dataDict;
-}
-
-Future<Map> getSheetsData({required String action}) async {
-  Map body = {"sheetID": sheetID, "action": action};
-
-  Map dataDict = await triggerWebAPP(body: body);
-
-  return dataDict;
+  Future<Map<String, dynamic>?> testReadData() async {
+    final body = {'sheetID': _sheetID, 'action': 'read', 'tab': _sheetTabName};
+    return await _triggerWebAPP(body);
+  }
 }

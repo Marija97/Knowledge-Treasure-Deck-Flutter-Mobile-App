@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:know_flow/app/services/network/google_sheet_manager.dart';
 
 import '../../../data/knowledge_repository/knowledge_repository.dart';
 import 'knowledge_state.dart';
@@ -27,6 +28,23 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
   void setDataRefreshingStatus(String status){
     state = state.copyWith(status: status);
+  }
+
+  final googleSheetManager = GoogleSheetManager();
+
+  Future<Map<String, dynamic>?> testRemoteDatabaseRead() async {
+    final result = await googleSheetManager.testReadData();
+    if(result == null) return null;
+
+    print("🌺 Got data: \n");
+    final data = result["data"];
+
+    for (int i = 0; i < (data?.length ?? 0); i++) {
+      final rowData = data![i];
+      print('$i: $rowData');
+    }
+
+    return result;
   }
 
   @override
