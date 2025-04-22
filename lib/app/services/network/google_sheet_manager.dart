@@ -4,6 +4,27 @@ import 'dart:convert';
 
 import 'dart:async';
 
+class Columns {
+  // currently
+  static const question = 1;
+  static const hint = 2;
+  static const answer = 3;
+  static const explanation = 4;
+  static const example = 5;
+  static const status = 6;
+
+  // in the future
+  // static const question = 1;
+  // static const contextCro = 2;
+  // static const hint = 3;
+  // static const answer = 4;
+  // static const explanation = 5;
+  // static const contextGe = 6;
+  // static const example = 7;
+  // static const isToBeKept = 8;
+}
+
+
 class GoogleSheetManager {
   static final _deploymentID =
       dotenv.env['GOOGLE_SHEET_PROJECT_DEPLOYMENT_ID']!;
@@ -49,7 +70,7 @@ class GoogleSheetManager {
     return await _triggerWebAPP(body);
   }
 
-  Future<bool> testWrite({
+  Future<bool> _write({
     required int row,
     required List data,
     int startingColumn = 1,
@@ -67,4 +88,9 @@ class GoogleSheetManager {
     if(result['status'] == 'success') return true;
     return false;
   }
+
+  Future<bool> markStatus({required int row, required String status}) async {
+    return _write(row: row, data: [status], startingColumn: Columns.status);
+  }
+
 }

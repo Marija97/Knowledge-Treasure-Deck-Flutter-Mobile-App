@@ -48,7 +48,12 @@ class KnowledgeController extends Notifier<KnowledgeState> {
   }
 
   Future<void> testRemoteDatabaseWrite() async {
-    final result = await googleSheetManager.testWrite(row: 7, data: ['0', '0']);
+    // final result = await googleSheetManager.write(row: 8, data: [0, 0]);
+    // print("🌺 Got result: $result");
+  }
+
+  Future<void> testFlagSet(String s) async {
+    final result = await googleSheetManager.markStatus(row: 8, status: s);
     print("🌺 Got result: $result");
   }
 
