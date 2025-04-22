@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../../data/models/factoid.dart';
 import '../../controllers/quiz_controller.dart';
 import '../../controllers/quiz_state.dart';
 
@@ -21,14 +22,17 @@ class QuizCard extends ConsumerWidget {
     if (state.completed) return Text('Completed!!');
     if (state.factoid == null) return Text('Some error!');
 
-    final factoid = state.factoid!;
+    final Factoid factoid = state.factoid!;
+
+    final notYetEvaluated = state.mode == QuizMode.evaluating &&
+        (factoid.status == null || factoid.status!.isNotEmpty);
 
     return InkWell(
       onTap: controller.nextView,
       borderRadius: QuizCard.cardBorderRadius,
       child: Ink(
         decoration: BoxDecoration(
-          color: Colors.blueGrey.shade600,
+          color: notYetEvaluated ? Colors.blueGrey.shade600 : Colors.blueGrey.shade400,
           borderRadius: QuizCard.cardBorderRadius,
         ),
         padding: EdgeInsets.all(20),
@@ -48,6 +52,8 @@ class QuizCard extends ConsumerWidget {
                           color:
                               state.obtained ? Colors.white : Colors.transparent,
                         ),
+                        const SizedBox(width: 5),
+                        Text(factoid.status ?? ''),
                         const Spacer(),
                       ]),
 

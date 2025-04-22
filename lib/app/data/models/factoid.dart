@@ -9,6 +9,7 @@ class Factoid extends Equatable {
   final String? hint;
   final String? explanation;
   final String? example;
+  final String? status;
 
   const Factoid({
     required this.question,
@@ -17,6 +18,7 @@ class Factoid extends Equatable {
     this.hint,
     this.explanation,
     this.example,
+    this.status,
   });
 
   String get key => question;
@@ -37,6 +39,7 @@ class Factoid extends Equatable {
         hint: json["hint"] as String?,
         explanation: json["explanation"] as String?,
         example: json["example"] as String?,
+        status: json["status"] as String?,
       );
 
   Map<String, dynamic> _toMap() => {
@@ -46,6 +49,7 @@ class Factoid extends Equatable {
         "hint": hint,
         "example": example,
         "explanation": explanation,
+        "status": status,
       };
 
   Factoid copyWith({
@@ -56,6 +60,7 @@ class Factoid extends Equatable {
     String? hint,
     String? explanation,
     String? example,
+    String? status,
   }) {
     return Factoid(
       question: question ?? this.question,
@@ -64,6 +69,7 @@ class Factoid extends Equatable {
       hint: hint ?? this.hint,
       explanation: explanation ?? this.explanation,
       example: example ?? this.example,
+      status: status ?? this.status,
     );
   }
 }
