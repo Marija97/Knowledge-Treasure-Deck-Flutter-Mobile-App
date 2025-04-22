@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:know_flow/app/services/network/google_sheet_manager.dart';
 
 import '../../../data/knowledge_repository/knowledge_repository.dart';
+import '../../../data/models/factoid.dart';
 import 'knowledge_state.dart';
 
 final knowledgeControllerProvider =
@@ -38,10 +39,21 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
     print("🌺 Got data: \n");
     final data = result["data"];
+    var category = '';
 
-    for (int i = 0; i < (data?.length ?? 0); i++) {
-      final rowData = data![i];
-      print('$i: $rowData');
+    for (int i = 1; i < 6; i++) {
+    // for (int i = 1; i < (data?.length ?? 0); i++) {
+      final rowData = data![i] as List<dynamic>;
+      print('${i+1}: $rowData');
+
+      if(i < 2) continue;
+      if(rowData.first == '') continue;
+      if(rowData[Columns.answer - 1] == '') { // is a category
+        category = rowData[0] as String;
+        continue;
+      }
+      final factoid = Factoid.fromGoogleSheetRow(row: i+1, data: rowData, category: category);
+      print(factoid);
     }
 
     return result;
