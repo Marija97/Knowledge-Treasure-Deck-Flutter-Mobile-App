@@ -34,7 +34,7 @@ class GoogleSheetManager {
   static final _webAppPath =
       'https://script.google.com/macros/s/$_deploymentID/exec';
 
-  static final _sheetTabName = 'test';
+  static final _sheetTabName = 'all_copy';
 
   Future<Map<String, dynamic>> _triggerWebAPP(Map<String, dynamic> body) async {
     Map<String, dynamic> dataDict = {};

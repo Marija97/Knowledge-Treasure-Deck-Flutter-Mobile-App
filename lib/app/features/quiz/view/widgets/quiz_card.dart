@@ -134,20 +134,40 @@ class QuizCard extends ConsumerWidget {
               if (state.mode == QuizMode.evaluating && state.showCorrectAnswer)
                 Padding(
                   padding: EdgeInsets.only(top: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  child: Column(
                     children: [
-                      OutlinedButton(
-                        child: Text('naah'),
-                        onPressed: () => onSetFactoidStatus(factoid.row!, 'naah'),
-                      ),
-                      OutlinedButton(
-                        child: Text('iknow :)'),
-                        onPressed: () => onSetFactoidStatus(factoid.row!, 'znam'),
-                      ),
-                      OutlinedButton(
-                        child: Text('idk'),
-                        onPressed: () => onSetFactoidStatus(factoid.row!, 'zelim znati'),
+                      Text(factoid.status ?? ''),
+                      const SizedBox(height: 2),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              OutlinedButton(
+                                child: Text('naah'),
+                                onPressed: () => onSetFactoidStatus(factoid.row!, 'naah'),
+                              ),
+                              OutlinedButton(
+                                child: Text('I learned :)'),
+                                onPressed: () => onSetFactoidStatus(factoid.row!, 'znam'),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              OutlinedButton(
+                                child: Text('to be learned'),
+                                onPressed: () => onSetFactoidStatus(factoid.row!, 'zelim znati'),
+                              ),
+                              OutlinedButton(
+                                child: Text('needs fixing'),
+                                onPressed: () => onSetFactoidStatus(factoid.row!, 'treba popraviti'),
+                              ),
+                             ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
