@@ -33,30 +33,37 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
   final googleSheetManager = GoogleSheetManager();
 
-  Future<Map<String, dynamic>?> testRemoteDatabaseRead() async {
+  Future<void> refreshFromRemoteDatabase() async {
     final result = await googleSheetManager.testReadData();
     if(result == null) return null;
 
     print("🌺 Got data: \n");
     final data = result["data"];
-    var category = '';
+    final readLength = 10;
 
-    for (int i = 1; i < 6; i++) {
+    var category = '';
+    var ccc = '{';
+
+    for (int i = 1; i < readLength; i++) {
     // for (int i = 1; i < (data?.length ?? 0); i++) {
       final rowData = data![i] as List<dynamic>;
       print('${i+1}: $rowData');
 
-      if(i < 2) continue;
       if(rowData.first == '') continue;
       if(rowData[Columns.answer - 1] == '') { // is a category
         category = rowData[0] as String;
         continue;
       }
-      final factoid = Factoid.fromGoogleSheetRow(row: i+1, data: rowData, category: category);
-      print(factoid);
-    }
+      final f = Factoid.fromGoogleSheetRow(row: i+1, data: rowData, category: category);
+      final m = '"${f.category}: ${f.question}": ${f.toJson()}';
 
-    return result;
+      final isLast = i == readLength - 1;
+      ccc += '$m ${isLast ? '\n' : ', \n'}';
+    }
+    ccc += '}';
+
+    await ref.read(knowledgeRepositoryProvider).clear();
+    await ref.read(knowledgeRepositoryProvider).setupInitialKnowledge(ccc);
   }
 
   Future<void> testRemoteDatabaseWrite() async {

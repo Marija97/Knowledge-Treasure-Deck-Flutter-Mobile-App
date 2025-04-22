@@ -69,8 +69,8 @@ class KnowledgeOverviewPage extends ConsumerWidget {
 
               const SizedBox(height: 12),
               TextButton(
-                onPressed: controller.testRemoteDatabaseRead, 
-                child: Text('Test Database Read'),
+                onPressed: controller.refreshFromRemoteDatabase,
+                child: Text('Refresh From Remote Database'),
               ),
               const SizedBox(height: 12),
               TextButton(

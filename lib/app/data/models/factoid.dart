@@ -76,12 +76,13 @@ class Factoid extends Equatable {
 
   Map<String, dynamic> _toMap() => {
         "question": question,
-        "answer": correctAnswer,
+        "correct_answer": correctAnswer,
         "category": category,
         "hint": hint,
         "example": example,
         "explanation": explanation,
         "status": status,
+        "row": row,
       };
 
   Factoid copyWith({
