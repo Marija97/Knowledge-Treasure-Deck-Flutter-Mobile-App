@@ -72,8 +72,9 @@ class GoogleSheetManager {
 
   Future<bool> _write({
     required int row,
-    required List data,
+    List? data,
     int startingColumn = 1,
+    String? singleValue,
   }) async {
     final parameters = {
       'sheetID': _sheetID,
@@ -84,13 +85,15 @@ class GoogleSheetManager {
       'numRows': 1.toString(), // default
       'startingColumn': startingColumn.toString(),
     };
+    if(singleValue != null) parameters['singleValue'] = singleValue;
+
     final result = await _triggerWebAPP(parameters);
     if(result['status'] == 'success') return true;
     return false;
   }
 
   Future<bool> markStatus({required int row, required String status}) async {
-    return _write(row: row, data: [status], startingColumn: Columns.status);
+    return _write(row: row, singleValue: status, startingColumn: Columns.status);
   }
 
 }

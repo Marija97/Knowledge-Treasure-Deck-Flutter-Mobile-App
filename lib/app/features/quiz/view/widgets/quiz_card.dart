@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../data/models/factoid.dart';
+import '../../../knowledge/controllers/knowledge_controller.dart';
 import '../../controllers/quiz_controller.dart';
 import '../../controllers/quiz_state.dart';
 
@@ -27,12 +28,16 @@ class QuizCard extends ConsumerWidget {
     final notYetEvaluated = state.mode == QuizMode.evaluating &&
         (factoid.status == null || factoid.status!.isNotEmpty);
 
+    final onSetFactoidStatus =
+        ref.read(knowledgeControllerProvider.notifier).setFactoidStatus;
     return InkWell(
       onTap: controller.nextView,
       borderRadius: QuizCard.cardBorderRadius,
       child: Ink(
         decoration: BoxDecoration(
-          color: notYetEvaluated ? Colors.blueGrey.shade600 : Colors.blueGrey.shade400,
+          color: notYetEvaluated
+              ? Colors.blueGrey.shade500
+              : Colors.blueGrey.shade600,
           borderRadius: QuizCard.cardBorderRadius,
         ),
         padding: EdgeInsets.all(20),
@@ -45,15 +50,16 @@ class QuizCard extends ConsumerWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       Row(children: [
                         Icon(
                           Icons.star,
-                          color:
-                              state.obtained ? Colors.white : Colors.transparent,
+                          color: state.obtained
+                              ? Colors.white
+                              : Colors.transparent,
                         ),
                         const SizedBox(width: 5),
-                        Text(factoid.status ?? ''),
+                        // if(state.mode == QuizMode.evaluating) Text(factoid.status ?? '?'),
                         const Spacer(),
                       ]),
 
@@ -123,6 +129,27 @@ class QuizCard extends ConsumerWidget {
                   child: OutlinedButton(
                     child: Text('Totally knew that ✅'),
                     onPressed: controller.markAsObtained,
+                  ),
+                ),
+              if (state.mode == QuizMode.evaluating && state.showCorrectAnswer)
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      OutlinedButton(
+                        child: Text('naah'),
+                        onPressed: () => onSetFactoidStatus(factoid.row!, 'naah'),
+                      ),
+                      OutlinedButton(
+                        child: Text('iknow :)'),
+                        onPressed: () => onSetFactoidStatus(factoid.row!, 'znam'),
+                      ),
+                      OutlinedButton(
+                        child: Text('idk'),
+                        onPressed: () => onSetFactoidStatus(factoid.row!, 'zelim znati'),
+                      ),
+                    ],
                   ),
                 ),
             ],

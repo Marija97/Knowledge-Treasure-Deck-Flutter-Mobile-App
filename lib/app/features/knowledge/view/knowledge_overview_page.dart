@@ -73,11 +73,6 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                 child: Text('Refresh From Remote Database'),
               ),
               const SizedBox(height: 12),
-              TextButton(
-                onPressed: () => controller.testFlagSet('s'),
-                child: Text('Test'),
-              ),
-              const SizedBox(height: 12),
               Expanded(
                 flex: 8,
                 child: ListView(

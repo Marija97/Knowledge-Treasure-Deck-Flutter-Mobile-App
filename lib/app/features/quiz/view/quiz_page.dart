@@ -27,20 +27,23 @@ class QuizPage extends ConsumerWidget {
             children: [
               Row(children: [
                 Expanded(
-                  child: AppText.large('${state.mode.name} :)'),
+                  child: AppText.large('${state.mode.name}'),
                 ),
-                AppButton(
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
                   title: 'Learn',
                   onTap: () => controller.switchQuizMode(QuizMode.learning),
-                ),
-                AppButton(
+                )),
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
                   title: 'Test',
                   onTap: () => controller.switchQuizMode(QuizMode.testing),
-                ),
-                AppButton(
+                )),
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
                   title: 'Evaluate',
                   onTap: () => controller.switchQuizMode(QuizMode.evaluating),
-                ),
+                )),
               ]),
               const Spacer(),
               QuizCard(category),

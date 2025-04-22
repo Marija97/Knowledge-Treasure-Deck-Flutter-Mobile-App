@@ -39,13 +39,12 @@ class KnowledgeController extends Notifier<KnowledgeState> {
 
     print("🌺 Got data: \n");
     final data = result["data"];
-    final readLength = 10;
+    final readLength = data?.length;
 
     var category = '';
     var ccc = '{';
 
     for (int i = 1; i < readLength; i++) {
-    // for (int i = 1; i < (data?.length ?? 0); i++) {
       final rowData = data![i] as List<dynamic>;
       print('${i+1}: $rowData');
 
@@ -71,9 +70,8 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     // print("🌺 Got result: $result");
   }
 
-  Future<void> testFlagSet(String s) async {
-    final result = await googleSheetManager.markStatus(row: 8, status: s);
-    print("🌺 Got result: $result");
+  Future<void> setFactoidStatus(int row, String status) async {
+    await googleSheetManager.markStatus(row: row, status: status);
   }
 
   @override
