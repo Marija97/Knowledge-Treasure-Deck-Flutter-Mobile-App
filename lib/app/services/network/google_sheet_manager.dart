@@ -12,10 +12,10 @@ class GoogleSheetManager {
 
   static final _webAppPath =
       'https://script.google.com/macros/s/$_deploymentID/exec';
-  
+
   static final _sheetTabName = 'test';
 
-  Future<Map<String, dynamic>> _triggerWebAPP(Map<String, String> body) async {
+  Future<Map<String, dynamic>> _triggerWebAPP(Map<String, dynamic> body) async {
     Map<String, dynamic> dataDict = {};
     final webAppURL = Uri.parse(_webAppPath);
     try {
@@ -47,5 +47,24 @@ class GoogleSheetManager {
   Future<Map<String, dynamic>?> testReadData() async {
     final body = {'sheetID': _sheetID, 'action': 'read', 'tab': _sheetTabName};
     return await _triggerWebAPP(body);
+  }
+
+  Future<bool> testWrite({
+    required int row,
+    required List data,
+    int startingColumn = 1,
+  }) async {
+    final parameters = {
+      'sheetID': _sheetID,
+      'action': 'write',
+      'tab': _sheetTabName,
+      'row': row.toString(),
+      'data': data.toString(),
+      'numRows': 1.toString(), // default
+      'startingColumn': startingColumn.toString(),
+    };
+    final result = await _triggerWebAPP(parameters);
+    if(result['status'] == 'success') return true;
+    return false;
   }
 }

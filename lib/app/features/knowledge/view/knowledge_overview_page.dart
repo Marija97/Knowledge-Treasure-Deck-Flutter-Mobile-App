@@ -72,7 +72,11 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                 onPressed: controller.testRemoteDatabaseRead, 
                 child: Text('Test Database Read'),
               ),
-              
+              const SizedBox(height: 12),
+              TextButton(
+                onPressed: controller.testRemoteDatabaseWrite,
+                child: Text('Test Database Write'),
+              ),
               const SizedBox(height: 12),
               Expanded(
                 flex: 8,

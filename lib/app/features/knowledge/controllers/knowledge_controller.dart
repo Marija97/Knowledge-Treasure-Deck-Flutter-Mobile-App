@@ -47,6 +47,11 @@ class KnowledgeController extends Notifier<KnowledgeState> {
     return result;
   }
 
+  Future<void> testRemoteDatabaseWrite() async {
+    final result = await googleSheetManager.testWrite(row: 7, data: ['0', '0']);
+    print("🌺 Got result: $result");
+  }
+
   @override
   KnowledgeState build() {
     return KnowledgeState(selectedCategory: null);
