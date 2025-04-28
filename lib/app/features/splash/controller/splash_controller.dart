@@ -22,7 +22,7 @@ class SplashController extends AutoDisposeAsyncNotifier<SplashState> {
       // await ref.read(knowledgeRepositoryProvider).clear();
 
       // reload the data
-      final data = await rootBundle.loadString('assets/quiz_data/german.json');
+      final data = await rootBundle.loadString('assets/quiz_data/test.json');
       await ref.read(knowledgeRepositoryProvider).setupInitialKnowledge(data);
     }
 

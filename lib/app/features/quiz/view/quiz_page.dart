@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:know_flow/app/features/quiz/controllers/quiz_state.dart';
 
 import '../../../widgets/button.dart';
 import '../../../widgets/text.dart';
@@ -26,14 +27,23 @@ class QuizPage extends ConsumerWidget {
             children: [
               Row(children: [
                 Expanded(
-                  child: AppText.large('${state.mode.name} :)'),
+                  child: AppText.large('${state.mode.name}'),
                 ),
-                Expanded(
-                  child: AppButton(
-                    title: 'Switch mode',
-                    onTap: controller.switchQuizMode,
-                  ),
-                ),
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
+                  title: 'Learn',
+                  onTap: () => controller.switchQuizMode(QuizMode.learning),
+                )),
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
+                  title: 'Test',
+                  onTap: () => controller.switchQuizMode(QuizMode.testing),
+                )),
+                const SizedBox(width: 2),
+                Expanded(child: AppButton(
+                  title: 'Evaluate',
+                  onTap: () => controller.switchQuizMode(QuizMode.evaluating),
+                )),
               ]),
               const Spacer(),
               QuizCard(category),

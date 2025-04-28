@@ -21,11 +21,11 @@ class KnowledgeOverviewPage extends ConsumerWidget {
     final controller = ref.read(knowledgeControllerProvider.notifier);
     final state = ref.watch(knowledgeControllerProvider);
 
-    Future<void> updateData() async {
+    Future<void> _updateDataViaGitHub() async {
       controller.setDataRefreshingStatus('...');
 
       await dotenv.load(fileName: '.env');
-      final token = dotenv.env['GITHUB_ACCESS_TOKEN'];;
+      final token = dotenv.env['GITHUB_ACCESS_TOKEN'];
       final url = 'https://api.github.com/repos/Marija97/Knowledge-Treasure-Deck-Flutter-Mobile-App/contents/assets/quiz_data/german.json';
 
       try {
@@ -46,6 +46,18 @@ class KnowledgeOverviewPage extends ConsumerWidget {
       }
     }
 
+    Future<void> updateDataRemotely() async {
+      controller.setDataRefreshingStatus('...');
+      try {
+        await controller.refreshFromRemoteDatabase();
+        controller.setDataRefreshingStatus(':)');
+      } catch (e, s) {
+        controller.setDataRefreshingStatus(':(');
+        debugPrint('Failed to read user data. Status Code: $e');
+        debugPrint(s.toString());
+      }
+    }
+
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -57,7 +69,7 @@ class KnowledgeOverviewPage extends ConsumerWidget {
 
               Row(children: [
                 GestureDetector(
-                  onLongPress: updateData,
+                  onLongPress: updateDataRemotely,
                   child: Image.asset(
                     './assets/images/logos/owl_orange.png',
                     height: 70,
@@ -66,7 +78,6 @@ class KnowledgeOverviewPage extends ConsumerWidget {
                 const SizedBox(width: 12),
                 AppText.large(state.status),
               ]),
-
               const SizedBox(height: 12),
               Expanded(
                 flex: 8,

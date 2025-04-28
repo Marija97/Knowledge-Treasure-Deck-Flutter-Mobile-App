@@ -61,7 +61,9 @@ class LocalKnowledgeRepository implements KnowledgeRepository {
 
   @override
   List<String> getCategories() {
-    return storage.getValue('categories') as List<String>;
+    final values = storage.getValue('categories');
+    if(values == null) return [];
+    return values as List<String>;
   }
 
   static allObtainedKey(String category) => 'obtained_$category';

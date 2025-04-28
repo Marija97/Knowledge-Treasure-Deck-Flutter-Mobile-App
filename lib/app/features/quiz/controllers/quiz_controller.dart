@@ -64,9 +64,9 @@ class QuizController extends StateNotifier<QuizState> {
     return '${state.ordinalNumber + 1}/${quest.length}';
   }
 
-  void switchQuizMode() {
-    final other = QuizMode.values.firstWhere((mode) => mode != state.mode);
-    state = state.copyWith(mode: other);
+  void switchQuizMode(QuizMode targetMode) {
+    if(targetMode == state.mode) return;
+    state = state.copyWith(mode: targetMode);
   }
 
   // static const questLength = 5; // Todo set in settings...

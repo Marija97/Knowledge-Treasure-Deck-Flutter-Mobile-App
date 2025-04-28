@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../data/models/factoid.dart';
 
-enum QuizMode { learning, testing }
+enum QuizMode { learning, testing, evaluating }
 
 class QuizState extends Equatable {
   const QuizState({
