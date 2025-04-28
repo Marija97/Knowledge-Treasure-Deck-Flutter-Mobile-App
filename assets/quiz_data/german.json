@@ -5527,5 +5527,173 @@
     "question": "moštvo",
     "correct_answer": "die Menge",
     "category": "S52. Text: Echt extrem - 6. Michael-Jackson-Flashmob in München        "
+  },
+  "S55. Text: Die Angst läuft mit: koristiti": {
+    "question": "koristiti",
+    "correct_answer": "verwenden",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "In den Sätzen wird der Konjuktiv II verwendet. Was wird damit ausgedrückt? - U tim rečenicama se koristi Konjuktiv II. Što se time izražava?"
+  },
+  "S55. Text: Die Angst läuft mit: istaknuti se": {
+    "question": "istaknuti se",
+    "correct_answer": "auffallen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "hint": "npr nesto se istice u tekstu",
+    "example": "Was fällt im Text auf?"
+  },
+  "S55. Text: Die Angst läuft mit: odnos, veza": {
+    "question": "odnos, veza",
+    "correct_answer": "die Beziehung",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: duševno, mentalno": {
+    "question": "duševno, mentalno",
+    "correct_answer": "geistig",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: gledati smrti u oči": {
+    "question": "gledati smrti u oči",
+    "correct_answer": "Dem Tod ins Auge zu blicken.",
+    "category": "S55. Text: Die Angst läuft mit",
+    "explanation": "der Tod - smrt; das Auge, die Augen = oko, oči"
+  },
+  "S55. Text: Die Angst läuft mit: strah, strašno": {
+    "question": "strah, strašno",
+    "correct_answer": "die Furcht; furchtbar",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: tek tada": {
+    "question": "tek tada",
+    "correct_answer": "erst dann",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "Erst dann sieht er, was er schon längst wusste. - Tek tada vidi ono što je već odavno znao."
+  },
+  "S55. Text: Die Angst läuft mit: (o)davno": {
+    "question": "(o)davno",
+    "correct_answer": "längst",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "Erst dann sieht er, was er schon längst wusste. - Tek tada vidi ono što je već odavno znao."
+  },
+  "S55. Text: Die Angst läuft mit: pasti": {
+    "question": "pasti",
+    "correct_answer": "stürzen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "explanation": "Perfekt: ist gestürzt",
+    "example": "Sein Partner Lutz Schreyer ist 24 Meter in die Tiefe gestürzt."
+  },
+  "S55. Text: Die Angst läuft mit: otvoriti": {
+    "question": "otvoriti",
+    "correct_answer": "aufmachen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "Kannst du bitte das Fenster aufmachen? (Možeš li, molim te, otvoriti prozor?)"
+  },
+  "S55. Text: Die Angst läuft mit: postaviti": {
+    "question": "postaviti",
+    "correct_answer": "aufstellen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "hint": "npr. rekord"
+  },
+  "S55. Text: Die Angst läuft mit: nastavljati dalje": {
+    "question": "nastavljati dalje",
+    "correct_answer": "weiter machen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "Falko Traber macht weiter, stellt Längen- und Höhen- rekorde auf dem Hochseil auf. Falko Traber nastavlja dalje, postavlja rekorde u duljini i visini na visokom užetu."
+  },
+  "S55. Text: Die Angst läuft mit: biciklom": {
+    "question": "biciklom",
+    "correct_answer": "mit einem Fahrrad",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: prijeći": {
+    "question": "prijeći",
+    "correct_answer": "überqueren",
+    "category": "S55. Text: Die Angst läuft mit",
+    "hint": "npr. cestu na crveno",
+    "example": "Er überquerte die Straße bei Rot. (Prešao je cestu na crveno.)"
+  },
+  "S55. Text: Die Angst läuft mit: bez prekida": {
+    "question": "bez prekida",
+    "correct_answer": "ohne Unterbrechung",
+    "category": "S55. Text: Die Angst läuft mit",
+    "explanation": "die Unterbrechung = prekid"
+  },
+  "S55. Text: Die Angst läuft mit: prekinuti": {
+    "question": "prekinuti",
+    "correct_answer": "unterbrechen, brach unter, hat untergebrochen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "hint": "irreg."
+  },
+  "S55. Text: Die Angst läuft mit: žičara": {
+    "question": "žičara",
+    "correct_answer": "die Seilbahn",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: uvijek iznova, stalno, opet i opet": {
+    "question": "uvijek iznova, stalno, opet i opet",
+    "correct_answer": "immer wieder",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "Er versucht es immer wieder. (On to pokušava uvijek iznova.) Immer wieder passieren Unfälle auf dieser Straße. (Stalno se događaju nesreće na toj cesti.)"
+  },
+  "S55. Text: Die Angst läuft mit: nastup": {
+    "question": "nastup",
+    "correct_answer": "der Auftritt, die Auftritte",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: položeno u kolijevku": {
+    "question": "položeno u kolijevku",
+    "correct_answer": "\"in die Wiege gelegt\"",
+    "category": "S55. Text: Die Angst läuft mit",
+    "explanation": "Fraza \"in die Wiege gelegt\" znači da je nešto urođeno, predodređeno od samog početka života.",
+    "example": "Das Leben auf dem Drahtseil ist ihm in die Wiege gelegt."
+  },
+  "S55. Text: Die Angst läuft mit: biti na putu": {
+    "question": "biti na putu",
+    "correct_answer": "unterwegs sein",
+    "category": "S55. Text: Die Angst läuft mit",
+    "explanation": "znači biti na putu, kretati se, ne biti stalno na jednom mjestu."
+  },
+  "S55. Text: Die Angst läuft mit: izvještavati, obavještavati, pričati": {
+    "question": "izvještavati, obavještavati, pričati",
+    "correct_answer": "berichten",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: službeni dokument, isprava": {
+    "question": "službeni dokument, isprava",
+    "correct_answer": "die Urkunde",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: snaga, sila, moć": {
+    "question": "snaga, sila, moć",
+    "correct_answer": "die Kraft, die Kräfte",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: osjećati, osjetiti": {
+    "question": "osjećati, osjetiti",
+    "correct_answer": "spüren",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "„Man spürt eine Kraft, als ob man alles schaffen könnte.\""
+  },
+  "S55. Text: Die Angst läuft mit: smisliti ideje, doći do novih ideja ili osmišljavati nešto": {
+    "question": "smisliti ideje, doći do novih ideja ili osmišljavati nešto",
+    "correct_answer": "sich Ideen einfallen lassen",
+    "category": "S55. Text: Die Angst läuft mit",
+    "hint": "doslovno znači „dopustiti da ti ideje padnu na pamet“",
+    "example": "Ich lasse mir immer neue Ideen einfallen. (Uvijek smišljam nove ideje.)"
+  },
+  "S55. Text: Die Angst läuft mit: zabavljati (nekoga ili sebe)": {
+    "question": "zabavljati (nekoga ili sebe)",
+    "correct_answer": "unterhalten + A; sich unterhalten",
+    "category": "S55. Text: Die Angst läuft mit",
+    "example": "„Es ist heute schwieriger, die Menschen zu unterhalten, weil das Fernsehen tagtäglich irgendwelche Superlative bietet.\""
+  },
+  "S55. Text: Die Angst läuft mit: povazdan": {
+    "question": "povazdan",
+    "correct_answer": "tagtäglich",
+    "category": "S55. Text: Die Angst läuft mit"
+  },
+  "S55. Text: Die Angst läuft mit: strast, strasti": {
+    "question": "strast, strasti",
+    "correct_answer": "die Leidenschaft, die Leidenschaften",
+    "category": "S55. Text: Die Angst läuft mit"
   }
 }
